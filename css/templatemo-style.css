@@ -868,7 +868,7 @@ textarea.form-control {
 .filled-bar-4 {
   position: absolute;
   z-index: 99;
-  width: 30%;
+  width: 70%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
