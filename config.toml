@@ -1,0 +1,69 @@
+baseurl = "http://www.example.com"
+title = "David Araújo"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "David Araújo"
+  info = "Computer Science student and undergraduate researcher"
+  keywords = "portfolio,developer,personal"
+  avatarurl = "images/PSX_20230228_104647.jpg"
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  dateFormat = "January 2, 2006"
+  since = 2023
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/DavidAraujo98"
+[[params.social]]
+  name = "Gmail"
+  icon = "fa fa-envelope fa-2x"
+  weight = 3
+  url = "mailto:david2araujo5@gmail.com"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/david2araujo5/"
+[[params.social]]
+  name = "Curriculum"
+  icon = "fa fa-file fa-2x"
+  weight = 4
+  url = "https://docs.google.com/document/d/e/2PACX-1vToY47Ukd08Y_0VYEJ3a_-MuDc2biS0gJFshLtZVIDTvbydlej14tlFzfBm3ExdpvlMjn4ZAr4BovJG/pub"
+[[params.social]]
+  name = "Medium"
+  icon = "fa fa-medium fa-2x"
+  weight = 5
+  url = "https://david2araujo5.medium.com/"
+
+# Menu links
+[[menu.main]]
+  name = "Projects"
+  weight = 2
+  url  = "projects/"
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+[[menu.main]]
+  name = "Contact me"
+  weight = 3
+  url = "contact/"
