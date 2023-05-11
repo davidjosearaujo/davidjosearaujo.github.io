@@ -4,7 +4,7 @@ date: 2023-05-07T12:20:33+01:00
 draft: false
 ---
 
-# WHO AM I?
+# Who am I?
 
 **Highly motivated and obsessively focused**, I guess, is the best way to describe me. I commit myself entirely to every single project I work on because, for me, software development is more than just my job; it is also my hobby and my passion. My main fields of interest are **networking**, **web3 technologies**, and **cybersecurity**.
 
