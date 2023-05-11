@@ -40,6 +40,6 @@ This project is based on the concept of an online store. It has two versions: on
 
 #### FestivalPlanner
 
-This project is based on the concept of an online store. It has two versions: one presents several critical security vulnerabilities, and the other is the same system with the vulnerabilities addressed in a correct fashion.
+Music festivals require careful planning before, during, and after they occur, our software provides a simple way of managing stages, musicians, catering, etc. So a database manager in WFA (C#) with connection to an MSSQL database.
 
 [GitHub](https://github.com/DavidAraujo98/miect/tree/main/BD%20-%20Bases%20de%20Dados/Project%20-%20FestivalPlanner)
