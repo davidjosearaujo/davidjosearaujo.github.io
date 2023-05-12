@@ -1,12 +1,12 @@
 ---
-title: "Projects"
+title: "Projects 🛠"
 date: 2023-05-11T21:20:59+01:00
 draft: false
 ---
 
-# Personal
+# Personal 😎
 
-This are some of the projects I've worked on my spare time, they are also the ones I had the most fun developing. :winking_face_with_tongue:
+This are some of the projects I've worked on my spare time, they are also the ones I had the most fun developing.
 
 #### EPHScores
 
@@ -22,13 +22,13 @@ CAP is a XML message-formatted based communication focussed one structuring the 
 
 [Python](https://test.pypi.org/project/capparser/)
 
-# University
+# University 🧑‍🎓
 
-During my college experience, I also developed some interesting system, some of my favorite are listed bellow.
+During my college experience, I also developed some interesting systems, some of my favorite are listed bellow.
 
 #### E-CHAP Authentication Mechanism
 
-In this project, we were asked to deliver an application that combines the advantageous characteristics of both a password manager as well as provides an E-CHAP authentication protocol that is able to communicate with any service that allows it.
+In this project, we were asked to deliver an application that combines the advantageous characteristics of both a password manager as well as providing an E-CHAP authentication protocol that is able to communicate with any service that allows it.
 
 [GitHub](https://github.com/DavidAraujo98/miect/tree/main/SIO%20-%20Seguranca%20Informatica%20em%20Organizacoes/Project-2)
 
