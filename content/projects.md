@@ -12,7 +12,7 @@ This are some of the projects I've worked on my spare time, they are also the on
 
 An application for medical emergency first responders in Portugal. It provides an easy way to calculate various scores and evaluations of the patient, soo to ease and accelerate the help and care.
 
-[Play Store](play.google.com/store/apps/details?id=com.davidaraujo.ephscores&pli=1)
+[Play Store](https://play.google.com/store/apps/details?id=com.davidaraujo.ephscores)
 
 #### CAP Parser library
 
