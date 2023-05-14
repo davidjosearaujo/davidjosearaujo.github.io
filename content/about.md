@@ -4,8 +4,6 @@ date: 2023-05-07T12:20:33+01:00
 draft: false
 ---
 
-# Who am I?
-
 **Highly motivated and obsessively focused**, I guess, is the best way to describe me. I commit myself entirely to every single project I work on because, for me, software development is more than just my job; it is also my hobby and my passion. My main fields of interest are **networking**, **web3 technologies**, and **cybersecurity**.
 
 I’ve been programming since I was 15, and from that point onward, I knew that technology was my vocation.Nowadays, I have the pleasure and opportunity of studying *Computer and Telematics Engineering at the University of Aveiro*, which has broadened my view of this field and has been an amazing learning journey. In **2022** I've also started a ***Undergraduate Student Research Scholarship*** at ***Instituto de Telecomunicações*** center in Aveiro in the field of microcontroller network communication for the *FireTech* project, which aims to develop a **system of wildfire detection and population warning** via local radio station broadcast.
