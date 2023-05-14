@@ -46,7 +46,7 @@ style = "github-dark"
   url = "https://www.linkedin.com/in/david2araujo5/"
 [[params.social]]
   name = "Curriculum"
-  icon = "fa fa-scroll fa-2x"
+  icon = "fa-solid fa-scroll"
   weight = 4
   url = "https://docs.google.com/document/d/e/2PACX-1vToY47Ukd08Y_0VYEJ3a_-MuDc2biS0gJFshLtZVIDTvbydlej14tlFzfBm3ExdpvlMjn4ZAr4BovJG/pub"
 [[params.social]]
