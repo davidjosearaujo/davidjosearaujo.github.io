@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: davidaraujo98.github.io
+Token: 3c9f4c064253511f03d2cfe0e8968158e47883802e685951024e6e18f83d465f
