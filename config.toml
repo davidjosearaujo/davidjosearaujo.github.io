@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://davidaraujo98.github.io"
 title = "David Araújo"
 theme = "hugo-coder"
 languagecode = "en"
@@ -6,6 +6,12 @@ defaultcontentlanguage = "en"
 
 paginate = 20
 enableEmoji=true
+
+[module]
+[[module.mounts]]
+  includeFiles = '.well-known/*'
+  source = 'content'
+  target = 'content'
 
 [markup.highlight]
 style = "github-dark"
