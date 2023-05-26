@@ -16,6 +16,6 @@ Or **send a message** bellow !
 
 # Contact form
 
-Although the form is from an **external** service, you can still consult our [Privacy Policy](https://www.freeprivacypolicy.com/live/58044f42-8abb-451b-8a9c-0483f22b093b).
+Although the form is from an **external** service, you can still consult this site's [Privacy Policy](https://www.freeprivacypolicy.com/live/58044f42-8abb-451b-8a9c-0483f22b093b).
 
 {{< formspree mzbwnrqv >}}
