@@ -2,42 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David Araújo</title>
-    <link>http://www.example.com/</link>
+    <link>https://davidaraujo98.github.io/</link>
     <description>Recent content on David Araújo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Contact Me 📣</title>
-      <link>http://www.example.com/contact/</link>
-      <pubDate>Fri, 12 May 2023 00:22:32 +0100</pubDate>
-      
-      <guid>http://www.example.com/contact/</guid>
-      <description>You can reach me via:
-📫 Email either at Gmail or Proton. 👥 Collaboration platforms such as Discord or Element. 🤓 And LinkedIn if you want to keep it &amp;ldquo;businessy&amp;rdquo;. Or send a message bellow !
-Contact formLink to headingFull NameEmail AddressMessage</description>
-    </item>
-    
-    <item>
-      <title>Projects 🛠</title>
-      <link>http://www.example.com/projects/</link>
-      <pubDate>Thu, 11 May 2023 21:20:59 +0100</pubDate>
-      
-      <guid>http://www.example.com/projects/</guid>
-      <description>Personal 😎Link to headingThis are some of the projects I&amp;rsquo;ve worked on my spare time, they are also the ones I had the most fun developing.
-EPHScoresLink to headingAn application for medical emergency first responders in Portugal. It provides an easy way to calculate various scores and evaluations of the patient, soo to ease and accelerate the help and care.
-Play Store
-CAP Parser libraryLink to headingCAP is a XML message-formatted based communication focussed one structuring the main aspects of any given emergency in a easy to read/easy to exchange message.</description>
-    </item>
-    
-    <item>
-      <title>About Me 📜</title>
-      <link>http://www.example.com/about/</link>
-      <pubDate>Sun, 07 May 2023 12:20:33 +0100</pubDate>
-      
-      <guid>http://www.example.com/about/</guid>
-      <description>Who am I?Link to headingHighly motivated and obsessively focused, I guess, is the best way to describe me. I commit myself entirely to every single project I work on because, for me, software development is more than just my job; it is also my hobby and my passion. My main fields of interest are networking, web3 technologies, and cybersecurity.
-I’ve been programming since I was 15, and from that point onward, I knew that technology was my vocation.</description>
-    </item>
-    
+    <language>en</language><atom:link href="https://davidaraujo98.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

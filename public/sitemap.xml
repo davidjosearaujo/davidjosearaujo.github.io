@@ -2,23 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.example.com/contact/</loc>
-    <lastmod>2023-05-12T00:22:32+01:00</lastmod>
+    <loc>https://davidaraujo98.github.io/authors/</loc>
   </url><url>
-    <loc>http://www.example.com/projects/</loc>
-    <lastmod>2023-05-11T21:20:59+01:00</lastmod>
+    <loc>https://davidaraujo98.github.io/categories/</loc>
   </url><url>
-    <loc>http://www.example.com/about/</loc>
-    <lastmod>2023-05-07T12:20:33+01:00</lastmod>
+    <loc>https://davidaraujo98.github.io/</loc>
   </url><url>
-    <loc>http://www.example.com/authors/</loc>
+    <loc>https://davidaraujo98.github.io/series/</loc>
   </url><url>
-    <loc>http://www.example.com/categories/</loc>
-  </url><url>
-    <loc>http://www.example.com/</loc>
-  </url><url>
-    <loc>http://www.example.com/series/</loc>
-  </url><url>
-    <loc>http://www.example.com/tags/</loc>
+    <loc>https://davidaraujo98.github.io/tags/</loc>
   </url>
 </urlset>
