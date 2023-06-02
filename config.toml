@@ -7,12 +7,6 @@ defaultcontentlanguage = "en"
 paginate = 20
 enableEmoji=true
 
-[module]
-[[module.mounts]]
-  includeFiles = '.well-known/*'
-  source = 'content'
-  target = 'content'
-
 [markup.highlight]
 style = "github-dark"
 
