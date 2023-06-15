@@ -1,4 +1,4 @@
-baseurl = "https://davidaraujo98.github.io"
+baseurl = "https://davidjosearaujo.github.io"
 title = "David Araújo"
 theme = "hugo-coder"
 languagecode = "en"
@@ -33,7 +33,7 @@ style = "github-dark"
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/DavidAraujo98"
+  url = "https://github.com/davidjosearaujo"
 [[params.social]]
   name = "Gmail"
   icon = "fa fa-envelope fa-2x"
