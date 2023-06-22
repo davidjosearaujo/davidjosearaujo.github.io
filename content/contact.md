@@ -6,9 +6,11 @@ draft: false
 
 You can reach me via:
 
-- 📫 **Email** either at [Gmail](mailto:david2araujo5@gmail.com) or [Proton](mailto:david2araujo5@proton.me).
-- 👥 **Collaboration** platforms such as [Discord](https://discordapp.com/users/David_Ara_jo#5133) or [Element](https://matrix.to/#/@davidjoaraujo:matrix.org).
-- 🤓 And [LinkedIn](https://www.linkedin.com/in/david2araujo5/) if you want to keep it "*businessy*".
+-   📫 **Email** either at [Gmail](mailto:david2araujo5@gmail.com) or [Proton](mailto:david2araujo5@proton.me).
+-   👥 **Collaboration** platforms such as [Discord](https://discordapp.com/users/David_Ara_jo#5133) or [Element](https://matrix.to/#/@davidjoaraujo:matrix.org).
+-   🤓 [LinkedIn](https://www.linkedin.com/in/david2araujo5/) if you want to keep it "_businessy_".
+
+If you need to share something **anonymously**, please refer to my [**OnionShare**](http://iimltxr4oe74eshdpstd3midfrqvytjn6xmvc7vppje7mktcdazwyhid.onion). _(You will need to use a TOR browser)_
 
 Or **send a message** bellow !
 
