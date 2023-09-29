@@ -12,9 +12,9 @@ style = "github-dark"
 
 [params]
   author = "David Araújo"
-  info = "Computer Science student, Undergraduate Researcher, and full time tech enthusiast!"
+  info = "Cybersecurity Student, Graduate Researcher, and full time tech enthusiast!"
   keywords = "portfolio,developer,personal"
-  avatarurl = "images/PSX_20230228_104647.jpg"
+  avatarurl = "images/51376165.jpeg"
 
   colorScheme = "auto"
   hidecolorschemetoggle = false
@@ -49,22 +49,22 @@ style = "github-dark"
   icon = "fa fa-file fa-2x"
   weight = 4
   url = "https://docs.google.com/document/d/e/2PACX-1vToY47Ukd08Y_0VYEJ3a_-MuDc2biS0gJFshLtZVIDTvbydlej14tlFzfBm3ExdpvlMjn4ZAr4BovJG/pub"
-[[params.social]]
-  name = "Medium"
-  icon = "fa fa-medium fa-2x"
-  weight = 5
-  url = "https://david2araujo5.medium.com/"
 
 # Menu links
-[[menu.main]]
-  name = "Projects"
-  weight = 2
-  url  = "projects/"
+
 [[menu.main]]
   name = "About Me"
   weight = 1
   url = "about/"
 [[menu.main]]
-  name = "Contact me"
+  name = "Projects"
+  weight = 2
+  url  = "projects/"
+[[menu.main]]
+  name = "Certifications"
   weight = 3
+  url  = "certs/"
+[[menu.main]]
+  name = "Contact me"
+  weight = 4
   url = "contact/"

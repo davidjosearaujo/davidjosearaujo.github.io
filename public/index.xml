@@ -7,31 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://davidjosearaujo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Contact Me 📣</title>
+      <title>Certifications</title>
+      <link>https://davidjosearaujo.github.io/certs/</link>
+      <pubDate>Fri, 29 Sep 2023 00:31:55 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/certs/</guid>
+      <description>In here you can see all the certificates I&amp;rsquo;ve earned soo far! Hopefully there are more coming soon&amp;hellip;
+API Penetration Testing</description>
+    </item>
+    
+    <item>
+      <title>Contact Me</title>
       <link>https://davidjosearaujo.github.io/contact/</link>
       <pubDate>Fri, 12 May 2023 00:22:32 +0100</pubDate>
       
       <guid>https://davidjosearaujo.github.io/contact/</guid>
       <description>You can reach me via:
-📫 Email either at Gmail or Proton. 👥 Collaboration platforms such as Discord or Element. 🤓 LinkedIn if you want to keep it &amp;ldquo;businessy&amp;rdquo;. Or send a message bellow !
+Email either at Gmail or Proton. Collaboration platforms such as Discord or Element. LinkedIn if you want to keep it &amp;ldquo;businessy&amp;rdquo;. Or send a message bellow !
 Contact form Link to heading Although the form is from an external service, you can still consult this site&amp;rsquo;s Privacy Policy.
 Full Name Email Address Message </description>
     </item>
     
     <item>
-      <title>Projects 🛠</title>
+      <title>Projects</title>
       <link>https://davidjosearaujo.github.io/projects/</link>
       <pubDate>Thu, 11 May 2023 21:20:59 +0100</pubDate>
       
       <guid>https://davidjosearaujo.github.io/projects/</guid>
-      <description>Personal 😎 Link to heading These are some of the projects I&amp;rsquo;ve worked on my spare time, they are also the ones I had the most fun developing.
+      <description>Personal Link to heading These are some of the projects I&amp;rsquo;ve worked on my spare time, they are also the ones I had the most fun developing.
 EPHScores Link to heading An application for medical emergency first responders in Portugal. It provides an easy way to calculate various scores and evaluations of the patient, soo to ease and accelerate the help and care.
 Play Store
 SensorMesh Link to heading SensorMesh allows you to direct output from serial devices and internal services into a distributed peer-to-peer database on IPFS.</description>
     </item>
     
     <item>
-      <title>About Me 📜</title>
+      <title>About Me</title>
       <link>https://davidjosearaujo.github.io/about/</link>
       <pubDate>Sun, 07 May 2023 12:20:33 +0100</pubDate>
       

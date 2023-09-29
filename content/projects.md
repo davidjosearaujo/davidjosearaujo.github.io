@@ -1,10 +1,10 @@
 ---
-title: "Projects 🛠"
+title: "Projects"
 date: 2023-05-11T21:20:59+01:00
 draft: false
 ---
 
-# Personal 😎
+# Personal
 
 These are some of the projects I've worked on my spare time, they are also the ones I had the most fun developing.
 
@@ -28,7 +28,7 @@ CAP is a XML message-formatted based communication focussed one structuring the 
 
 [Python](https://test.pypi.org/project/capparser/)
 
-# University 🧑‍🎓
+# University
 
 During my college experience, I also developed some interesting systems, some of my favorite are listed bellow.
 
