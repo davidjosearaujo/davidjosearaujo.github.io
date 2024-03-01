@@ -46,16 +46,22 @@ It now continues as open source project, feel free to join !
 
 In this project, we were asked to deliver an application that combines the advantageous characteristics of both a password manager as well as providing an E-CHAP authentication protocol that is able to communicate with any service that allows it.
 
-[GitHub](https://github.com/DavidAraujo98/miect/tree/main/SIO%20-%20Seguranca%20Informatica%20em%20Organizacoes/Project-2)
+[GitHub](https://github.com/davidjosearaujo/echap-password-manager)
 
-### Vulnerabilities
+## Deterministic RSA key generation
 
-This project is based on the concept of an online store. It has two versions: one presents several critical security vulnerabilities, and the other is the same system with the vulnerabilities addressed in a correct fashion.
+College project for the subject of Applied Cryptography, in this project required the student to develop a **pseudo-random number generator**, provided a set of parameters. This can then be used to provide pseudo-random value to an RSA key generator, also created by the user.
 
-[GitHub](https://github.com/DavidAraujo98/miect/tree/main/SIO%20-%20Seguranca%20Informatica%20em%20Organizacoes/Project-1)
+[GitHub](https://github.com/davidjosearaujo/d-rsa)
 
-### FestivalPlanner
+## Enhanced DES
 
-Music festivals require careful planning before, during, and after they occur, our software provides a simple way of managing stages, musicians, catering, etc. So a database manager in WFA (C#) with connection to an MSSQL database.
+College project for the subject of Applied Cryptography, in this project intends to take the **underlying technologies of DES**, like **S-Boxes**, where a complex, but **deterministic method of shuffling them** and encrypting data with these is possible by simply providing a password.
 
-[GitHub](https://github.com/DavidAraujo98/miect/tree/main/BD%20-%20Bases%20de%20Dados/Project%20-%20FestivalPlanner)
+[GitHub](https://github.com/davidjosearaujo/e-des)
+
+## MusicTrackSlicer
+
+College project for the subject of Distributed Systems. A central server exposes a client GUI where a user can upload a music file, the server then splits the audio into segments of smaller size and publishes them to the MQTT channel. The workers subscribed to the channel, picked up the tracks, sliced them into the different instrument tracks and returned them to the server. The server then re-assembles the multiple slices and thus returns to the user the same music, but each instrument is now in an individual file.
+
+[GitHub](https://github.com/davidjosearaujo/distributed-music-processor)
