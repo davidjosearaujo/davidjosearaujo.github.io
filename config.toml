@@ -10,9 +10,12 @@ enableEmoji=true
 [markup.highlight]
 style = "github-dark"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
   author = "David Araújo"
-  info = "Cybersecurity Student, Graduate Researcher, and full time tech enthusiast!"
+  info = "Cybersecurity Student, Graduate Researcher, Firefighter, Trail Runner and whatever adventure I come up with tomorrow!"
   keywords = "portfolio,developer,personal"
   avatarurl = "images/51376165.jpg"
 
@@ -65,6 +68,10 @@ style = "github-dark"
   weight = 3
   url  = "certs/"
 [[menu.main]]
-  name = "Contact me"
+  name = "Running"
   weight = 4
+  url  = "running/"
+[[menu.main]]
+  name = "Contact me"
+  weight = 5
   url = "contact/"
