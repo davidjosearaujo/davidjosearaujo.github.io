@@ -17,7 +17,7 @@ unsafe = true
   author = "David Araújo"
   info = "Cybersecurity Student, Graduate Researcher, Firefighter, Trail Runner and whatever adventure I come up with tomorrow!"
   keywords = "portfolio,developer,personal"
-  avatarurl = "images/51376165.jpg"
+  avatarurl = "images/profile.jpeg"
 
   colorScheme = "auto"
   hidecolorschemetoggle = false
