@@ -60,9 +60,9 @@ unsafe = true
   weight = 1
   url = "about/"
 [[menu.main]]
-  name = "Projects"
+  name = "Skills & Projects"
   weight = 2
-  url  = "projects/"
+  url  = "skills-projects/"
 [[menu.main]]
   name = "Certifications"
   weight = 3
