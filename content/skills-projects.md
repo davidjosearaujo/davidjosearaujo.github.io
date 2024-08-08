@@ -19,7 +19,6 @@ draft: false
 - Javascript
 - Dart
 <!--
-- Perl
 - Haskell
 - Elixir
 -->
@@ -56,9 +55,7 @@ draft: false
 - Docker
 - Kubernetes
 - Ansible
-<!--
 - Terraform
--->
 {{< /tab >}}
 
 {{< /tabgroup >}}
