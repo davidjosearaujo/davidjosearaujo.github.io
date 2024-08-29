@@ -42,20 +42,21 @@ draft: false
 {{< /tab >}}
 
 {{< tab name="Frameworks" >}}
-- Vue.js
-- Express.js
+- GraphQL
 - Flask
 - FastAPI
+- Vue.js
+- Express.js
 - Flutter
 - Pandas
 {{< /tab >}}
 
 {{< tab name="Tools" >}}
-- RabbitMQ
 - Docker
 - Kubernetes
 - Ansible
 - Terraform
+- RabbitMQ
 {{< /tab >}}
 
 {{< /tabgroup >}}
