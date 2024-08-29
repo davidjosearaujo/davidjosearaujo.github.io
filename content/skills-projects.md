@@ -12,9 +12,9 @@ draft: false
 - Go
 - Rust
 - Python
+- Bash
 - Java
 - Zig
-- Bash
 - C
 - Javascript
 - Dart
@@ -31,14 +31,16 @@ draft: false
 - Cloud Firestore
 - MongoDB
 - Redis
+<!--
+- PostgresQL
+- CockroachDB
+-->
 {{< /tab >}}
 
 {{< tab name="Cloud platforms" >}}
 - AWS
-- Firebase
-<!--
 - Google Cloud
--->
+- Firebase
 {{< /tab >}}
 
 {{< tab name="Frameworks" >}}
