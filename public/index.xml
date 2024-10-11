@@ -5,60 +5,43 @@
     <link>https://davidjosearaujo.github.io/</link>
     <description>Recent content on David Araújo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://davidjosearaujo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 22 Mar 2024 11:00:10 +0000</lastBuildDate>
+    <atom:link href="https://davidjosearaujo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running</title>
       <link>https://davidjosearaujo.github.io/running/</link>
       <pubDate>Fri, 22 Mar 2024 11:00:10 +0000</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/running/</guid>
       <description>Recently, I&amp;rsquo;ve stumbled upon the joy of running, especially on trails. Being out in nature has always been my thing, and running through the wild feels like the ultimate freedom. It&amp;rsquo;s not just about the exercise; it&amp;rsquo;s about pushing myself, seeing how far I can go, and feeling alive in the process. Trail running is my escape, my challenge, and my way of embracing the beauty of the great outdoors while pushing my own limits.</description>
     </item>
-    
     <item>
       <title>Certifications</title>
       <link>https://davidjosearaujo.github.io/certs/</link>
       <pubDate>Fri, 29 Sep 2023 00:31:55 +0100</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/certs/</guid>
-      <description>Learning is my favorite hobby, so in my spare time I try to it as much as I can, mainly with online course, HackTheBox and TryHackMe tutorials, or just Youtube videos 😉
-In here you can see all the certificates I&amp;rsquo;ve earned soo far! Hopefully there are more coming soon&amp;hellip;
-API Penetration Testing
-Information Systems Auditing, Controls and Assurance
-Cyber Incident Response Specialization
-Cyber Threat Hunting Specialization
-Blockchain Security Specialization</description>
+      <description>Learning is my favorite hobby, so in my spare time I try to it as much as I can, mainly with online course, HackTheBox and TryHackMe tutorials, or just Youtube videos 😉&#xA;In here you can see all the certificates I&amp;rsquo;ve earned soo far! Hopefully there are more coming soon&amp;hellip;&#xA;API Penetration Testing&#xA;Information Systems Auditing, Controls and Assurance&#xA;Cyber Incident Response Specialization&#xA;Cyber Threat Hunting Specialization&#xA;Blockchain Security Specialization</description>
     </item>
-    
     <item>
       <title>Contact Me</title>
       <link>https://davidjosearaujo.github.io/contact/</link>
       <pubDate>Fri, 12 May 2023 00:22:32 +0100</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/contact/</guid>
-      <description>You can reach me via:
-Email either at Gmail or Proton. Anonymous file sharing at OnionShare Collaboration platforms such as Discord or Element. LinkedIn if you want to keep it &amp;ldquo;businessy&amp;rdquo;. Or send a message bellow !
-Contact form Link to heading Although the form is from an external service, you can still consult this site&amp;rsquo;s Privacy Policy.
-Full Name Email Address Message </description>
+      <description>You can reach me via:&#xA;Email either at Gmail or Proton. Anonymous file sharing at OnionShare Collaboration platforms such as Discord or Element. LinkedIn if you want to keep it &amp;ldquo;businessy&amp;rdquo;. </description>
     </item>
-    
     <item>
       <title>Skills &amp; Projects</title>
       <link>https://davidjosearaujo.github.io/skills-projects/</link>
       <pubDate>Thu, 11 May 2023 21:20:59 +0100</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/skills-projects/</guid>
       <description>Skills Link to heading Programming languages Go Rust Python Bash Java Zig C Javascript Dart Databases MSSQL MySQL SQLite Cloud Firestore MongoDB Redis Cloud platforms AWS Google Cloud Firebase Frameworks GraphQL Flask FastAPI Vue.js Express.js Flutter Pandas Tools Docker Kubernetes Ansible Terraform RabbitMQ Projects Link to heading Personal Link to heading These are some of the projects I’ve worked on my spare time, they are also the ones I had the most fun developing.</description>
     </item>
-    
     <item>
       <title>About Me</title>
       <link>https://davidjosearaujo.github.io/about/</link>
       <pubDate>Sun, 07 May 2023 12:20:33 +0100</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/about/</guid>
       <description>Passionate and deeply focused, I thrive in the ever-evolving world of technology. With a degree in Computer and Telematics Engineering from the University of Aveiro, I&amp;rsquo;ve expanded my horizons across various tech domains. I commit myself entirely to every single project I work on because, for me, software development is more than just my job; it is also my hobby and my passion. My main fields of interest are networking, web3 technologies, cybersecurity and microcontrollers.</description>
     </item>
-    
   </channel>
 </rss>
