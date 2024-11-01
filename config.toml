@@ -15,9 +15,8 @@ unsafe = true
 
 [params]
   author = "David Araújo"
-  info = "Cybersecurity Student, Graduate Researcher, Firefighter, Trail Runner and whatever adventure I come up with tomorrow!"
+  info = "Cybersecurity student and researcher"
   keywords = "portfolio,developer,personal"
-  avatarurl = "images/profile.jpeg"
 
   colorScheme = "auto"
   hidecolorschemetoggle = false
@@ -38,20 +37,15 @@ unsafe = true
   weight = 1
   url = "https://github.com/davidjosearaujo"
 [[params.social]]
-  name = "Gmail"
+  name = "Email"
   icon = "fa fa-envelope fa-2x"
   weight = 3
-  url = "mailto:david2araujo5@gmail.com"
+  url = "mailto:david2araujo5@proton.me"
 [[params.social]]
   name = "LinkedIn"
   icon = "fa fa-linkedin fa-2x"
   weight = 2
   url = "https://www.linkedin.com/in/david2araujo5/"
-[[params.social]]
-  name = "Curriculum"
-  icon = "fa fa-file fa-2x"
-  weight = 4
-  url = "https://docs.google.com/document/d/e/2PACX-1vToY47Ukd08Y_0VYEJ3a_-MuDc2biS0gJFshLtZVIDTvbydlej14tlFzfBm3ExdpvlMjn4ZAr4BovJG/pub"
 
 # Menu links
 
@@ -60,18 +54,6 @@ unsafe = true
   weight = 1
   url = "about/"
 [[menu.main]]
-  name = "Skills & Projects"
+  name = "Blog"
   weight = 2
-  url  = "skills-projects/"
-[[menu.main]]
-  name = "Certifications"
-  weight = 3
-  url  = "certs/"
-[[menu.main]]
-  name = "Running"
-  weight = 4
-  url  = "running/"
-[[menu.main]]
-  name = "Contact me"
-  weight = 5
-  url = "contact/"
+  url = "posts/"
