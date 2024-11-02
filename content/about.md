@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2024-11-01T23:16:42Z
-draft: true
+draft: false
 ---
 
 Tech geek since a young age, now knee-deep in a Master's in Cybersecurity at the University of Aveiro. I live and breathe software development, where I've developed a strong interest in network security, malware and reverse engineering.
