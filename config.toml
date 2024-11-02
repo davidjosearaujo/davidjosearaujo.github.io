@@ -16,13 +16,14 @@ unsafe = true
 [params]
   author = "David Araújo"
   info = "Cybersecurity student and researcher"
-  keywords = "portfolio,developer,personal"
+  keywords = "portfolio,developer,personal,blog"
 
   colorScheme = "auto"
   hidecolorschemetoggle = false
 
   dateFormat = "January 2, 2006"
   since = 2023
+  maxSeeAlsoItems = 10
 
 [taxonomies]
   category = "categories"
