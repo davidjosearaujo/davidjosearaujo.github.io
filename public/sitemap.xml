@@ -2,17 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://davidjosearaujo.github.io/categories/home/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/authors/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/blogging/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/categories/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/cybersecurity/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/authors/david-ara%C3%BAjo/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/posts/hello-world/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/posts/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/</loc>
+    <lastmod>2024-11-02T21:07:22+00:00</lastmod>
+  </url><url>
     <loc>https://davidjosearaujo.github.io/about/</loc>
     <lastmod>2024-11-01T23:16:42+00:00</lastmod>
   </url><url>
-    <loc>https://davidjosearaujo.github.io/authors/</loc>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/categories/</loc>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/</loc>
-  </url><url>
     <loc>https://davidjosearaujo.github.io/series/</loc>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/tags/</loc>
   </url>
 </urlset>
