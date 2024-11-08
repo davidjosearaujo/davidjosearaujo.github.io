@@ -10,7 +10,7 @@ I started my research journey tackling Software Defined Networks with a Graduate
 
 When I'm not coding, I'm dreaming new systems and projects, fighting fires or trails running, and thats me: passionate, focused, and always up for a challenge!
 
-{{< notice info >}} Looking for my CV? Download it [here](/cv/davidjosearaujo.pdf). {{< /notice >}}
+{{< notice tip >}} Looking for my CV? Download it [here](/cv/davidjosearaujo.pdf). {{< /notice >}}
 
 
 # Experience
