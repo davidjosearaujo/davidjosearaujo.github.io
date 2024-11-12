@@ -6,14 +6,15 @@
     <description>Recent content in Categories on David Araújo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Nov 2024 21:07:22 +0000</lastBuildDate>
-    <atom:link href="https://davidjosearaujo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Nov 2024 21:07:22 +0000</lastBuildDate><atom:link href="https://davidjosearaujo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>/Home</title>
+      <title>/home</title>
       <link>https://davidjosearaujo.github.io/categories/home/</link>
       <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
+      
       <guid>https://davidjosearaujo.github.io/categories/home/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>

@@ -5,7 +5,6 @@
     <link>https://davidjosearaujo.github.io/series/</link>
     <description>Recent content in Series on David Araújo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <atom:link href="https://davidjosearaujo.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://davidjosearaujo.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

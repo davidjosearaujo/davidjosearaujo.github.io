@@ -6,21 +6,24 @@
     <description>Recent content in Tags on David Araújo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Nov 2024 21:07:22 +0000</lastBuildDate>
-    <atom:link href="https://davidjosearaujo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Nov 2024 21:07:22 +0000</lastBuildDate><atom:link href="https://davidjosearaujo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blogging</title>
+      <title>blogging</title>
       <link>https://davidjosearaujo.github.io/tags/blogging/</link>
       <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
+      
       <guid>https://davidjosearaujo.github.io/tags/blogging/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Cybersecurity</title>
+      <title>cybersecurity</title>
       <link>https://davidjosearaujo.github.io/tags/cybersecurity/</link>
       <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
+      
       <guid>https://davidjosearaujo.github.io/tags/cybersecurity/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>
