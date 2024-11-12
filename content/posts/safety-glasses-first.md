@@ -27,14 +27,14 @@ As much as I love getting my hands on that new, shiny, (un)known malicious appli
 
 <!-- TODO: add link to these distros-->
 
-**The OS is the root of everything**. It's what connects simple syscalls with your awesome applications, but it also opens the door for you to completely brick your machine.
+**The OS is the root of everything**. It's what connects simple _syscalls_ with your awesome applications, but it also opens the door for you to completely brick your machine.
 
 Knowing this, at least for me, I think there are two ways of going about choosing your OS:
 
 1. Getting the most user-friendly, out-of-the-box-running, noob-fest, grandma-adoring, stupid-proof OS you can find, or
 2. The most raw, no-nonsense, simplest, barebone, can't-break-if-there's-nothing-to-break, the "_I have too much free time_" OS.
 
-Regardless of the route you choose, the two major distros that you'll most probably come up wtih will be **[Ubuntu](https://ubuntu.com/)** and **[Debian](https://www.debian.org/)**. I won't even lose my time talking about Windows, it's just a joke by now, and if you use Mac for development/research, I would advise you to see a therapist.
+Regardless of the route you choose, the two major distros that you'll most probably come up with will be **[Ubuntu](https://ubuntu.com/)** and **[Debian](https://www.debian.org/)**. I won't even lose my time talking about Windows, it's just a joke by now, and if you use Mac for development/research, I would advise you to see a therapist.
 
 ## Ubuntu
 
@@ -67,7 +67,7 @@ Unlike mainstream distros designed with the user in mind, these specialized dist
 
 And that is were virtualization comes in, when the goal minimizing exposure, there aren't much better options than it.
 
-If your plannning on working with potentially malicious applications, doing forensic research and recovery or even bug hunting, being confortable with virtualization is a must have. But not only that, you'll find the need to make virtualization programmable and repitable.
+If your planning on working with potentially malicious applications, doing forensic research and recovery or even bug hunting, being comfortable with virtualization is a must have. But not only that, you'll find the need to make virtualization programmable and reproducible (especially when dealing with _POCs_ and forensics).
 
 ## Virtual Machines + Vagrant
 
@@ -80,6 +80,6 @@ If your plannning on working with potentially malicious applications, doing fore
 
 ## Containers
 
-Nowadays the easiest way of achieving isolation in this fashion is containerization, and although it is pretty secure if used correctly, it is not 100% isolated from the host as it need to use the systems kernel, network stack, _cgroups_ and namespaces, and if we are not carefull this can allow an malicious application to escape the container. This can happen with easy mistakes like poor configurations, like mounting the host filesystem were you shouldn't, using privileged containers, or in some more extreme cases with processe injections.
+Nowadays the easiest way of achieving isolation in this fashion is containerization, and although it is pretty secure if used correctly, it is not 100% isolated from the host as it need to use the systems kernel, network stack, _cgroups_ and namespaces, and if we are not careful this can allow an malicious application to escape the container. This can happen with easy mistakes like poor configurations, like mounting the host filesystem were you shouldn't, using privileged containers, or in some more extreme cases with process injections.
 
 I'm not saying you shouldn't use containers, as there are instances where they are really useful and I do use them, like the [Parrot OS Docker Images](https://parrotsec.org/docs/cloud/parrot-on-docker/), or [REMnux](https://docs.remnux.org/install-distro/remnux-as-a-container), but you do need to be careful when doing so.
