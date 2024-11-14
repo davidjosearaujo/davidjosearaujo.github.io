@@ -47,7 +47,7 @@ So, Ubuntu fits right into that first option when picking an OS. It’s stupidly
 Debian fits into the second option when choosing an OS. It’s an OS you’ll need to configure before you can start working, but there’s a good reason for that -**you’re in control**! Out of the box, Debian comes with almost no pre-installed tools, which is great from a configurability standpoint because it means there’s almost no risk of dependency collisions when adding new ones. The downside of having this much control is that if you’re not careful, **you can easily mess up your system dependencies. So, proceed with caution** and don’t go installing everything willy-nilly.
 
 {{< figure 
-    src="/posts/safety-glasses-first/with-great-power-ab26ea63d2.jpg"
+    src="/posts/01-safety-glasses-first/with-great-power.jpg"
     height=300vw
 >}}
 
@@ -72,7 +72,7 @@ If your planning on working with potentially malicious applications, doing foren
 ## Virtual Machines + Vagrant
 
 {{< figure 
-    src="/posts/safety-glasses-first/vagrant-virtualbox.png"
+    src="/posts/01-safety-glasses-first/vagrant-virtualbox.png"
     height=200vw
 >}}
 
@@ -80,6 +80,6 @@ If your planning on working with potentially malicious applications, doing foren
 
 ## Containers
 
-Nowadays the easiest way of achieving isolation in this fashion is containerization, and although it is pretty secure if used correctly, it is not 100% isolated from the host as it need to use the systems kernel, network stack, _cgroups_ and namespaces, and if we are not careful this can allow an malicious application to escape the container. This can happen with easy mistakes like poor configurations, like mounting the host filesystem were you shouldn't, using privileged containers, or in some more extreme cases with process injections.
+Beside VMs, nowadays the easiest way of achieving is containerization, and although it is pretty secure if used correctly, it is not 100% isolated from the host as it need to use the systems kernel, network stack, _cgroups_ and namespaces, and if we are not careful this can allow an malicious application to escape the container. This can happen with easy mistakes like poor configurations, like mounting the host filesystem were you shouldn't, using privileged containers, or in some more extreme cases with process injections.
 
 I'm not saying you shouldn't use containers, as there are instances where they are really useful and I do use them, like the [Parrot OS Docker Images](https://parrotsec.org/docs/cloud/parrot-on-docker/), or [REMnux](https://docs.remnux.org/install-distro/remnux-as-a-container), but you do need to be careful when doing so.
