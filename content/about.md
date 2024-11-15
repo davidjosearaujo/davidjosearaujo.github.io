@@ -39,7 +39,6 @@ Inserted in the FireTec project, my position was created with the intent of addi
 -   Rust
 -   JavaScript
 -   Java
--   C++
 -   C
 -   Zig
 -   Bash
