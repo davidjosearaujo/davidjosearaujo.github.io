@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://davidjosearaujo.github.io/</loc>
     <lastmod>2024-11-08T11:51:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/</loc>
     <lastmod>2024-11-08T11:51:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/home/</loc>
+    <loc>https://davidjosearaujo.github.io/categories/home/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://davidjosearaujo.github.io/authors/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blogging/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/blogging/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://davidjosearaujo.github.io/categories/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/cybersecurity/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/david-ara%C3%BAjo/</loc>
+    <loc>https://davidjosearaujo.github.io/authors/david-ara%C3%BAjo/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/00-hello-world/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/00-hello-world/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://davidjosearaujo.github.io/about/</loc>
     <lastmod>2024-11-01T23:16:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://davidjosearaujo.github.io/series/</loc>
   </url>
 </urlset>
