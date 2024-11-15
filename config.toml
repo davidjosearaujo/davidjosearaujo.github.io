@@ -38,18 +38,22 @@ unsafe = true
   weight = 1
   url = "https://github.com/davidjosearaujo"
 [[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/david2araujo5/"
+[[params.social]]
   name = "Email"
   icon = "fa fa-envelope fa-2x"
   weight = 3
   url = "mailto:david2araujo5@proton.me"
 [[params.social]]
-  name = "LinkedIn"
-  icon = "fa fa-linkedin fa-2x"
-  weight = 2
-  url = "https://www.linkedin.com/in/david2araujo5/"
+  name = "PGP Key"
+  icon = "fa fa-key fa-2x"
+  weight = 4
+  url = "/privacy-coms/publickey.david2araujo5@proton.me-a597f002670ad244abd585d65c3915f83d1eaf25.asc"
 
 # Menu links
-
 [[menu.main]]
   name = "About Me"
   weight = 1
