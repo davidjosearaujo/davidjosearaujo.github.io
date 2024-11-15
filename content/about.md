@@ -42,7 +42,8 @@ Inserted in the FireTec project, my position was created with the intent of addi
 -   C
 -   Zig
 -   Bash
-    {{< /tab >}}
+
+{{< /tab >}}
 
 {{< tab name="Tools and Frameworks" >}}
 
@@ -56,7 +57,8 @@ Inserted in the FireTec project, my position was created with the intent of addi
 -   GraphQL
 -   AWS
 -   Google Cloud
-    {{< /tab >}}
+
+{{< /tab >}}
 
 {{< tab name="Languages" >}}
 
