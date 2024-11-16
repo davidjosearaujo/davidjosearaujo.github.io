@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2024-11-08T11:51:38Z
 title = "Safety Glasses First"
 description = "How to setup for safe malware analysis"
@@ -88,6 +88,11 @@ I'm not saying you shouldn't use containers; there are instances where they are 
 
 # Touch it with a stick
 
+{{< figure 
+    src="/posts/01-safety-glasses-first/plague-doctor.avif"
+    height=300vw
+>}}
+
 ## Isolation always
 
 This should be obvious by now, but **it’s the obvious thing we often get wrong**. Isolation isn’t difficult in theory, but it can be tedious. You might ask yourself why you should analyze an application in a _VM_ if you know it won’t affect your system, either because you've set it up to be safe or you already understand the malware's behavior and have prepared for it. But **overconfidence is a dangerous thing**, and **sophisticated malware is often tailored to evade analysis**. It might behave in unexpected ways.
@@ -104,7 +109,7 @@ There’s a reason why static analysis comes first, **it’s safer for both you 
 
 ## Keep your eyes open
 
-Keep _htop_ in your back pocket. **Application behavior is often not obvious.** Even a **failed execution might still start a process or inject configurations you didn’t expect** (remember the snapshots I mentioned?). Constant monitoring can be as simple as having _htop_ open in a different tab or using _strace_. You’ll need to keep your eyes peeled and pay attention to everything that’s happening. This is another reason why isolation helps: _VMs_ and OSes like REMnux often have very few processes running in the background, which makes it **easier to detect any new processes that pop up**.
+Keep `htop` in your back pocket. **Application behavior is often not obvious.** Even a **failed execution might still start a process or inject configurations you didn’t expect** (remember the snapshots I mentioned?). Constant monitoring can be as simple as having `htop` open in a different tab or using `strace`. You’ll need to keep your eyes peeled and pay attention to everything that’s happening. This is another reason why isolation helps: _VMs_ and OSes like REMnux often have very few processes running in the background, which makes it **easier to detect any new processes that pop up**.
 
 ## Stay anonymous
 
@@ -112,15 +117,20 @@ Don’t expose personal information during analysis. **When creativity runs dry,
 
 # Clean up and bleach
 
-When you’ve finally finished your analysis, it’s time to clean up after yourself! This step is as important as any other, because leaving behind digital "trash" can pose a real danger when you least expect it. Forgotten remnants can come back to "cut" you when overlooked.
+{{< figure 
+    src="/posts/01-safety-glasses-first/consuela-family-guy.gif"
+    height=300vw
+>}}
+
+When you’ve finally finished your analysis, it’s time to clean up after yourself! This step is as important as any other, because leaving behind "trash" can pose a real danger when you least expect it. **Forgotten remnants can come back to "cut" you when overlooked.**
 
 ## Don't get attached
 
-We use _VMs_ and containers for a reason: they're easy to spin up and take down. Resist the temptation to reuse the same environment repeatedly. The _VM_ you used two months ago to test ransomware and then forgot about is not safe for analyzing a new binary. Trust me, when you enable that shared directory to copy the new file, it will come back to bite you.
+We use _VMs_ and containers for a reason: they're easy to spin up and take down. **Resist the temptation to reuse the same environment repeatedly.** The _VM_ you used two months ago to test ransomware and then forgot about is not safe for analyzing a new binary. Trust me, when you enable that shared directory to copy the new file, it will come back to bite you.
 
 ## Delete or secure every trace
 
-Often, legitimate sources are used to download malware for testing, typically packaged in password-protected zip or tarball files on your host before being transferred to the _VM_ via scp or drag & drop. You might even develop scripts on the host to aid in testing. While there’s nothing inherently wrong with this, I still don’t like leaving TNT lying around on my carpet. So, please, delete any binaries you’re not actively analyzing. If it’s rare malware or a tool you’ve developed, at the very least, secure it in a password-protected compressed file, encrypted directories, or even better, cold storage.
+Often, legitimate sources are used to download malware for testing, typically packaged in password-protected zip or tarball files on your host before being transferred to the _VM_ via `scp` or _drag & drop_. You might even develop scripts on the host to aid in testing. While there’s nothing inherently wrong with this, I still don’t like leaving TNT lying around on my carpet. So, please, delete any binaries you’re not actively analyzing. If it’s rare malware or a tool you’ve developed, at the very least, secure it in a password-protected compressed file, encrypted directories, or even better, cold storage.
 
 # Have Fun!
 
