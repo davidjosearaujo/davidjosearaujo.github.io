@@ -72,6 +72,7 @@
 
 
 
+<link rel="stylesheet" href="https://davidjosearaujo.github.io/css/pagefind.css">
 </head>
 
 
@@ -132,16 +133,21 @@
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
     <script src="/pagefind/pagefind-ui.js"></script>
     <div id="search"></div>
+   
     <script>
         window.addEventListener("DOMContentLoaded", (event) => {
             new PagefindUI({
                 element: "#search",
-                showSubResults: true,
+                showSubResults: false,
             });
         });
     </script>
 
     <ul><li>
+  <span class="date">November 8, 2024</span>
+  <a class="title" href="/posts/01-safety-glasses-first/">Safety Glasses First</a>
+</li>
+<li>
   <span class="date">November 2, 2024</span>
   <a class="title" href="/posts/00-hello-world/">Hello World</a>
 </li>
