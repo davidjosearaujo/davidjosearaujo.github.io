@@ -25,6 +25,8 @@ unsafe = true
   since = 2023
   maxSeeAlsoItems = 10
 
+  custom_css = ["css/pagefind.css"]
+
 [taxonomies]
   category = "categories"
   series = "series"
