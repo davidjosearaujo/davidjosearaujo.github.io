@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2024-11-08T11:51:38Z
+date = 2024-11-16T11:51:38Z
 title = "Safety Glasses First"
 description = "How to setup for safe malware analysis"
 slug = ""
