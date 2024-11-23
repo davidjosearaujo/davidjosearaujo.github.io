@@ -48,9 +48,9 @@ Inserted in the FireTec project, my position was created with the intent of addi
 {{< tab name="Tools and Frameworks" >}}
 
 -   Git
+-   Vagrant
 -   Ansible
 -   Terraform
--   Vagrant
 -   Kubernetes
 -   MSSQL
 -   SQL
@@ -60,39 +60,78 @@ Inserted in the FireTec project, my position was created with the intent of addi
 
 {{< /tab >}}
 
+{{< tab name="Cybersecurity" >}}
+
+-   GRC (Governance, Risk, and Compliance)
+-   Risk Assessment
+-   IAM Management (Identity and Access Management)
+-   Threat Modelling
+-   IS Auditing (Information Systems Auditing)
+-   SSDLC (Secure Software Development Life Cycle)
+-   SAST (Static Application Security Testing)
+-   DAST (Dynamic Application Security Testing)
+-   Vulnerability Management
+-   API Penetration Testing
+-   Threat Hunting
+
+{{< /tab >}}
+
 {{< tab name="Languages" >}}
 
 -   Portuguese (native)
 -   English (proficient)
-    {{< /tab >}}
+
+{{< /tab >}}
 
 {{< /tabgroup >}}
 
 # Projects
 
-### [Reverse Engineering - PDF Manager Malicious Android Application](https://github.com/davidjosearaujo/re-android-reversing)
+{{< tabgroup >}}
 
--   _2024_
+{{< tab name="Academic" >}}
+
+### [Reverse Engineering - PDF Manager Malicious Android Application](https://github.com/davidjosearaujo/re-android-reversing)
 
 Analysis of the PDF Reader File Manager application. This app gained notoriety when it was removed from the Play Store. It was developed with the intent of stealing data from Android users, as described in this article [here](https://www.tomsguide.com/computing/malware-adware/these-malicious-android-malware-apps-were-downloaded-150000-times-from-the-play-store-delete-them-right-now).
 
 ### [Flexible, Risk Aware Authentication System](https://github.com/davidjosearaujo/iaa-idp-client)
 
--   _2024_
-
 Design and implementation of an Identity Provider (IdP) using the OAuth 2.0 protocol, and three client services which use it for authentication and authorization.
 
 ### [Enhanced DES (E-DES)](https://github.com/davidjosearaujo/e-des)
-
--   _2023_
 
 A Implementation of a DES variant known as E-DES, using a 256-bit key, derived from a user-provided password and S-boxes derived from the key, instead of using fixed and known S-boxes.
 
 ### [Deterministic RSA key generation (D-RSA)](https://github.com/davidjosearaujo/d-rsa)
 
--   _2023_
-
 Deterministic RSA key generation and implementation of a pseudo-random number generator and RSA key generator.
+
+{{< /tab >}}
+
+{{< tab name="Personal" >}}
+
+### [gometric](https://github.com/davidjosearaujo/gometric)
+
+A metrics server built in Go that collects system metrics and exposes them via a GraphQL API. It includes support for CPU, memory, disk, network, and process metrics. Deployment can be automated using Terraform and Ansible, or just by running the binary on the target machine.
+
+### [Sentinel](https://github.com/davidjosearaujo/sentinel-analysis)
+
+A CLI tool developed in order to streamline the analysis of traffic captures. Sentinel allows highly specific and precise metric measurements, such as: search for possible exfiltration, search for possible botnet and C&C communication, volume of connection per destination and hourly connection volume.
+
+{{< /tab >}}
+
+{{< /tabgroup >}}
+
+# Education
+
+### M.S in Cybersecurity
+-   _09/2023 - Present_
+-   _University of Aveiro_
+
+### B.Eng. in Computer Science and Telematics
+-   _09/2018 - 07/2023_
+-   _University of Aveiro_
 
 # Certifications
 
