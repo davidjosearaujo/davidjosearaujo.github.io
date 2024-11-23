@@ -141,6 +141,14 @@ A CLI tool developed in order to streamline the analysis of traffic captures. Se
 -   [Information Systems Auditing, Controls and Assurance](/certs/CourseraW3NSAL9PD4YW.pdf), The Hong Kong University of Science and Technology, _07/2024_
 -   [API Penetration Testing](/certs/APIsecCourseCertificate20230928-28-qgr8sq.pdf), APIsec University, _09/2023_
 
+# Course Notes
+
+I believe in growing and sharing knowledge. To that end, **from my college and online courses, I maintain all the notes from my studies and make them publicly available**. You can find them here:
+
+- [B.Eng. in Computer Science and Telematics Courses](https://davidjosearaujo.gitbook.io/notes-miect)
+- [M.S in Cybersecurity Courses](https://davidjosearaujo.gitbook.io/notes-mcs)
+- [Online Course](https://davidjosearaujo.gitbook.io/online-courses)
+
 # Publications
 
 1. M. Coelho, L. Santiago, **D. Araújo**, A. Navarro and N. B. Carvalho, "[**A Low-Cost Embedded System to Support Broadcasting Emergency Messages Through FM Radio Stations**](https://ieeexplore.ieee.org/document/10361555)" in _IEEE Embedded Systems Letters, vol. 16, no. 3, pp. 247-250, Sept. 2024_, doi: 10.1109/LES.2023.3343641.
