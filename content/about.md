@@ -4,11 +4,11 @@ date: 2024-11-01T23:16:42Z
 draft: false
 ---
 
-Tech geek since a young age, now knee-deep in a Master's in Cybersecurity at the University of Aveiro. I live and breathe software development, where I've developed a strong interest in network security, malware and reverse engineering.
+I’ve been passionate about technology since I was young and am now pursuing a Master’s in Cybersecurity at the University of Aveiro. My main interests are in software development, network security, and malware analysis.
 
-I started my research journey tackling Software Defined Networks with a Graduate Research Scholarship and currently working on improving support for legacy non-5G devices in 5G network by improving authentication and authorization mechanisms between them.
+My research started with Software Defined Networks during a Graduate Research Scholarship. Currently, I’m working on improving authentication and authorization for legacy non-5G devices in 5G networks.
 
-When I'm not coding, I'm dreaming new systems and projects, fighting fires or trails running, and thats me: passionate, focused, and always up for a challenge!
+When I’m not working, I’m either brainstorming new projects, firefighting, or trail running—always staying focused and ready for the next challenge.
 
 {{< notice tip "Curriculum Vitae" >}} Looking for my CV? Download it [here](/cv/davidjosearaujo.pdf). {{< /notice >}}
 
