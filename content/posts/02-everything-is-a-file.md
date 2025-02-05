@@ -43,26 +43,53 @@ There are 3 file descriptors in the POSIX API:
 
 # *Is my red blue for you, or my green your green, too?*
 
-> *"How do I know that you and me*\
-> *See the same colors the same way when you and me see?*\
-> *Is my red blue for you, or my green your green, too?*\
-> *Could it be true we see differing hues?"*\
+> "How do I know that you and me\
+> See the same colors the same way when you and me see?\
+> Is my red blue for you, or my green your green, too?\
+> Could it be true we see differing hues?"\
 > \- in *[Thoughtful Guy](https://www.youtube.com/watch?v=U6y7YOlldek)*, by Rhett and Link
 
 Besides being a cool verse and a deep philosophical question, it is also a question we have to ask regarding files. Does the OS see files the same way I do?
 
 Regarding the colors, I have absolutely no idea, but regarding files the answer is no. For the OS, a file is represented as an *inode*, a structure that contains metadata about the file, these include creation date, last update date, ownership, permissions, size and most importantly, it keeps a pointer towards the memory block in the memory where the files data is actually stored.
 
-Too see all the information that is stored in an *inode*, you can simply use de command `ls -il`, let's try it!
+Too see all the information that is stored in an *inode* (and more), you can simply use de command `ls -il`, let's try it!
 
 ```bash
 remnux@00cd6cd99d6f:/var/log$ ls -il
 total 1824
-37128551 -rw-r--r-- 1 root       root              63157 Mar 10  2023 alternatives.log
 37128568 drwxr-xr-x 4 remnux     remnux             4096 Mar 10  2023 networkminer
 ```
 
-TODO: 1º Continue here!!
+Lets go through what e see here from left to right:
+- First we have the ***inode* number**. This number is indexed in the file systems **inode table** and with this index the kernel is capable of accessing the inode's content and the file's location, allowing the kernel to retrive said file.
+- Then we have a list of characters and dashes, these and the file's **type an permissions**. If your reading this, you'll probably already know wha they mean, but lets go over it just in case.
+    - The first character tells you the **type** of the file. There are **7 types** (we'll go over this in more detail later but the options are):
+        - **\-** Regular
+        - **d** Directory
+        - **l** Symbolic link
+        - **b** Block
+        - **c** Character
+        - **s** Socket link
+        - **p** FIFO
+    - The next three characters (in our case `rwx`) are the **files owner** permissions.
+    - The next three (`r-x`) are the **group** permissions.
+    - And the next three (`r-x`) are the **others** permissions.
+
+{{< notice tip "Representing permissions" >}}
+Permissions follow a simple representation standard where `r` is for **read**, `w` is for **write**, `x` is for **execute** and `-` for **no permission**.
+
+They are always in the same order, `r` then `w` then `x`, as this is tight to a binary representation of three bits, where each character can be represented by a `1` or a `0` if it were a `-`. What does this mean? Means that `rwx` is the same as `111` (or 6 in decimal), and `r-x` is `101` (or 5 in decimal), and if we put all of the three sets of three characters together, our files permission of `rwxr-xr-x` could also be represented as `655`.
+{{< /notice >}}
+
+- Then we have the **number of hard link** to this file. Links are quite interesting, and something I think you'll enjoy [reading about](https://en.wikipedia.org/wiki/Hard_link), but just to be brief, did you notice I didn't mention the *name* of the file as being something the *inode* holds as metadata? Well that is because a file doesn't actually **have** one, it is **linked** to one rather, and the **hard link** is what represents this association between a file and a name (this happens because things such as directories exist, we will touch on this subject later).
+- Owner name.
+- Group name.
+- Number of bytes in your file (size).
+- Date of the last modification.
+- And the name of the file (which we already know it's not in the *inode*)
+
+For more information that this regarding a file, you can also use the `stat` command, which will also give you things like: when the file was last access, modified and created, it's IO Block, among other things.
 
 # What types of files are there?
 
