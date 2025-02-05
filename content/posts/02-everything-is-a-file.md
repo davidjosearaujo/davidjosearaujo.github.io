@@ -11,143 +11,73 @@ externalLink = ""
 series = []
 +++
 
+{{< notice info "Table of contents" >}}
+1. [What is a file?](#what-is-a-file)
+2. [What can we learn about a file?](#what-can-we-learn-about-a-file)
+3. [What types of files are there?](#what-types-of-files-are-there?)
+4. [What file is this?](#what-file-is-this?)
+5. [Don't know it? Read it!](#don't-know-it?-read-it)
+{{< /notice >}}
 
----
-https://dev.to/eteimz/everything-is-a-file-explained-g2a
+# What is a file?
 
-This article is interesting as it focus on the way we interact it files and how that can be applied to everything in Unix, and that is the reason for the saying 'everything is a file'
+Files, everything is a file! You may or may not have ever heard this regarding Linux. It is quite a popular saying amongst Linux enthusiasts, but besides being a catchy sentence, what does this actually mean?
 
-We can open, close, read and write to files, just like in real world
+Well, first we need to discuss **what is a file** in its essence. Not  even a digital file necessarily, but a file as a concept really.
 
-In Unix-like operating systems, everything is referred to as a file because various system resources can be treated as file-like entities. These file-like resources, such as standard input, standard output, and network connections, can be opened, read from, written to, and closed, with data being streamed from each resource. This design allows the same operations to be performed across different system resources, making it easier to work with them.
+A files is a *thing* that hold information in a structured way, and with which you can interact with to access with that information. And how do you interact with it? Think of a notebook, you can pick it up and open it, you can read it, you can write on it, you can erase something that was previously written and at the end you can close it! With a combination you this simple interaction you can perform others too, you can create copies of you notebooks, you can create new notebooks, you can give someone your notes and they can give you theirs. You can do a LOT with this *thing* that hold information.
 
-The creators of Unix designed the operating system to treat various system resources as files, allowing the same set of APIs to be used across different tasks. This is achieved through the use of file descriptors, which are unique integers that represent open files, such as standard input (0) and standard output (1). System calls, like the write system call, can then be used to interact with these file-like resources.
----
+Taking this basic interaction into account: open, read, write and close, and how universal they are, the creators of Unix came up with the brilliant, and simplistic (wonderful how much these two go hand in hand by the way), idea of: why not treating everything like if it was a file, and then we can use the same set of API for all these tasks? And that is exactly what they did!
 
-https://en.wikipedia.org/wiki/Unix_file_types
+## File Descriptors
 
-The seven standard Unix file types are regular, directory, symbolic link, FIFO special, block special, character special, and socket
+This universality regarding the API could only be achieved by implementing something called **file descriptors**. These are process-unique integers used to represent files or I/O resources that can be used by system calls to interact with resources by telling the kernel how the process wishes to access the file.
 
-For regular files, Unix does not impose or provide any internal file structure; therefore, their structure and interpretation is entirely dependent on the software using them.[2] However, the file command can usually be used to determine what type of data they contain.
+There are 3 file descriptors in the POSIX API:
 
-# Directory
+| Integer | Name | Description |
+| :-: | :-: | - |
+| 0 | Standard Input (`stdin`) | This is a stream from which a program can read input data by using the *read* operation. Like when a program read the input from the keyboard. |
+| 1 | Standard Output (`stdout`) | This is a stream to which a program writes its output data by using the *write* operation. Not all programs generate output, but when they do the most common use it to directed to some specific location like a file of simply to the text terminal in the case of an interactive shell. |
+| 2 | Standard Error (`stderr`)| Like `stdout`, it is also an output but specifically for displaying error or diagnostic messages. Being independent of the `stdout` gives us the opportunity to handle its stream separately. |
 
-The most common special file is the directory.
+# *Is my red blue for you, or my green your green, too?*
 
-A directory is marked with a d as the first letter in the mode field in the output of ls -dl or stat
+> *"How do I know that you and me*\
+> *See the same colors the same way when you and me see?*\
+> *Is my red blue for you, or my green your green, too?*\
+> *Could it be true we see differing hues?"*\
+> \- in *[Thoughtful Guy](https://www.youtube.com/watch?v=U6y7YOlldek)*, by Rhett and Link
 
-# Symbolic link
+Besides being a cool verse and a deep philosophical question, it is also a question we have to ask regarding files. Does the OS see files the same way I do?
 
-A symbolic link is a reference to another file. This special file is stored as a textual representation of the referenced file's path (which means the destination may be a relative path, or may not exist at all).
+Regarding the colors, I have absolutely no idea, but regarding files the answer is no. For the OS, a file is represented as an *inode*, a structure that contains metadata about the file, these include creation date, last update date, ownership, permissions, size and most importantly, it keeps a pointer towards the memory block in the memory where the files data is actually stored.
 
-A symbolic link is marked with an l (lower case L) as the first letter of the mode string, e.g. in this abbreviated ls -l output
+Too see all the information that is stored in an *inode*, you can simply use de command `ls -il`, let's try it!
 
-# FIFO (named pipe)
+```bash
+remnux@00cd6cd99d6f:/var/log$ ls -il
+total 1824
+37128551 -rw-r--r-- 1 root       root              63157 Mar 10  2023 alternatives.log
+37128568 drwxr-xr-x 4 remnux     remnux             4096 Mar 10  2023 networkminer
+```
 
-One of the strengths of Unix has always been inter-process communication. Among the facilities provided by the OS are pipes, which connect the output of one process to the input of another. This is fine if both processes exist in the same parent process space, started by the same user, but there are circumstances where the communicating processes must use FIFOs, here referred to as named pipes. One such circumstance occurs when the processes must be executed under different user names and permissions.
+TODO: 1º Continue here!!
 
-Named pipes are special files that can exist anywhere in the file system. They can be created with the command mkfifo as in mkfifo mypipe.
+# What types of files are there?
 
-A named pipe is marked with a p as the first letter of the mode string, e.g. in this abbreviated ls -l output
+Now that we understand the concept of what a file is and how a file is treated by the system, we need to narrow down **types of files there are**, because although it is very cool to say *everything* is a file, we need to know how big this *everything* really is and what we can expect to encounter.
 
-# Socket
+In reality, *everything* means **seven**, which maybe is not as big as you though, but it is still more then enough trust me. These standard Unix files types are defined by POSIX, although specific OSs can define their own beyond these, but leaving that aside, let's take a look at each one.
 
-A socket is a special file used for inter-process communication, which enables communication between two processes. In addition to sending data, processes can send file descriptors across a Unix domain socket connection using the sendmsg() and recvmsg() system calls.
+## Regular
 
-Unlike named pipes which allow only unidirectional data flow, sockets are fully duplex-capable.
+These are the "common" files that you typically call quintessential file. These can be anything from scripts, images, videos, audios, compressed folder (zip, 7z, ...), documents, program-specific-format files like XML, DOCX, PDf, and many other.
 
-A socket is marked with an s as the first letter of the mode string
+Because files can be soo many things and hold so many types of different information depending on their use, Unix does not impose or provide any specific internal structure for this regular file type, this is entirely up to the program using them.
 
-# Device file (block, character)
+But if you want to know what a file is? Well, although there is not an imposed structure, there are always conventions,standard and programs that are soo universally used that even if you don't recognize it (or it is **hidden from you**!!), the `file` command will usually be able to tell you what type of file it is.
 
-In Unix, almost all things are handled as files and have a location in the file system, even hardware devices like hard drives. The great exception is network devices, which do not turn up in the file system but are handled separately.
+TODO: 2º Continue
 
-Device files are used to apply access rights to the devices and to direct operations on the files to the appropriate device drivers.
-
-Unix makes a distinction between character devices and block devices. The distinction is roughly as follows:
-- Character devices provide only a serial stream of input or accept a serial stream of output
-- Block devices are randomly accessible
-
-Although, for example, disk partitions may have both character devices that provide un-buffered random access to blocks on the partition and block devices that provide buffered random access to blocks on the partition.
-
-A character device is marked with a c as the first letter of the mode string and a block device is marked with a b, e.g. in this abbreviated ls -l output
----
-
-https://dev.to/chandelieraxel/what-is-a-file-in-unix-systems--m5g
-
-In an operating system (OS), various features rely on files, including processes, devices, networks, and directories. There are 7 types of files, with regular files and directories being two of the main types. This summary will focus on regular files and directories for now.
-
-From an operating system (OS) perspective, a file is represented as an inode, a data structure containing metadata about the file. This metadata includes information such as creation date, last update date, ownership, permissions, and file size. Note that the file name and actual file data are not part of the inode.
-
-You can visualize an inode informations directly in your terminal, by typing the ls -l command.
-
-In order :
-
-- File type and permissions. It's quite hard to read, let's break it down together.
-    - The first character specify the what kind of file this is (the 7 types we mentionned earlier).
-        - - Regular file.
-        - d Directory.
-        - l Symbolic link.
-        - b Block special file.
-        - c Character special file.
-        - s Socket link.
-        - p FIFO.
-    - The next three characters are related to the owner permissions for the file.
-    - The next three characters are related to the group permissions for the file.
-    - The last three characters are related to the others permissions for the file.
-
-    - All permissions fields can be read as follow :
-        - Is the permission allowed to read the file ? - for no, r for yes.
-        - Is the permission allowed to write the file ? - for no, w for yes.
-        - Is the permission allowed to execute the file ? - for no, x for yes.
-- Number of hard links. You may find more informations here.
-- Owner name.
-- Group name.
-- Number of bytes in your file.
-- Date of last modification.
-- File name. Not a part of the inode, but still in the output. More on it later.
-
-If you're willing to get a bit more information about a specific file, you may want to use the stat command directly.
-
-If you execute the ls -li command you will find an extra column at the beginning of the output.
-
-An inode contains a unique integer, the inode number, which serves as a unique identifier for a specific file in the file system. Each file has a distinct inode number, except for hard links, and there is a limited maximum number of inode numbers that a file system can handle, after which file creation is no longer possible.
-
-Since the file name is not stored in the inode, it must be stored elsewhere. The file name is actually stored in the parent directory. A directory is simply a container that holds a list of files and subdirectories, and can be viewed using a command like ls -l.
-
-The directories files actually only contain a mapping table, between a file inode number, and his name.
-
-The list goes on for all the file or other directories it may contain.
-
-A directory is nothing but a specific file, it also have an inode number, and his name is saved within his parent directory inode.
-
-So, where is the file data ?
-
-What make the inode so special is that it kept references (pointers) toward the memory blocks that are actually containing the data in disk. By doing so, when we ask to open the file, it go through all of them and recover the information needed.
----
-
-https://microsoft.github.io/WhatTheHack/020-LinuxFundamentals/Student/resources/concepts.html
-
-# File Descriptors
-Abstraction of an identification to access a file. When a process wants to manipulate a file, it will use a number that is a file descriptor that tells where that file is and how to access it.
-
-There are 3 file descriptors that show how files can be accessed, they are:
-- Standard Input (stdin): Standard Input is a stream for text input, linked to the keyboard. It is named as File Descriptor 0.
-
-- Standard Output (stdout): The Standard Output is a stream for the normal output of programs. When a program runs successfully, it generates an output that is Standard Output, which is bound to the terminal or in a terminal window. All output generated by the commands is written to Standard Output which is called File Descriptor 1.
-
-- Standard Error (stderr): The Standard Error is also a text output stream, but used to display error messages. When your command fails, it generates an error which is displayed by the Standard Error output, linked to the terminal and is called File Descriptor 2.
-
-
----
-
-https://www.tecmint.com/everything-is-file-and-types-of-files-linux/
-
-
----
-
-Talk about how you can access information about running processes by reading the files in /proc
-
-First find PID of running process using top / htop, and then look for the dir with that name and read the status file inside it for more information
-
-Also, you should read the cgroup and environ files
+# What file is this?
