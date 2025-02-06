@@ -18,27 +18,6 @@ https://dev.to/eteimz/everything-is-a-file-explained-g2a
 
 https://en.wikipedia.org/wiki/Unix_file_types
 
-The seven standard Unix file types are regular, directory, symbolic link, FIFO special, block special, character special, and socket
-
-For regular files, Unix does not impose or provide any internal file structure; therefore, their structure and interpretation is entirely dependent on the software using them.[2] However, the file command can usually be used to determine what type of data they contain.
-
-
-# FIFO (named pipe)
-
-One of the strengths of Unix has always been inter-process communication. Among the facilities provided by the OS are pipes, which connect the output of one process to the input of another. This is fine if both processes exist in the same parent process space, started by the same user, but there are circumstances where the communicating processes must use FIFOs, here referred to as named pipes. One such circumstance occurs when the processes must be executed under different user names and permissions.
-
-Named pipes are special files that can exist anywhere in the file system. They can be created with the command mkfifo as in mkfifo mypipe.
-
-A named pipe is marked with a p as the first letter of the mode string, e.g. in this abbreviated ls -l output
-
-# Socket
-
-A socket is a special file used for inter-process communication, which enables communication between two processes. In addition to sending data, processes can send file descriptors across a Unix domain socket connection using the sendmsg() and recvmsg() system calls.
-
-Unlike named pipes which allow only unidirectional data flow, sockets are fully duplex-capable.
-
-A socket is marked with an s as the first letter of the mode string
-
 # Device file (block, character)
 
 In Unix, almost all things are handled as files and have a location in the file system, even hardware devices like hard drives. The great exception is network devices, which do not turn up in the file system but are handled separately.

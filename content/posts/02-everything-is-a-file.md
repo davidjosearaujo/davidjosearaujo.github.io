@@ -184,10 +184,63 @@ Try counting the characters in the name of the original file ;)
 
 FIFO are quite interesting and fun files. One of the strengths of Unix is the capability of processes to communicate between each other, and one of the ways they do it is by using *pipes*, which direct the output of one process to the input of another process. But for file to be able to use them, they must exist in the same parent process space, started by the same user. But if you want processes from different users and different permissions to communicate? Well, were comes FIFO for the rescue!
 
-FIFO files, or named pipes can be created anywhere in the system and function like a "dropbox for data streams". One process place a value inside, and another can go in there and collect it.
+FIFO files, or named pipes can be created anywhere in the system and function like a "dropbox for data streams". One process writes a value inside, and another can go in there and read it.
 
 FIFO files can be created using the `mkfifo` command, and look like regular file system nodes but are distinguished by a `p` character when you use the `ls -l` command.
 
 When a FIFO is opened for reading, the process will block until another process opens the FIFO for writing, and vice versa, this means they are uniderectional! Data written to a FIFO is passed internally by the kernel without being stored on the filesystem.
 
-# What file is this?
+You can do some interesting things if named pipes, lets see it.
+
+1. First we create the file
+
+```bash
+root@1f587f78be08:/var/log# mkfifo pipe
+root@1f587f78be08:/var/log# ls -il
+total 1824
+...
+36452964 prw-r--r-- 1 root       root                  0 Feb  6 22:28 pipe
+...
+```
+
+2. Then we need to execute something that outputs a stream of data, like the `ls`command. But remember, named pipes are blocking, so you need to push it to the background otherwise you will be stuck until another process (like a `cat pipe` on another terminal) reads the pipe.
+
+```bash
+root@1f587f78be08:/var/log# ls > pipe &
+[1] 37
+```
+
+3. Now that we have the pipe as been "filled" with data on the "writing side", we need to read it. But once again, remember once we opened it to for reading, it will blocked until something is written on the other side! You may not notice this is problem if what is being written is from an "endless" source, like a ping or `/dev/urandom` but if it's not and you happen to try to read it when theres is nothing more to be written on the other side, you be stuck in a blocked process. One way to avoid this is to direct the pipe read to a file descriptor which we can then read.
+
+```bash
+root@1f587f78be08:/var/log# exec 3< pipe
+```
+
+4. Now, you can just read the file descriptor!
+
+```bash
+root@1f587f78be08:/var/log# read -ru 3 abc
+[1]+  Done                    ls --color=auto > pipe
+root@1f587f78be08:/var/log# echo $abc
+alternatives.log
+root@1f587f78be08:/var/log# read -ru 3 abc && echo $abc
+apt
+root@1f587f78be08:/var/log# read -ru 3 abc && echo $abc
+bootstrap.log
+...
+```
+
+> Notice how the first read operation unblocked the writing process, allowing it terminate, and also, that in this specific case, it is reading the output of `ls` line by line.
+
+Soo yeah, named pipes are a bit weird when it comes to files, and you'll probably very rarely find one in the wild, but nevertheless, now you know!
+
+## Socket
+
+A socket is a special file used for inter-process communication, which enables communication between two processes in duplex. In addition to sending data, processes can send file descriptors across a Unix domain socket connection using the `sendmsg()` and `recvmsg()` system calls.
+
+A socket is marked with an `s` as the first character of the mode string
+
+TODO: How creating a socket file is not possible and must be done with something like netcat
+
+## Device file
+
