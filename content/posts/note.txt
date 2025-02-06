@@ -22,25 +22,6 @@ The seven standard Unix file types are regular, directory, symbolic link, FIFO s
 
 For regular files, Unix does not impose or provide any internal file structure; therefore, their structure and interpretation is entirely dependent on the software using them.[2] However, the file command can usually be used to determine what type of data they contain.
 
-# Directory
-
-The most common special file is the directory.
-
-A directory is marked with a d as the first letter in the mode field in the output of ls -dl or stat
-
-Since the file name is not stored in the inode, it must be stored elsewhere. The file name is actually stored in the parent directory. A directory is simply a container that holds a list of files and subdirectories, and can be viewed using a command like ls -l.
-
-The directories files actually only contain a mapping table, between a file inode number, and his name.
-
-The list goes on for all the file or other directories it may contain.
-
-A directory is nothing but a specific file, it also have an inode number, and his name is saved within his parent directory inode.
-
-# Symbolic link
-
-A symbolic link is a reference to another file. This special file is stored as a textual representation of the referenced file's path (which means the destination may be a relative path, or may not exist at all).
-
-A symbolic link is marked with an l (lower case L) as the first letter of the mode string, e.g. in this abbreviated ls -l output
 
 # FIFO (named pipe)
 

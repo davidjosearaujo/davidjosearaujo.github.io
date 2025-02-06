@@ -82,7 +82,7 @@ Permissions follow a simple representation standard where `r` is for **read**, `
 They are always in the same order, `r` then `w` then `x`, as this is tight to a binary representation of three bits, where each character can be represented by a `1` or a `0` if it were a `-`. What does this mean? Means that `rwx` is the same as `111` (or 6 in decimal), and `r-x` is `101` (or 5 in decimal), and if we put all of the three sets of three characters together, our files permission of `rwxr-xr-x` could also be represented as `655`.
 {{< /notice >}}
 
-- Then we have the **number of hard link** to this file. Links are quite interesting, and something I think you'll enjoy [reading about](https://en.wikipedia.org/wiki/Hard_link), but just to be brief, did you notice I didn't mention the *name* of the file as being something the *inode* holds as metadata? Well that is because a file doesn't actually **have** one, it is **linked** to one rather, and the **hard link** is what represents this association between a file and a name (this happens because things such as directories exist, we will touch on this subject later).
+- Then we have the **number of hard link** to this file. Links are quite interesting, and something I think you'll enjoy [reading about](https://en.wikipedia.org/wiki/Hard_link), but just to be brief, did you notice I didn't mention the *name* of the file as being something the *inode* holds as metadata? Well that is because a file doesn't actually **have** one, it is **linked** to one rather, and the **hard link** is a file representation of this association between a file content and a name, so all files will have at least one hard link (this happens because things such as directories exist, we will touch on this subject later).
 - Owner name.
 - Group name.
 - Number of bytes in your file (size).
@@ -90,6 +90,18 @@ They are always in the same order, `r` then `w` then `x`, as this is tight to a 
 - And the name of the file (which we already know it's not in the *inode*)
 
 For more information that this regarding a file, you can also use the `stat` command, which will also give you things like: when the file was last access, modified and created, it's IO Block, among other things.
+
+```bash
+remnux@25bdfcf5df91:/var/log$ stat alternatives.log 
+  File: alternatives.log
+  Size: 63157     	Blocks: 128        IO Block: 4096   regular file
+Device: 32h/50d	Inode: 37128551    Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2023-03-10 04:07:39.000000000 +0000
+Modify: 2023-03-10 04:07:39.000000000 +0000
+Change: 2025-01-31 09:39:34.999892789 +0000
+ Birth: -
+```
 
 # What types of files are there?
 
@@ -103,8 +115,79 @@ These are the "common" files that you typically call quintessential file. These 
 
 Because files can be soo many things and hold so many types of different information depending on their use, Unix does not impose or provide any specific internal structure for this regular file type, this is entirely up to the program using them.
 
+As we discussed before, regular files are identified by a **-**, as we can se in the example bellow as the first character.
+```bash
+remnux@25bdfcf5df91:/var/log$ ls -l
+-rw-r--r-- 1 root       root              63157 Mar 10  2023 alternatives.log
+```
+
 But if you want to know what a file is? Well, although there is not an imposed structure, there are always conventions,standard and programs that are soo universally used that even if you don't recognize it (or it is **hidden from you**!!), the `file` command will usually be able to tell you what type of file it is.
 
-TODO: 2º Continue
+```bash
+remnux@25bdfcf5df91:/var/log$ file alternatives.log 
+alternatives.log: ASCII text, with very long lines
+```
+
+This works because of something we call *"magic numbers"* or more appropriately, [file signature](https://en.wikipedia.org/wiki/File_format#Magic_number), which are unique sequences of bytes at the beginning of a file that indicate the file format. The `file` command reads these magic numbers and compares them against a database to determine the file type. This database is typically found in `/etc/magic` or `/usr/share/file/magic`.
+
+> *Magic numbers* and file signature are an interesting and important subject, especially regarding forensics and malware analysis! Maybe will write a post about them someday, but you should definitely read about them.
+
+## Directory
+
+Yes, a directory is a file. In fact, it is the most common "special" file of all files. But since it is a file, and files store information, what does a directory hold?
+
+Well, it can't hold other files as a hole, if that where the case then all files would in fact just be *a* single file! It would be like saying that, if we wrote an entire book in a single page, it would still be a book because it holds the same information as if it was written through out various pages, which wouldn't be true.
+
+Well, remember before when I said a file doesn't actually have a name, its just linked to one? That link is what a directory hold.
+
+A directory is file that actually only contains a mapping table, linking all it's children file (all kinds of files) names and their respective *inode* numbers. Returning to the book example, a directory is like the index, it doesn't tell you the information of each chapter, but it tell you the chapter's name and the page it begins at, and that chapter's name in unique in that book. It may exist other books with chapters with the same name, but they are not the same chapter since they do not exist on the same realm (the realm being the book they belong to). This means that file names are **directory specific**, and that is why they are not held at the inode! Because the inode points to a unique space in memory, and the memory that is common to every file in the system!
+
+> Can you imagine if every file name had to be unique system wide? I'm not that imaginative!
+
+## Symbolic link
+
+We have hard link, but we also have ***symbolic link*** (sometimes also called *soft* links), and it is nothing by a reference to another file.
+
+But what is the difference you ask? Well, flirts of all, a symbolic link is a file in itself and thus it holds information, unlike a hard link. This file hold a textual representation of the **file's path** it references.
+
+Unlike hard links that ties a file's name to a it's *inode* number, the soft link is a link to the file name which is then linked to the *inode* via a hard link.
+
+Yeah... confusing... just look at the image!
+
+{{< figure 
+    src="/posts/02-everything-is-a-file/hard-vs-soft.png"
+    height=300vw
+>}}
+
+Turning back to the shell, symbolic links are denoted by a `l` character, and depending on the OS your running, some have an handy representation showing you which file the are referencing.
+
+```bash
+remnux@25bdfcf5df91:~$ touch file-with-a-name.txt
+remnux@25bdfcf5df91:~$ ln -s ./file-with-a-name-txt my-file-via-another-file.txt
+remnux@25bdfcf5df91:~$ ls -il
+total 0
+36178073 -rw-r--r-- 1 remnux remnux  0 Feb  6 15:38 file-with-a-name.txt
+36178076 lrwxrwxrwx 1 remnux remnux 22 Feb  6 15:40 my-file-via-another-file.txt -> ./file-with-a-name-txt
+36178073 -rw-r--r-- 2 remnux remnux  0 Feb  6 15:38 same-file-different-name.txt
+remnux@25bdfcf5df91:~$
+```
+
+{{< notice tip "Look closely">}}
+
+Notice a cool thing in the previous code snapshot. Did you notice that the `file-with-a-name.txt` has 0 bytes but the symbolic link file, `my-file-via-another-file.txt`, as 22?
+
+Try counting the characters in the name of the original file ;)
+
+{{< /notice >}}
+
+## FIFO
+
+FIFO are quite interesting and fun files. One of the strengths of Unix is the capability of processes to communicate between each other, and one of the ways they do it is by using *pipes*, which direct the output of one process to the input of another process. But for file to be able to use them, they must exist in the same parent process space, started by the same user. But if you want processes from different users and different permissions to communicate? Well, were comes FIFO for the rescue!
+
+FIFO files, or named pipes can be created anywhere in the system and function like a "dropbox for data streams". One process place a value inside, and another can go in there and collect it.
+
+FIFO files can be created using the `mkfifo` command, and look like regular file system nodes but are distinguished by a `p` character when you use the `ls -l` command.
+
+When a FIFO is opened for reading, the process will block until another process opens the FIFO for writing, and vice versa, this means they are uniderectional! Data written to a FIFO is passed internally by the kernel without being stored on the filesystem.
 
 # What file is this?
