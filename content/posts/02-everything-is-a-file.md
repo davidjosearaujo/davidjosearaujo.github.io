@@ -26,7 +26,7 @@ To understand this, we first need to define **what a file is at its core**. Not 
 
 A file is a *thing* that holds information, and with which you can interact to access that information. How do you interact with it? Think of a notebook. You can pick it up and open it, read it, write in it, erase something that was written, and eventually close it. With this simple set of actions, you can do even more: you can make copies of your notebook, create new notebooks, or share your notes with others—and they can share theirs with you. You can do a LOT with this thing that holds information.
 
-Considering these basic interactions, **open**, **read**, **write**, and *close* and how universal they are, the creators of Unix came up with the brilliant and simple (it’s amazing how often these two qualities go hand in hand) idea: *why not treat everything as if it were a file, and use the same set of APIs for all these tasks*? And that’s exactly what they did!
+Considering these basic interactions, **open**, **read**, **write**, and **close** and how universal they are, the creators of Unix came up with the brilliant and simple (it’s amazing how often these two qualities go hand in hand) idea: *why not treat everything as if it were a file, and use the same set of APIs for all these tasks*? And that’s exactly what they did!
 
 ## File Descriptors
 
