@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2024-11-21T15:51:16Z
 title = "Everything Is A File"
 description = "When you don't know what to do, just remember: _everything is a file_"
@@ -59,7 +59,7 @@ total 1824
 37128568 drwxr-xr-x 4 remnux     remnux             4096 Mar 10  2023 networkminer
 ```
 
-Lets go through what e see here from left to right:
+Let's go through what e see here from left to right:
 - First, we have the ***inode* number**. This number is indexed in the file system’s ***inode* table**, and with this index, the kernel can access the inode’s content and the file’s location, allowing the kernel to retrieve the file.
 - Next, we have a list of characters and dashes, which represent the file’s **type and permissions**. If you're reading this, you probably already know what they mean, but let’s go over it just in case:
     - The first character indicates the **type** of the file. There are **7 types** (we’ll dive into these in more detail later, but here are the options):
@@ -105,9 +105,9 @@ Change: 2025-01-31 09:39:34.999892789 +0000
 
 # What types of files are there?
 
-NNow that we understand the concept of what a file is and how a file is treated by the system, we need to narrow down the **types of files there are**. Because although it’s very cool to say *everything* is a file, we need to understand how big this *everything* really is and what we can expect to encounter.
+Now that we understand the concept of what a file is and how a file is treated by the system, we need to narrow down the **types of files there are**. Because although it’s very cool to say *everything* is a file, we need to understand how big this *everything* really is and what we can expect to encounter.
 
-In reality, *everything* means **seven**, which maybe isn’t as big as you thought, but it’s still more than enough—trust me. These standard Unix file types are defined by POSIX, although specific OSs can define their own beyond these. But leaving that aside, let’s take a look at each one.
+In reality, *everything* means **seven**, which maybe isn’t as big as you thought, but it’s still more than enough, trust me. These standard Unix file types are defined by POSIX, although specific OSs can define their own beyond these. But leaving that aside, let’s take a look at each one.
 
 ## Regular
 

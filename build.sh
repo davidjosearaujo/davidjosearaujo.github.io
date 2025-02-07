@@ -2,4 +2,4 @@
 
 hugo
 
-npx -y pagefing --site public
+npx -y pagefind --site "public"
