@@ -208,7 +208,7 @@
 <p>Files, everything is a file! You may have heard this phrase in relation to Linux. It’s quite popular among Linux enthusiasts, but beyond being a catchy sentence, what does it actually mean?</p>
 <p>To understand this, we first need to define <strong>what a file is at its core</strong>. Not necessarily a digital file, but the concept of a file.</p>
 <p>A file is a <em>thing</em> that holds information, and with which you can interact to access that information. How do you interact with it? Think of a notebook. You can pick it up and open it, read it, write in it, erase something that was written, and eventually close it. With this simple set of actions, you can do even more: you can make copies of your notebook, create new notebooks, or share your notes with others—and they can share theirs with you. You can do a LOT with this thing that holds information.</p>
-<p>Considering these basic interactions, <strong>open</strong>, <strong>read</strong>, <strong>write</strong>, and <em>close</em> and how universal they are, the creators of Unix came up with the brilliant and simple (it’s amazing how often these two qualities go hand in hand) idea: <em>why not treat everything as if it were a file, and use the same set of APIs for all these tasks</em>? And that’s exactly what they did!</p>
+<p>Considering these basic interactions, <strong>open</strong>, <strong>read</strong>, <strong>write</strong>, and <strong>close</strong> and how universal they are, the creators of Unix came up with the brilliant and simple (it’s amazing how often these two qualities go hand in hand) idea: <em>why not treat everything as if it were a file, and use the same set of APIs for all these tasks</em>? And that’s exactly what they did!</p>
 <h2 id="file-descriptors">
   File Descriptors
   <a class="heading-link" href="#file-descriptors">
@@ -260,7 +260,7 @@ Could it be true we see differing hues?&rdquo;<br>
 </blockquote>
 <p>Besides being a cool verse and a deep philosophical question, it&rsquo;s also something we need to ask about files: <strong>Does the OS see files the same way I do?</strong></p>
 <p>As for the colors, I have absolutely no idea, but when it comes to files, the answer is <strong>no</strong>. For the OS, a file is represented as an <em><strong>inode</strong></em>, a structure that holds metadata about the file. This includes the <strong>creation date, last update date, ownership, permissions, size, and most importantly, it contains a pointer to the memory block</strong> where the file&rsquo;s actual data is stored.</p>
-<p>To see all the information stored in an inode (and more), you can simply use the command ls -il. Let&rsquo;s try it!</p>
+<p>To see all the information stored in an inode (and more), you can simply use the command <code>ls -il</code>. Let&rsquo;s try it!</p>
 <div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@00cd6cd99d6f:/var/log$ ls -il
 </span></span><span style="display:flex;"><span>total <span style="color:#a5d6ff">1824</span>
 </span></span><span style="display:flex;"><span><span style="color:#a5d6ff">37128568</span> drwxr-xr-x <span style="color:#a5d6ff">4</span> remnux     remnux             <span style="color:#a5d6ff">4096</span> Mar <span style="color:#a5d6ff">10</span>  <span style="color:#a5d6ff">2023</span> networkminer
@@ -350,7 +350,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <p>Yes, a directory is a file. In fact, it is the most common &ldquo;special&rdquo; file of all files. But since it is a file, and files store information, <strong>what does a directory hold?</strong></p>
 <p>Well, <strong>it can&rsquo;t hold other files as a whole</strong>. If that were the case, then all files would, in fact, just be <em>a</em> single file! It would be like saying that if we wrote an entire book on a single page, it would still be a book because it holds the same information as if it were written throughout various pages, which wouldn&rsquo;t be true.</p>
 <p>Remember before when I said a file doesn&rsquo;t actually have a name, it&rsquo;s just linked to one? <strong>That link is what a directory holds.</strong></p>
-<p>A directory <strong>is a file that actually only contains a mapping table</strong>, linking all its child files (of all types) <strong>names and their respective <em>inode</em> numbers</strong>. Returning to the book example, a directory is like the index. It doesn&rsquo;t tell you the information of each chapter, but it tells you the chapter&rsquo;s name and the page it begins at. That chapter&rsquo;s name is unique in that book. It may exist in other books with chapters of the same name, but they are not the same chapter since they do not exist in the same book. This means that file names are <strong>directory-specific</strong>, and that is why they are not held in the inode! Because the inode points to a unique space in memory, and the memory that is common to every file in the system!</p>
+<p>A directory <strong>is a file that actually only contains a mapping table</strong>, linking all its child files (of all types) <strong>names and their respective <em>inode</em> numbers</strong>. Returning to the book example, a directory is like the index. It doesn&rsquo;t tell you the information of each chapter, but it tells you the chapter&rsquo;s name and the page it begins at. That chapter&rsquo;s name is unique in that book. It may exist, in other books, chapters of the same name, but they are not the same chapter since they do not exist in the same book. This means that file names are <strong>directory-specific</strong>, and that is why they are not held in the inode!</p>
 <blockquote>
 <p>Can you imagine if every file name had to be unique system wide? I&rsquo;m not that imaginative!</p>
 </blockquote>
@@ -415,7 +415,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# ls &gt; pipe &amp;
 </span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">[</span>1<span style="color:#ff7b72;font-weight:bold">]</span> <span style="color:#a5d6ff">37</span>
 </span></span></code></pre></div><ol start="3">
-<li>Now that we have the pipe as being &ldquo;filled&rdquo; with data on the &ldquo;writing side&rdquo;, we need to read it. But once again, remember once we open it for reading, it will block until something is written on the other side! You may not notice this as a problem if what is being written is from an &ldquo;endless&rdquo; source, like a ping or <code>/dev/urandom</code>, but if it&rsquo;s not and you happen to try to read it when there&rsquo;s nothing more to be written on the other side, you&rsquo;ll be stuck in a blocked process. One way to avoid this is to direct the pipe read to a file descriptor which we can then read.</li>
+<li>Now that we have the pipe as being &ldquo;filled&rdquo; with data on the &ldquo;writing side&rdquo;, we need to read it. But once again, remember once we open it for reading, it will block until something is written on the other side! You may not notice this as a problem if what is being written is from an &ldquo;endless&rdquo; source, like a ping or <code>/dev/urandom</code>, but if it&rsquo;s not and you happen to try to read it when there&rsquo;s nothing more to be written on the other side, you&rsquo;ll be stuck in a blocked process. One way to avoid this is to direct the pipe read to a file descriptor which we can then read without getting blocked.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# exec 3&lt; pipe
 </span></span></code></pre></div><ol start="4">
@@ -436,7 +436,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <blockquote>
 <p>Notice how the first read operation unblocked the writing process, allowing it to terminate, and also, that in this specific case, it is reading the output of <code>ls</code> line by line.</p>
 </blockquote>
-<p>Soo yeah, named pipes are a bit weird when it comes to files, and you&rsquo;ll probably very rarely find one in the wild, but nevertheless, now you know!</p>
+<p>Soo yeah, named pipes are a bit weird when it comes to files, and you&rsquo;ll probably very rarely find one in the wild like this, but nevertheless, now you know!</p>
 <h2 id="socket">
   Socket
   <a class="heading-link" href="#socket">

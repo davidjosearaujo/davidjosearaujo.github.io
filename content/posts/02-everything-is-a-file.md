@@ -51,7 +51,7 @@ Besides being a cool verse and a deep philosophical question, it's also somethin
 
 As for the colors, I have absolutely no idea, but when it comes to files, the answer is **no**. For the OS, a file is represented as an ***inode***, a structure that holds metadata about the file. This includes the **creation date, last update date, ownership, permissions, size, and most importantly, it contains a pointer to the memory block** where the file's actual data is stored.
 
-To see all the information stored in an inode (and more), you can simply use the command ls -il. Let's try it!
+To see all the information stored in an inode (and more), you can simply use the command `ls -il`. Let's try it!
 
 ```bash
 remnux@00cd6cd99d6f:/var/log$ ls -il
@@ -141,7 +141,7 @@ Well, **it can't hold other files as a whole**. If that were the case, then all 
 
 Remember before when I said a file doesn't actually have a name, it's just linked to one? **That link is what a directory holds.**
 
-A directory **is a file that actually only contains a mapping table**, linking all its child files (of all types) **names and their respective *inode* numbers**. Returning to the book example, a directory is like the index. It doesn't tell you the information of each chapter, but it tells you the chapter's name and the page it begins at. That chapter's name is unique in that book. It may exist in other books with chapters of the same name, but they are not the same chapter since they do not exist in the same book. This means that file names are **directory-specific**, and that is why they are not held in the inode! Because the inode points to a unique space in memory, and the memory that is common to every file in the system!
+A directory **is a file that actually only contains a mapping table**, linking all its child files (of all types) **names and their respective *inode* numbers**. Returning to the book example, a directory is like the index. It doesn't tell you the information of each chapter, but it tells you the chapter's name and the page it begins at. That chapter's name is unique in that book. It may exist, in other books, chapters of the same name, but they are not the same chapter since they do not exist in the same book. This means that file names are **directory-specific**, and that is why they are not held in the inode!
 
 > Can you imagine if every file name had to be unique system wide? I'm not that imaginative!
 
@@ -216,7 +216,7 @@ root@1f587f78be08:/var/log# ls > pipe &
 [1] 37
 ```
 
-3. Now that we have the pipe as being "filled" with data on the "writing side", we need to read it. But once again, remember once we open it for reading, it will block until something is written on the other side! You may not notice this as a problem if what is being written is from an "endless" source, like a ping or `/dev/urandom`, but if it's not and you happen to try to read it when there's nothing more to be written on the other side, you'll be stuck in a blocked process. One way to avoid this is to direct the pipe read to a file descriptor which we can then read.
+3. Now that we have the pipe as being "filled" with data on the "writing side", we need to read it. But once again, remember once we open it for reading, it will block until something is written on the other side! You may not notice this as a problem if what is being written is from an "endless" source, like a ping or `/dev/urandom`, but if it's not and you happen to try to read it when there's nothing more to be written on the other side, you'll be stuck in a blocked process. One way to avoid this is to direct the pipe read to a file descriptor which we can then read without getting blocked.
 
 ```bash
 root@1f587f78be08:/var/log# exec 3< pipe
@@ -243,7 +243,7 @@ bootstrap.log
 
 > Notice how the first read operation unblocked the writing process, allowing it to terminate, and also, that in this specific case, it is reading the output of `ls` line by line.
 
-Soo yeah, named pipes are a bit weird when it comes to files, and you'll probably very rarely find one in the wild, but nevertheless, now you know!
+Soo yeah, named pipes are a bit weird when it comes to files, and you'll probably very rarely find one in the wild like this, but nevertheless, now you know!
 
 ## Socket
 
@@ -262,7 +262,6 @@ total 0
 ```
 
 But there are also other, more "black magic", methods to create and interact with sockets. For this, you'll need two terminals.
-
 
 1. In the first terminal, start `netcat` to open a socket and be able to see incoming messages.
 
@@ -317,6 +316,7 @@ In Unix, almost everything is treated as a file and has a location in the file s
 Device files are used to apply access rights to devices and direct operations on files to the relevant device drivers.
 
 Unix distinguishes between **character devices** and **block devices**:
+
 - **Character devices** provide a continuous stream of input or output.
 - **Block devices** offer random access to data blocks.
 
