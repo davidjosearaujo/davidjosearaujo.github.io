@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2024-11-21T15:51:16Z
+date = 2025-02-07T16:57:16Z
 title = "Everything Is A File"
 description = "When you don't know what to do, just remember: _everything is a file_"
 slug = ""
