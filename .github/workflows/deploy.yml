@@ -2,10 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    tags:
-      - 'new-post-.**'
-      - 'layout-.**'
-      - 'about-.**'
+    
   workflow_dispatch:
 
 permissions:
@@ -18,6 +15,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
