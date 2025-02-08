@@ -1,11 +1,11 @@
-name: Deploy Only Hugo site to Pages
+name: Deploy Hugo site to Pages
 
 on:
   push:
     tags:
-      - new-post-.*
-      - layout-.*
-      - about-.*
+      - 'new-post-.*'
+      - 'layout-.*'
+      - 'about-.*'
   workflow_dispatch:
 
 permissions:
