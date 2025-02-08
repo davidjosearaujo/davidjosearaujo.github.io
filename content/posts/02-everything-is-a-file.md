@@ -16,6 +16,7 @@ series = []
 2. [Is my red blue for you, or my green your green, too?](#is-my-red-blue-for-you-or-my-green-your-green-too)
 3. [What types of files are there?](#what-types-of-files-are-there)
 4. [Why should I care?](#why-should-i-care)
+5. [Keep exploring](#keep-exploring)
 {{< /notice >}}
 
 # What is a file?
