@@ -1,5 +1,9 @@
 {{ partial "head/meta-tags.html" . }}
 
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
 {{ if .Permalink }}
 <link rel="canonical" href="{{ .Permalink }}">
 {{ end }}

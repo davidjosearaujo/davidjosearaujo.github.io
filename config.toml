@@ -4,6 +4,10 @@ theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
+[outputs]
+  home = ['html', 'rss']
+  blog = ['html', 'rss']
+
 [pagination]
 pagerSize = 20
 
@@ -27,7 +31,7 @@ unsafe = true
   since = 2023
   maxSeeAlsoItems = 10
 
-  custom_css = ["css/pagefind.css"]
+  custom_css = ["css/pagefind.css"]  
 
 [taxonomies]
   category = "categories"
