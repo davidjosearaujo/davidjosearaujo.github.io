@@ -54,7 +54,7 @@ unsafe = true
   name = "Email"
   icon = "fa fa-envelope fa-2x"
   weight = 3
-  url = "mailto:david2araujo5@proton.me"
+  url = "mailto:contact@davidjosearaujo.dev"
 [[params.social]]
   name = "PGP Key"
   icon = "fa fa-key fa-2x"
