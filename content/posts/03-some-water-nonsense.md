@@ -8,9 +8,9 @@ draft: true
 
 1. [Poor man's indoor pool](#poor-mans-indoor-pool)
 2. [Of course its an Arduino project](#of-course-its-an-arduino-project)
-3. [What types of files are there?](#what-types-of-files-are-there)
-4. [Why should I care?](#why-should-i-care)
-5. [Keep exploring](#keep-exploring)
+3. [List of parts](#list-of-parts)
+4. [Circuit schematics](#circuit-schematics)
+5. [I suck at soldering](#i-suck-at-soldering)
 {{< /notice >}}
 
 # Poor man's indoor pool
@@ -19,7 +19,7 @@ So, my house has a basement. And where I live? It rains. Actually, when it rains
 
 Now, my basement does have a sort of rain collection system – you know, like many houses, it has a pit (sump pit, for the fancy folks) with a submersible pump. This pump is *supposed* to trigger automatically with a little floaty thing (a buoy!) when the water in said pit gets high enough. I definitely didn't install it, which is probably obvious because whoever did clearly didn't think the pit should be, oh, I don't know, **deep enough** to actually let the water rise and trigger the pump before it starts auditioning for "Waterworld" all over my floor. But no, this pit is so shallow that by the time the buoy would even think about triggering, I'd already be wading in knee-deep water.
 
-This is one of those problems that, when it arises, feels like the absolute worst thing that could possibly happen (an impromptu Olympic-sized pool in your basement is rarely ideal, folks). But, it's such a sneaky seasonal issue that you totally forget about its treachery... until the next torrential downpour. Then, it's a mad dash to the basement to manually switch on the pump, all while cursing the many, many dry days you could have fixed it but, alas, did not.
+This is one of those problems that, when it arises, feels like the absolute worst thing that could possibly happen (an impromptu Olympic-sized pool in your basement is rarely ideal). But, it's such a sneaky seasonal issue that you totally forget about its treachery... until the next torrential downpour. Then, it's a mad dash to the basement to manually switch on the pump, all while cursing the many, many dry days you could have fixed it but, alas, did not.
 
 But no more, I say! Today, we banish the basement bog! Today, we fix this soggy saga... with tech!
 
@@ -40,51 +40,30 @@ Second challenge: How do I actually detect the water level? My first thought wen
 
 Enter the hero: the distance sensor! More specifically, an ultrasonic distance sensor. These bad boys are dirt cheap, super common, and incredibly well-documented. Winner!
 
-## Connections overview
+## Selecting the board
 
-```mermaid
-graph TD
+Ah, the brains of the operation! The central nervous system, poised for such raw data-crushing and powerful computing tasks as... repeatedly requesting a value from the sensor, determining if it falls within the 5 to 30 cm danger zone, and if so, flicking the pump on. If not, well, it does nothing. Dramatic, I know.
 
-subgraph Power
-    USB_Power([USB 5V Input])
-end
+Yeah, it doesn't exactly require a supercomputer, I'll admit. For someone so obsessed with efficiency and squeezing every last drop of performance out of components, it almost pains me to use a microcontroller for such a trivial task. Almost. Because, you see, it's cheap and easy – and those are two things I might love even more than hyper-efficiency.
 
-subgraph NodeMCU
-    VIN([VIN 5V])
-    V33([3.3V])
-    D1([D1 - Trigger])
-    D2([D2 - Echo])
-    D5([D5 - Relay Signal])
-    GND([GND])
-end
+My criteria were simple: small, cheap, and "good enough." I didn't need Wi-Fi or BLE (though, a tiny part of me now regrets not being able to get a notification when the pump kicks in – future upgrade, perhaps?). Initially, I considered an ESP32-C3. I spotted some on AliExpress that weren't outrageously priced, but the delivery dates were so far out in the stratosphere, I was genuinely worried my old pal Procrastination would have declared victory and the board would just gather dust upon arrival.
 
-subgraph Ultrasonic Sensor
-    USGND([GND])
-    USVCC([VCC])
-    TRIG([TRIG])
-    ECHO([ECHO])
-end
+Then, salvation! I found a fantastic local supplier – massive shout-out to [Mauser](mauser.pt) for their awesome selection and great prices! They had the [Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/).
 
-subgraph Relay Module
-    RVCC([VCC])
-    RIN([IN])
-    NO([NO Contact])
-    COM([COM Contact])
-    NC([NC Contact])
-    RGND([GND])
-end
+Beyond its ridiculously small size which is perfect for tucking away, the RP2040 chip itself is powerful enough for this and much more, it has just enough GPIOs for my sensor and relay.
 
-%% Connections
+# List of parts
 
-USB_Power --> VIN
-USB_Power --> V33
-GND --> USGND
-GND --> RGND
+Like I said before, [Mauser](mauser.pt) has super cool stuff, specially target at tinkerers, and soo I ended up just placing the order for everything there, and I also had some stuff lying around. You can see everything in the table bellow.
 
-V33 --> USVCC
-VIN --> RVCC
+# Circuit schematics
 
-D1 <--> TRIG
-D2 <--> ECHO
-D5 <--> RIN
-```
+<!-- Show circuit schematics, give link to downlaod PDF file. Show initial POC in bread board, and also talk about planing the board and how I'm crap at that -->
+
+# I suck at soldering
+
+<!-- Talk about soldering, getting the component to lay of the board, how the board I choose sucks ass. How initially usb was (and still is a great idea) but in my case failed. how it will all fit together, how i was quite crafty to make a holder for the sensor, show final configuration with cable terminated in EU standard for sockets -->
+
+# Hope you don't need it, but in any case
+
+<!-- Mention project in Gitlab and give links -->
