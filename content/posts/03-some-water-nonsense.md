@@ -1,5 +1,5 @@
 ---
-title: "03 Some Water Nonsense"
+title: "Some Water Nonsense"
 date: 2025-05-04T18:21:20+01:00
 draft: true
 ---
@@ -27,7 +27,7 @@ But no more, I say! Today, we banish the basement bog! Today, we fix this soggy 
 
 {{< figure
     src="/posts/03-some-water-nonsense/setup.jpg"
-    height=300vw
+    height=400vw
 >}}
 
 What did you expect? Sure, this is a problem that could be solved with a shovel and some good old-fashioned *manual labor* (i.e., digging a deeper hole). But where's the fun in that? Nope, we're bringing in the microcontrollers – the go-to tech for both certified geniuses and, let's be honest, anyone who thinks a '*smart q-tip*' (the *iOtitis*) is a groundbreaking idea!
@@ -48,19 +48,64 @@ Yeah, it doesn't exactly require a supercomputer, I'll admit. For someone so obs
 
 My criteria were simple: small, cheap, and "good enough." I didn't need Wi-Fi or BLE (though, a tiny part of me now regrets not being able to get a notification when the pump kicks in – future upgrade, perhaps?). Initially, I considered an ESP32-C3. I spotted some on AliExpress that weren't outrageously priced, but the delivery dates were so far out in the stratosphere, I was genuinely worried my old pal Procrastination would have declared victory and the board would just gather dust upon arrival.
 
+{{< figure
+    src="/posts/03-some-water-nonsense/mauser.jpg"
+    height=400vw
+>}}
+
 Then, salvation! I found a fantastic local supplier – massive shout-out to [Mauser](mauser.pt) for their awesome selection and great prices! They had the [Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/).
 
 Beyond its ridiculously small size which is perfect for tucking away, the RP2040 chip itself is powerful enough for this and much more, it has just enough GPIOs for my sensor and relay.
 
 # List of parts
 
-Like I said before, [Mauser](mauser.pt) has super cool stuff, specially target at tinkerers, and soo I ended up just placing the order for everything there, and I also had some stuff lying around. You can see everything in the table bellow.
+As I mentioned, [Mauser](mauser.pt) hhas some seriously cool stuff, especially for us tinkerers. So, I ended up grabbing most of what I needed from them, supplemented by a few bits and bobs I already had lying around the workshop (aka, my "organized chaos" pile). Check out the full shopping list in the table below!
+
+| Component | Quantity | Price (€) |
+| :- | :-: | -: |
+| XIAO RP2040 | 1 | 6.02 |
+| HC-SR04 | 1 | 1.99 |
+| 5V Relay Module (Arduino compatible) | 1 | 1.22 |
+| Resistor (2.2kΩ 0.6W±1% ⌀2.5x6.8mm) | 20 | 1.71 |
+| Resistor (1kΩ 0.6W±1% ⌀2.5x6.8mm) | 20 | 0.81 |
+| Plastic electronics box (74x89x41mm) | 1 | 3.38 |
+| Stripboard (72x95mm) | 2 | 1.69 |
+
+So, for just €16.82, I think I snagged a pretty sweet deal on the main components! Right then, let's dive into the schematics so I can show you how this master plan (hopefully) comes together.
 
 # Circuit schematics
 
-<!-- Show circuit schematics, give link to downlaod PDF file. Show initial POC in bread board, and also talk about planing the board and how I'm crap at that -->
+Alright, let's talk circuit schematics! Now, look, I'm not an electronics engineer, nor do I claim to be (would I even want to be, really?). So, please, no nitpicking if these schematics aren't perfectly "proper" or "up to ISO 9000-whatever standards." I'm sharing this for the love of the game, folks!
+
+This was my first real rodeo with any kind of CAD/circuit design software, but I find it genuinely interesting. I'd love to get good enough to design a slick, single PCB for this whole setup and get it professionally manufactured – how awesome would that be? I dove into KiCAD, and I must say, it feels like seriously pro-level software, even if my usage was decidedly "beginner-level." But hey, it got the job done!
+
+{{< figure
+    src="/posts/03-some-water-nonsense/circuit-schematic.jpg"
+    height=600vw
+>}}
+
+My circuit is pretty straightforward, with just a handful of main components. Initially, I thought the wiring would be even simpler, but a quick dive into the XIAO RP2040's documentation revealed its 3.3V operating voltage. This meant I needed a voltage divider for the 5V sensor output to play nice with the microcontroller. Luckily, whipping one up with two resistors is super easy.
+
+{{< notice tip "Circuit Schematics" >}}
+
+By the way, you can download the schematic's PDF file from the project page [here](https://gitlab.com/davidjosearaujo/some-water-nonsense/-/blob/main/schematics/circuit-schematic.pdf?ref_type=heads).
+
+{{< /notice >}}
+
+With the schematic sorted, I whipped up a proof-of-concept on a breadboard and – surprise, surprise – it actually worked! (Okay, maybe not a huge surprise, but still satisfying.)
 
 # I suck at soldering
+
+Then came soldering time. I remembered a blank perfboard I had stashed away and thought, "Perfect!" Oh, dear reader, **HUGE** mistake. A blank perfboard is a special kind of torture! No convenient strips, no helpful solder points – every single connection has to be painstakingly wired point-to-point with actual cable. Awful. Never again. Just use a stripboard, people... please, for your own sanity!
+
+What didn't help either is that I have approximately zero experience planning circuit layouts on a board. I sketched out a draft, as you can see below, and on paper, it looked like a masterpiece! Translating that to the tiny real estate of the board and actually soldering it? Yeah, that was a whole different ballgame, especially at such a small scale.
+
+{{< figure
+    src="/posts/03-some-water-nonsense/board-circuit-layout.jpg"
+    height=500vw
+>}}
+
+No look, I'm a multifaceted guy, meaning, I suck ass at a great number of stuff, and soldering is one of them.
 
 <!-- Talk about soldering, getting the component to lay of the board, how the board I choose sucks ass. How initially usb was (and still is a great idea) but in my case failed. how it will all fit together, how i was quite crafty to make a holder for the sensor, show final configuration with cable terminated in EU standard for sockets -->
 
