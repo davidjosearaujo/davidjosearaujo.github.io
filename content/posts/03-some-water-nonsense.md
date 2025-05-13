@@ -1,7 +1,7 @@
 ---
 title: "Some Water Nonsense"
 date: 2025-05-04T18:21:20+01:00
-draft: true
+draft: false
 ---
 
 {{< notice info "Table of contents" >}}
@@ -11,7 +11,14 @@ draft: true
 3. [List of parts](#list-of-parts)
 4. [Circuit schematics](#circuit-schematics)
 5. [I suck at soldering](#i-suck-at-soldering)
+6. [Box it up and deploy it](#box-it-up-and-deploy-it)
 {{< /notice >}}
+
+{{< notice tip "Project page" >}}
+
+For whatever sordid reason you're looking into replicating this project, you can find all documents and code [here](https://gitlab.com/davidjosearaujo/some-water-nonsense)
+
+ {{< /notice >}}
 
 # Poor man's indoor pool
 
@@ -80,7 +87,7 @@ Alright, let's talk circuit schematics! Now, look, I'm not an electronics engine
 This was my first real rodeo with any kind of CAD/circuit design software, but I find it genuinely interesting. I'd love to get good enough to design a slick, single PCB for this whole setup and get it professionally manufactured – how awesome would that be? I dove into KiCAD, and I must say, it feels like seriously pro-level software, even if my usage was decidedly "beginner-level." But hey, it got the job done!
 
 {{< figure
-    src="/posts/03-some-water-nonsense/circuit-schematic.jpg"
+    src="/posts/03-some-water-nonsense/circuit_schematic.jpg"
     height=600vw
 >}}
 
@@ -101,14 +108,81 @@ Then came soldering time. I remembered a blank perfboard I had stashed away and 
 What didn't help either is that I have approximately zero experience planning circuit layouts on a board. I sketched out a draft, as you can see below, and on paper, it looked like a masterpiece! Translating that to the tiny real estate of the board and actually soldering it? Yeah, that was a whole different ballgame, especially at such a small scale.
 
 {{< figure
-    src="/posts/03-some-water-nonsense/board-circuit-layout.jpg"
+    src="/posts/03-some-water-nonsense/board_circuit_layout.jpg"
     height=500vw
 >}}
 
-No look, I'm a multifaceted guy, meaning, I suck ass at a great number of stuff, and soldering is one of them.
+Now, look, I consider myself a multifaceted guy. By which I mean, I suck at a surprisingly large number of things, and soldering is definitely high on that list.
 
-<!-- Talk about soldering, getting the component to lay of the board, how the board I choose sucks ass. How initially usb was (and still is a great idea) but in my case failed. how it will all fit together, how i was quite crafty to make a holder for the sensor, show final configuration with cable terminated in EU standard for sockets -->
+I began by placing the components on the board in roughly the positions I'd sketched in the diagram. I quickly discovered that "tiny components" + "short connections" = "a special kind of soldering hell." But, I wrestled through it. Thankfully, I have a ton of solid core (monofilament) wire lying around, and it's actually quite decent for this kind of point-to-point work.
 
-# Hope you don't need it, but in any case
+{{< figure
+    src="/posts/03-some-water-nonsense/crafty_soldering_and_cabling.jpg"
+    height=500vw
+>}}
 
-<!-- Mention project in Gitlab and give links -->
+One thing I hadn't initially considered was how to make the 4-pin connection to the sensor neat and tidy. But then, a lightbulb moment! I unearthed a female USB header from my glorious scrap bin. "Hang on," I thought, "the sensor has 4 pins... a USB connector has 4 pins... could I just repurpose a USB cable for the sensor, creating a slick, easily connectable/disconnectable interface?"
+
+The answer, my friends, was a resounding YES! In the immortal words of Jeremy Clarkson: "Sometimes my genius... it's almost frightening."
+
+
+{{< figure
+    src="/posts/03-some-water-nonsense/initial_soldered_circuit_with_usb.jpg"
+    height=500vw
+>}}
+
+But then, disaster struck! The sacrificial USB cable I dug up must have been fossilized. It was so old and deteriorated that the internal wires were likely broken, because a continuity test revealed... absolutely nothing. Zilch. Nada.
+
+Now, I'm a pretty frugal guy – I don't like clutter if it's not serving a purpose. Translation: I didn't have another USB cable I was willing to sacrifice for this noble cause. (I know, I know, *who doesn't have a drawer overflowing with spare USB cables*? Apparently, me!). So, I was faced with two options: buy a new USB cable, or rethink the interface.
+
+Since my parts bin is generously stocked with spare jumper cables (the Dupont kind, perfect for easy connections!), I opted to make a custom 4-pin splitter cable with those instead. And you know what? It ended up working quite nicely.
+
+Still, if you replicate this, definitely go for an adapted USB cable – it's a cleaner solution.
+
+{{< figure
+    src="/posts/03-some-water-nonsense/final_soldered_circuit.jpg"
+    height=500vw
+>}}
+
+# Box it up and deploy it
+
+With everything (allegedly) working, it was time to wrap it all up in a neat little package.
+
+I knew this contraption would end up lying on the basement floor, a veritable flood zone, so I wanted to protect it as much as humanly possible. That's why I ordered one of those rugged electrical junction boxes – the kind that are airtight and designed to brave the great outdoors and all its elements.
+
+{{< figure
+    src="/posts/03-some-water-nonsense/inside_the_box.jpg"
+    height=500vw
+>}}
+
+And I can definitely attest to their toughness; drilling the holes for the cables was a workout, but I managed! In this setup, as you can see, I also repurposed a beefy cable I had lying around, properly rated for the 240V circuits we have in our European homes. This became the lifeline connecting the pump to its power source, with my trusty relay playing gatekeeper for the electricity. Of course, hindsight being the perfect 20/20 it is, I really should have made that cable longer. Naturally, I ended up needing an extension cord to reach the wall socket. Oh well, that sounds suspiciously like a "*Future-Me*" problem.
+
+{{< figure
+    src="/posts/03-some-water-nonsense/system_deployed.jpg"
+    height=500vw
+>}}
+
+I also meticulously sealed every cable entry point with a generous helping of hot glue – just in case any dirt, moisture, or adventurous insects decided my genius invention looked like prime real estate for a new home.
+
+{{< figure
+    src="/posts/03-some-water-nonsense/hc_sr04_sensor_holder_back.jpg"
+    height=500vw
+>}}
+
+{{< figure
+    src="/posts/03-some-water-nonsense/hc_sr04_sensor_holder_front.jpg"
+    height=500vw
+>}}
+
+Deploying the sensor itself was surprisingly the easy part. The sump pit lid conveniently already had a hole for the pump's power cable. So, I figured placing the sensor nearby would let me use a nice short cable (just two jumper cables long, in fact). I scavenged an old piece of plastic, fashioned it into a makeshift holder with a couple of strategically drilled holes, and zip-tied the sensor to it. A healthy application of double-sided tape, reinforced with a dollop of super glue for that "*absolutely-no-way-this-is-coming-off*" strength, secured it to the inside of the lid. I triple-checked that the lid could still close properly without dunking my precious handiwork into the watery abyss below.
+
+{{< figure
+    src="/posts/03-some-water-nonsense/sensor_deployed.jpg"
+    height=500vw
+>}}
+
+And as you can see from the deployed setup... there's just one tiny, insignificant, almost unnoticeable problem: the pit is so ridiculously shallow that the top of the pump itself now prevents the lid from closing. Whoops.
+
+So, in grand conclusion: despite my valiant, tech-fueled crusade to avoid manual labor at all costs, it turns out I still need to resort to good old-fashioned digging. I have to deepen that blasted hole so the lid can close, and I can finally pretend this whole saga never happened. Thus, manual labor proves itself inevitable, and I am forever defeated in my glorious quest for a victory of ingenuity over elbow grease. The irony is not lost on me.
+
+Till next time folks, I'm gonna go look for a shovel...
