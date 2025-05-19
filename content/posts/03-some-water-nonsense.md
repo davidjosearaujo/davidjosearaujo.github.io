@@ -16,7 +16,7 @@ draft: false
 
 {{< notice tip "Project page" >}}
 
-For whatever sordid reason you're looking into replicating this project, you can find all documents and code [here](https://gitlab.com/davidjosearaujo/some-water-nonsense)
+For whatever sordid reason you're looking into replicating this project, you can find all documents and code [here](https://github.com/davidjosearaujo/some-water-nonsense)
 
  {{< /notice >}}
 
@@ -95,7 +95,7 @@ My circuit is pretty straightforward, with just a handful of main components. In
 
 {{< notice tip "Circuit Schematics" >}}
 
-By the way, you can download the schematic's PDF file from the project page [here](https://gitlab.com/davidjosearaujo/some-water-nonsense/-/blob/main/schematics/circuit-schematic.pdf?ref_type=heads).
+By the way, you can download the schematic's PDF file from the project page [here](https://github.com/davidjosearaujo/some-water-nonsense/blob/main/schematics/circuit-schematic.pdf).
 
 {{< /notice >}}
 
