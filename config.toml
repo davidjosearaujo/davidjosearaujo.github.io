@@ -46,11 +46,6 @@ unsafe = true
   weight = 1
   url = "https://github.com/davidjosearaujo"
 [[params.social]]
-  name = "GitLab"
-  icon = "fa fa-gitlab fa-2x"
-  weight = 1
-  url = "https://gitlab.com/davidjosearaujo"
-[[params.social]]
   name = "LinkedIn"
   icon = "fa fa-linkedin fa-2x"
   weight = 2
