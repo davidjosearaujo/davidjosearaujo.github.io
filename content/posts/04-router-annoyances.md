@@ -229,7 +229,7 @@ Now, what also must be noticed, is that all of these calculations rely on the `C
 
 The only thing missing from all of what we've seen is knowing **where those header flags with weird values are**!
 
-Withing this `login()` function, however, there is nothing regarding headers apart from the variable `g_requestVerificationToken` being verified. But what is also obvious is that I don't see any AJAX calls directly here; all I see are these `saveAjaxData` and `getAjaxData` functions. Let's go see how they are creating the requests.
+Within this `login()` function, however, there is nothing regarding headers apart from the variable `g_requestVerificationToken` being verified. But what is also obvious is that I don't see any AJAX calls directly here; all I see are these `saveAjaxData` and `getAjaxData` functions. Let's go see how they are creating the requests.
 
 ```javascript
 function saveAjaxData(urlstr, xmlDate, callback_func, options) {
