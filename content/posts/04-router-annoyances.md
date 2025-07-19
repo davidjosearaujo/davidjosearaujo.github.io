@@ -35,7 +35,7 @@ Having all of this accessible within your LAN is awesome, but the really cool pa
 
 This obviously poses the question: how do I access my home services from afar? Now, this isn't a post on how to create your home server, but one crucial step will always be enabling port-forwarding in your home router.
 
-Some folks choose to set up **multiple port-forwarding rules**, basically making various services directly accessible. I, however, opted against that – it just **cranks up my server's surface exposure to attacks**, and frankly, who needs that stress? The most secure solution I found? **Just forwarding one port and using it to establish a connection with a VPN server** in your home network (or a VPN peer, if you're using Wireguard, which is totally what I do!). This trick not only ensures I've got just one tiny port open to the outside world, but also that only encrypted traffic gets to boogie on through.
+Some folks choose to set up **multiple port-forwarding rules**, basically making various services directly accessible. I, however, opted against that – it just **cranks up my server's surface exposure to attacks**, and frankly, who needs that stress? The most secure solution I found? **Just forwarding one port and using it to establish a connection with a VPN server** in your home network (*or a VPN peer, if you're using Wireguard, which is totally what I do!*). This trick not only ensures I've got just one tiny port open to the outside world, but also that only encrypted traffic gets to boogie on through.
 
 But that is where my problem starts. **My setup is perfect, but my router is from my ISP, and for some annoying reason, from time to time, it just resets automatically.** And when it does, it **erases all of my port-forwarding rules**. So you can imagine how annoying it is when **I'm trying to access my home server while I'm at work or school, and my VPN just won't connect**. It's been going on for some time now, and it's one of the reasons I'm not able to take advantage of even more services, like hosting my own password manager. Why? Because I don't want to take the chance of not being home, needing to log in somewhere, and just not being able to retrieve my credentials. Like I said, such a trivial issue with such critical consequences... annoying consequences.
 
@@ -50,11 +50,9 @@ The first question I had was the obvious one: **why does the router do this?**
     height=400vw
 >}}
 
-The first question I had was the obvious one, shouted directly at my router: "Why do you do this?!"
-
 From the admin panel of my router, I found this delightful set of options. It's pretty obvious that the problematic one is the "scheduled restart," but what I still don't get is why it erases some configurations but not others. For that, I'm afraid, I still don't have an answer. The mystery continues!
 
-Naturally, I turned it off, fully expecting it to just solve the issue. But for some reason, after a few days, I went back to check, and guess what? The configurations were gone again. My blood is boiling by now because I only ever find out the configurations are gone when I'm miles away from home and I REALLY need to connect and I just can't.
+Naturally, I turned it off, fully expecting it to just solve the issue. But for some reason, after a few days, I went back to check, and guess what? **The configurations were gone again.** My blood is boiling by now because I only ever find out the configurations are gone when I'm miles away from home and I REALLY need to connect and I just can't.
 
 But I insisted, and I can't tell you how many variations of these options I've tried – enabling/disabling some or all, tweaking every setting – **but the problem just stubbornly continued**! Seriously, why is my router erasing my configurations?! It's like it has a personal vendetta against my self-hosting dreams.
 
@@ -106,9 +104,9 @@ HTTP/1.1 200 OK
 <?xml version="1.0" encoding="UTF-8"?><response><iterations>100</iterations><servernonce>45adf3a2cce832f3486a908c35490b90be709348a9d775214d7bdfc04d971d5326Q5vDwFdWk2arNgZxLlwSpPce06Kgmu</servernonce><modeselected>1</modeselected><salt>f76f8f886c80b03f1f7aef5e466b55cfd1894501283683178ea94f09548c8439</salt><newType>0</newType></response>
 ```
 
-Yeah, it really is CHAP! I see nonces, iterations, I see salt... I don't see pepper, but this is hot!
+Yeah, it really is CHAP! I see nonces, iterations, I see salt... **I don't see pepper, but this is hot!**
 
-What I also see are non-standard header fields: `_ResponseSource` set as `Broswer` (I guess English wasn't the strong suit of the developer, bless their heart) and `__RequestVerificationToken` with some weird value I have no idea where it came from. Finally, the `Cookie` is also populated with some value.
+What I also see are non-standard header fields: `_ResponseSource` set as `Broswer` (*I guess English wasn't the strong suit of the developer, bless their heart*) and `__RequestVerificationToken` with some weird value I have no idea where it came from. Finally, the `Cookie` is also populated with some value.
 
 ```
 POST http://192.168.1.1/api/user/challenge_login HTTP/1.1
@@ -119,11 +117,11 @@ __RequestVerificationToken: ZL1Yz7kWugYZJfopEQvXINI2DRayNWXm
 SessionID=q6jtjN8RYr6w3vLeFVWjxru0KTMbLH90T0wXoAgmtzphl45NYbIm8MsU9flb518ycQrs9xy08Jn7LUmHVeoLPMHofjoawFldnNLVeje80fjXVB2qKnh38QOdBwDQ80lZ
 ```
 
-Okay, this is really cool (*except for the fact that it uses XML, which is the bane of my existence*) and before exploring the next request, I think I'll need to see where in the client-side code this request is formed, because I need to understand how all of these values originate.
+Okay, this is really cool (*except for the fact that it uses XML, which is the bane of my existence*) and before exploring the next request, **I think I'll need to see where in the client-side code this request is formed, because I need to understand how all of these values originate**.
 
 ## Examining *main.js* and *libjquery.js*
 
-This file is quite large, at more than 10k lines. I was expecting that, as this is such a simple device, the implementation must be very rudimentary, avoiding as much as possible using external libraries which can bring overhead. Because of that, this file contains almost all that is necessary to run the entire page.
+The *main.js* file is quite large, at more than 10k lines. I was expecting that, as this is such a simple device, the implementation must be very rudimentary, avoiding as much as possible using external libraries which can bring overhead. Because of that, these files contains almost all that is necessary to run the entire page.
 
 Also, because of this, we can overlook various functions as they are just standard implementations of tools for hashing, encoding, handling objects in the page, and other common utilities. **I have to give some props to whomever wrote this, as the variables and function names are very descriptive, and that makes finding things very easy.**
 
@@ -165,7 +163,7 @@ Content-Length: 807
 
 Once this is received, there is not much to it really. It will calculate the server proof and compare it with the server signature it received. If it matches up, then it calculates a server key, and with it a public key signature, and also compares it to the RSA public key signature it received. If everything matches, it ensures mutual authentication.
 
-Now, what also must be noticed, is that all of these calculations rely on the `CryptoJS.SCRAM()` object function, so we need to review them. These are located in another file called *libjquery.js*.
+Now, what also must be noticed, is that all of these calculations rely on the `CryptoJS.SCRAM()` object functions, so we need to review them. These are located in another file called *libjquery.js*.
 
 ```javascript
 (function () {
@@ -306,13 +304,13 @@ function saveAjaxData(urlstr, xmlDate, callback_func, options) {
 
 We can see that `saveAjaxData()` is just **a method for constructing POST requests**, and already we can see the header flags that we were missing! It's not overly complicated, really, and **we learn that for a POST request to be valid, it must contain a verification token**. Also, these verification tokens are stored in an array and apparently are issued by the server for the client to use. If you recall the last response we got from ZAP, those were issued in the header.
 
-Finally, the cookie flag: we don't really need to see how the code handles it because, from the capture, the operation is pretty straightforward. **For any GET request, the cookie is not necessary, but the server in the response will return a `Set-Cookie` flag, so all we'll need to do is update our cookie every time that header appears.
-**
+Finally, the cookie flag: we don't really need to see how the code handles it because, from the capture, the operation is pretty straightforward. **For any GET request, the cookie is not necessary, but the server in the response will return a `Set-Cookie` flag, so all we'll need to do is update our cookie every time that header appears.**
+
 # Developing a solution
 
 Lets get into development!
 
-Now look, I can't be acused of prefering Python for every thing like a sucker, but I do belive in choosing the best tool for the job. Is this a super specifi task? Will it be efficiency constrained? No and no. Do I want to get this over with? YES!
+Now look, I can't be acused of prefering Python for every thing like a sucker, **but I do belive in choosing the best tool for the job**. Is this a super specifi task? Will it be efficiency constrained? No and no. Do I want to get this over with? YES!
 
 So we've poked and prodded, and now we know how this router's brain (or lack thereof) works. The goal? To programmatically log in and tell it to behave, specifically when it comes to those pesky port-forwarding rules. Since we're dealing with a custom CHAP authentication and XML (ugh).
 
@@ -334,7 +332,7 @@ So, while the router might be a bit of a pain with its random resets and XML pre
 
 Now that we've got this fancy Python script that can log into the router and boss it around, what's the ultimate goal? Automation, of course! My personal solution to this ongoing router rebellion was to set up a trusty cron job on my home server.
 
-Every ten minutes, like clockwork, this script springs into action. It first checks if my crucial Wireguard port-forwarding rule is still alive and kicking. If, for some annoying reason, my ISP's router has decided to throw a tantrum and erase the rule again (which, let's be honest, it probably has), the script simply logs back in and re-creates it. Problem solved!
+Every ten minutes, like clockwork, this script springs into action. It first checks if my crucial Wireguard port-forwarding rule is still alive and kicking. If, for some annoying reason, my ISP's router has decided to throw a tantrum and erase the rule again (*which, let's be honest, it probably has*), the script simply logs back in and re-creates it. Problem solved!
 
 This means I no longer have to worry about my VPN suddenly dropping out when I'm trying to access my server from work or school. It's truly a "set it and forget it" solution, and my blood pressure has thanked me for it. 
 
