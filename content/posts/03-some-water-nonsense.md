@@ -66,7 +66,7 @@ Beyond its ridiculously small size which is perfect for tucking away, the RP2040
 
 # List of parts
 
-As I mentioned, [Mauser](mauser.pt) hhas some seriously cool stuff, especially for us tinkerers. So, I ended up grabbing most of what I needed from them, supplemented by a few bits and bobs I already had lying around the workshop (aka, my "organized chaos" pile). Check out the full shopping list in the table below!
+As I mentioned, [Mauser](mauser.pt) has some seriously cool stuff, especially for us tinkerers. So, I ended up grabbing most of what I needed from them, supplemented by a few bits and bobs I already had lying around the workshop (aka, my "organized chaos" pile). Check out the full shopping list in the table below!
 
 | Component | Quantity | Price (€) |
 | :- | :-: | -: |
