@@ -1,8 +1,15 @@
----
-title: "Some Water Nonsense"
-date: 2025-05-13T11:05:20+01:00
-draft: false
----
++++ 
+draft = false
+date = 2025-05-13T11:05:20+01:00
+title = "Some Water Nonsense"
+description = "Draining the pool at my basement"
+slug = ""
+authors = ["David Araújo"]
+tags = ["microcontrolers", "hardware", "electronics", "arduino", "home"]
+categories = ["/electronics"]
+externalLink = ""
+series = []
++++
 
 {{< notice info "Table of contents" >}}
 
