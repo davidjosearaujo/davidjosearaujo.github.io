@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on David Araújo</title>
+    <link>https://davidjosearaujo.github.io/tags/</link>
+    <description>Recent content in Tags on David Araújo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Jul 2025 16:42:53 +0100</lastBuildDate><atom:link href="https://davidjosearaujo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>home server</title>
+      <link>https://davidjosearaujo.github.io/tags/home-server/</link>
+      <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/home-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking</title>
+      <link>https://davidjosearaujo.github.io/tags/networking/</link>
+      <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reverse engineering</title>
+      <link>https://davidjosearaujo.github.io/tags/reverse-engineering/</link>
+      <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/reverse-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>https://davidjosearaujo.github.io/tags/arduino/</link>
+      <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>electronics</title>
+      <link>https://davidjosearaujo.github.io/tags/electronics/</link>
+      <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hardware</title>
+      <link>https://davidjosearaujo.github.io/tags/hardware/</link>
+      <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>home</title>
+      <link>https://davidjosearaujo.github.io/tags/home/</link>
+      <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microcontrolers</title>
+      <link>https://davidjosearaujo.github.io/tags/microcontrolers/</link>
+      <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/microcontrolers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exploitation</title>
+      <link>https://davidjosearaujo.github.io/tags/exploitation/</link>
+      <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/exploitation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>forensics</title>
+      <link>https://davidjosearaujo.github.io/tags/forensics/</link>
+      <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/forensics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hacking</title>
+      <link>https://davidjosearaujo.github.io/tags/hacking/</link>
+      <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>malware analysis</title>
+      <link>https://davidjosearaujo.github.io/tags/malware-analysis/</link>
+      <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/malware-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>https://davidjosearaujo.github.io/tags/research/</link>
+      <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>environment</title>
+      <link>https://davidjosearaujo.github.io/tags/environment/</link>
+      <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>isolation</title>
+      <link>https://davidjosearaujo.github.io/tags/isolation/</link>
+      <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/isolation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>safety</title>
+      <link>https://davidjosearaujo.github.io/tags/safety/</link>
+      <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/safety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://davidjosearaujo.github.io/tags/tools/</link>
+      <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogging</title>
+      <link>https://davidjosearaujo.github.io/tags/blogging/</link>
+      <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cybersecurity</title>
+      <link>https://davidjosearaujo.github.io/tags/cybersecurity/</link>
+      <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

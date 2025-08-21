@@ -1,0 +1,72 @@
+baseurl = "https://davidjosearaujo.github.io"
+title = "David Araújo"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+[outputs]
+  home = ['html', 'rss']
+  blog = ['html', 'rss']
+
+[pagination]
+pagerSize = 20
+
+enableEmoji=true
+
+[markup.highlight]
+style = "github-dark"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  author = "David Araújo"
+  info = "Cybersecurity student and researcher"
+  keywords = "portfolio,developer,personal,blog"
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  dateFormat = "January 2, 2006"
+  since = 2023
+  maxSeeAlsoItems = 10
+
+  custom_css = ["css/pagefind.css"]  
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "GitHub"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/davidjosearaujo"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/davidjosearaujo"
+[[params.social]]
+  name = "Email"
+  icon = "fa fa-envelope fa-2x"
+  weight = 3
+  url = "mailto:contact@davidjosearaujo.dev"
+[[params.social]]
+  name = "PGP Key"
+  icon = "fa fa-key fa-2x"
+  weight = 4
+  url = "/privacy-coms/publickey.david2araujo5@proton.me-a597f002670ad244abd585d65c3915f83d1eaf25.asc"
+
+# Menu links
+[[menu.main]]
+  name = "About Me"
+  weight = 1
+  url = "about/"
+[[menu.main]]
+  name = "Blog"
+  weight = 2
+  url = "posts/"

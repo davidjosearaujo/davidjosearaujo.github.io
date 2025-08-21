@@ -1,0 +1,34 @@
+{{ define "title" }} {{ title (i18n (lower .Title)) | default .Title }} · {{
+.Site.Title }} {{ end }} {{ define "content" }}
+<section class="container list">
+    <header>
+        <h1 class="title">
+            <a class="title-link" href="{{ .Permalink | safeURL }}">
+                {{ title (i18n (lower .Title)) | default .Title }}
+            </a>
+        </h1>
+    </header>
+    {{ .Content }}
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <div id="search"></div>
+   <!--  <div style="background-color: #f8f9fc; border-radius: 8px;">
+        <div id="search"></div>
+    </div>     -->
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            new PagefindUI({
+                element: "#search",
+                showSubResults: false,
+            });
+        });
+    </script>
+
+    <ul>
+        {{- range .Paginator.Pages -}} {{- .Render "li" -}} {{- end -}}
+    </ul>
+
+    {{ partial "pagination.html" . }}
+
+</section>
+{{ end }}

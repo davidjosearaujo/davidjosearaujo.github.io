@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Safety Glasses First · David Araújo
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="David Araújo">
+<meta name="description" content="How to setup for safe malware analysis">
+<meta name="keywords" content="portfolio,developer,personal,blog">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Safety Glasses First"/>
+<meta name="twitter:description" content="How to setup for safe malware analysis"/>
+
+<meta property="og:title" content="Safety Glasses First" />
+<meta property="og:description" content="How to setup for safe malware analysis" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://davidjosearaujo.github.io/posts/01-safety-glasses-first/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-16T11:51:38+00:00" />
+<meta property="article:modified_time" content="2024-11-16T11:51:38+00:00" />
+
+
+
+
+
+
+<link rel="canonical" href="https://davidjosearaujo.github.io/posts/01-safety-glasses-first/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.65236a6d834b26194eed04a2a3b45e44d9194ef9e620253705d4bef03bd7ef81.css" integrity="sha256-ZSNqbYNLJhlO7QSio7ReRNkZTvnmICU3BdS&#43;8DvX74E=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://davidjosearaujo.github.io/css/pagefind.css">
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      David Araújo
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post" data-pagefind-body>
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://davidjosearaujo.github.io/posts/01-safety-glasses-first/">
+              Safety Glasses First
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-11-16T11:51:38Z">
+                November 16, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/david-ara%C3%BAjo/">David Araújo</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/malware-analysis/">/malware-analysis</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/tools/">tools</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/environment/">environment</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/safety/">safety</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/isolation/">isolation</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/malware-analysis/">malware analysis</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/hacking/">hacking</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <div class="notice info">
+  <div class="notice-title">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>Table of contents
+  </div>
+  <div class="notice-content"><ol>
+<li><a href="#strong-roots" >Strong roots</a></li>
+<li><a href="#vitualization-is-the-name-of-the-game" >Vitualization is the name of the game</a></li>
+<li><a href="#touch-it-with-a-stick" >Touch it with a stick</a></li>
+<li><a href="#clean-up-and-bleach" >Clean up and bleach</a></li>
+<li><a href="#have-fun" >Have Fun!</a></li>
+</ol></div>
+</div>
+
+<p>I&rsquo;m paranoid about safety.</p>
+<p>As much as I love getting my hands on that new, shiny, (un)known malicious application or scratching that itch of clicking on those sketchy phishing emails I tell myself only idiots click on, the one thing I love more is knowing that after I get bored doing it, my machine will not be infected and that little voice in my head won&rsquo;t be telling me that I need to, again, nuke my disk and re-install my OS.</p>
+<p><strong>Your safety and that of your system are paramount for what we&rsquo;ll be exploring</strong>. So, in this post I&rsquo;ll be sharing with you the <strong>tools and procedures I use/adopt</strong> so I can have fun exploring, but keep peace of mind about the safety of my machine.</p>
+<h1 id="strong-roots">
+  Strong roots
+  <a class="heading-link" href="#strong-roots">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><strong>The OS is the root of everything</strong>. It&rsquo;s what connects simple <em>syscalls</em> with your awesome applications, but it also opens the door for you to completely brick your machine.</p>
+<p>Knowing this, at least for me, I think there are two ways of going about choosing your OS:</p>
+<ol>
+<li>Getting the most user-friendly, out-of-the-box-running, noob-fest, grandma-adoring, stupid-proof OS you can find, or</li>
+<li>The most raw, no-nonsense, simplest, barebone, can&rsquo;t-break-if-there&rsquo;s-nothing-to-break, the &ldquo;<em>I have too much free time</em>&rdquo; OS.</li>
+</ol>
+<p>Regardless of the route you choose, the two major <em>distros</em> that you&rsquo;ll most probably come up with will be <strong><a href="https://ubuntu.com/"  class="external-link" target="_blank" rel="noopener">Ubuntu</a></strong> and <strong><a href="https://www.debian.org/"  class="external-link" target="_blank" rel="noopener">Debian</a></strong>. I won&rsquo;t even lose my time talking about Windows, it&rsquo;s just a joke by now, and if you use Mac for development/research, I would advise you to see a therapist.</p>
+<h2 id="ubuntu">
+  Ubuntu
+  <a class="heading-link" href="#ubuntu">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I&rsquo;m not going to bash Ubuntu. My take is that, while there are things that don’t make sense and can be straight-up annoying (looking at you, Snap), at the end of the day, when you&rsquo;re developing or researching, you&rsquo;re installing and using tons of different tools and packages, often in early development phases. <strong>Having a system that’s solid and widely compatible with minimal hassle is a huge plus.</strong></p>
+<p>So, Ubuntu fits right into that first option when picking an OS. It’s stupidly simple, pretty permissive out of the box, and while you might run into some dependency issues, it’s an awesome place to start if all you want is an OS you can set up and just start working on.</p>
+<h2 id="debian">
+  Debian
+  <a class="heading-link" href="#debian">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Debian fits into the second option when choosing an OS. It’s an OS you’ll need to configure before you can start working, but there’s a good reason for that -<strong>you’re in control</strong>! Out of the box, Debian comes with almost no pre-installed tools, which is great from a configurability standpoint because it means there’s almost no risk of dependency collisions when adding new ones. The downside of having this much control is that if you’re not careful, <strong>you can easily mess up your system dependencies. So, proceed with caution</strong> and don’t go installing everything willy-nilly.</p>
+<figure><img src="/posts/01-safety-glasses-first/with-great-power.jpg" height="300vw"/>
+</figure>
+
+<p>I personally daily drive Debian 12, and it’s been great for me. It gives me the confidence that no matter what I need to work on tomorrow, I’ll be able to run it on my machine and install whatever tools I need without much hassle.</p>
+<p>Regardless of the <em>distro</em> you choose, for what I anticipate we’ll cover in the blog, I don’t see the OS being a limiting factor. All you need is <strong>something stable with good compatibility</strong>.</p>
+<h2 id="_what-about-kali_">
+  &ldquo;<em>What about Kali?</em>&rdquo;
+  <a class="heading-link" href="#_what-about-kali_">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Well, let me tell you something, son: you don’t just install Kali or Parrot OS on your main machine! That’s not only <strong>unsafe</strong> but also <strong>annoying for day-to-day operations</strong>.</p>
+<p><a href="https://www.kali.org/"  class="external-link" target="_blank" rel="noopener">Kali</a>, <a href="https://parrotsec.org/"  class="external-link" target="_blank" rel="noopener">Parrot</a>, <a href="https://www.blackarch.org/"  class="external-link" target="_blank" rel="noopener">Black Arch</a>, <a href="https://remnux.org/"  class="external-link" target="_blank" rel="noopener">REMnux</a>, and similar <em>distros</em> are meant to be used <strong>live or as temporary sandboxes</strong>, with minimal impact on your core system or its packages. You wouldn&rsquo;t use a scalpel to eat your dinner or butter your toast - it would be annoying and dangerous, right? You use it for a <strong>specific purpose at a specific time</strong>, and when you’re done, <strong>you set it aside to avoid injury or contamination</strong>.</p>
+<p>Unlike mainstream <em>distros</em> designed with the user in mind, these specialized <em>distros</em> are <strong>built to package tools</strong> and create an <strong>environment for using them</strong>. They are not made with user or system security as a priority, so installing them on <strong>bare metal and using them as a daily driver only increases your exposure</strong>.</p>
+<h1 id="vitualization-is-the-name-of-the-game">
+  Vitualization is the name of the game
+  <a class="heading-link" href="#vitualization-is-the-name-of-the-game">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>If you&rsquo;re planning on working with potentially malicious applications, conducting forensic research and recovery, or even bug hunting, <strong>being comfortable with virtualization is essential</strong>. But that&rsquo;s not all, you&rsquo;ll also find the need to make virtualization <strong>programmable and reproducible</strong>, especially when dealing with <em>POCs</em> and forensic work.</p>
+<h2 id="virtual-machines--vagrant">
+  Virtual Machines + Vagrant
+  <a class="heading-link" href="#virtual-machines--vagrant">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<figure><img src="/posts/01-safety-glasses-first/vagrant-virtualbox.png" height="200vw"/>
+</figure>
+
+<p>Vagrant&rsquo;s objective is to make <em>VM</em> creation as streamlined as possible. It was developed with the intent of making provisioning virtual machines as easy as possible for large-scale applications, but we can <strong>use it to spin up <em>VMs</em> pre-configured</strong> with specific contents, network settings, file system status, and more. Basically, you can think of it as a kind of <em>Docker for VMs</em>.</p>
+<p>I use it all the time, as it is useful not only for development and sharing between team members but also for <strong>replicating environment status</strong> when analyzing malware, for example.</p>
+<p>When it comes to <em>VM</em> isolation configuration, it doesn’t get much better than REMnux, in my opinion. If you’re wondering how to set up a <em>VM</em> for maximum isolation,<strong>I suggest downloading the OVA file from the <a href="https://docs.remnux.org/install-_distro_/get-virtual-appliance"  class="external-link" target="_blank" rel="noopener">REMnux documentation page</a> and examining how it’s configured, particularly in terms of filesystem sharing and network interfaces</strong>. Consider reading the REMnux documentation thoroughly; it&rsquo;s an excellent resource that <strong>explains the purpose and use of various tools for malware analysis</strong>. It also provides guidance on key steps to follow when researching new applications.</p>
+<h2 id="containers">
+  Containers
+  <a class="heading-link" href="#containers">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Besides <em>VMs</em>, nowadays the <strong>easiest way of achieving isolation is containerization</strong>. Although it is relatively secure if used correctly, <strong>it is not 100% isolated from the host</strong>, as it needs to use the system&rsquo;s kernel, network stack, <em>cgroups</em>, and namespaces. If we are not careful, <strong>this can allow a malicious application to escape the container</strong>. This can happen due to simple mistakes like poor configurations (e.g., mounting the host filesystem where you shouldn&rsquo;t or using privileged containers) or, in more extreme cases, through process injections.</p>
+<p>I&rsquo;m not saying you shouldn&rsquo;t use containers; there are instances where they are very useful, and I do use them, such as <a href="https://parrotsec.org/docs/cloud/parrot-on-docker/"  class="external-link" target="_blank" rel="noopener">Parrot OS Docker Images</a> or <a href="https://docs.remnux.org/install-_distro_/remnux-as-a-container"  class="external-link" target="_blank" rel="noopener">REMnux</a>. However, you need to be cautious when using them.</p>
+<h1 id="touch-it-with-a-stick">
+  Touch it with a stick
+  <a class="heading-link" href="#touch-it-with-a-stick">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<figure><img src="/posts/01-safety-glasses-first/plague-doctor.avif" height="300vw"/>
+</figure>
+
+<h2 id="isolation-always">
+  Isolation always
+  <a class="heading-link" href="#isolation-always">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This should be obvious by now, but <strong>it’s the obvious thing we often get wrong</strong>. Isolation isn’t difficult in theory, but it can be tedious. You might ask yourself why you should analyze an application in a <em>VM</em> if you know it won’t affect your system, either because you&rsquo;ve set it up to be safe or you already understand the malware&rsquo;s behavior and have prepared for it. But <strong>overconfidence is a dangerous thing</strong>, and <strong>sophisticated malware is often tailored to evade analysis</strong>. It might behave in unexpected ways.</p>
+<p>Furthermore, when doing forensics, <strong>you not only need to contain the information you&rsquo;re working on but also protect it from contamination</strong>. Automated services you&rsquo;ve set up might interfere without you realizing it, potentially ruining your evidence. <strong>Your <em>VM</em> is your cleanroom!</strong></p>
+<h2 id="anchor-points">
+  Anchor points
+  <a class="heading-link" href="#anchor-points">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>Snapshots, well and often!</strong> Whether in malware analysis or forensic work, I take snapshots of everything I do. Before decompressing files, before reading, writing, or executing them. Before clicking on links, downloading files, or sending requests. This is not only a <strong>safe practice in case you tamper with or break something</strong>, but also a practical approach <strong>if you need to go back and re-check which steps you’ve taken</strong> during your analysis or exploration.</p>
+<h2 id="static-first">
+  Static first
+  <a class="heading-link" href="#static-first">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>There’s a reason why static analysis comes first, <strong>it’s safer for both you and the file</strong>. Before executing any file, take the time to gather as much information as possible without interacting with it. Static analysis allows you to <strong>examine the file’s metadata, check cryptographic signatures, check for <em>strings</em>, and verify the file size and type, all of which can provide crucial insights into its behavior</strong>. Even the file name might give you a clue about its intent or source. By performing these checks, you minimize the risk of accidentally triggering harmful behavior and gain a deeper understanding of the file’s characteristics before it runs.</p>
+<h2 id="keep-your-eyes-open">
+  Keep your eyes open
+  <a class="heading-link" href="#keep-your-eyes-open">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Keep <code>htop</code> in your back pocket. <strong>Application behavior is often not obvious.</strong> Even a <strong>failed execution might still start a process or inject configurations you didn’t expect</strong> (remember the snapshots I mentioned?). Constant monitoring can be as simple as having <code>htop</code> open in a different tab or using <code>strace</code>. You’ll need to keep your eyes peeled and pay attention to everything that’s happening. This is another reason why isolation helps: <em>VMs</em> and OSes like REMnux often have very few processes running in the background, which makes it <strong>easier to detect any new processes that pop up</strong>.</p>
+<h2 id="stay-anonymous">
+  Stay anonymous
+  <a class="heading-link" href="#stay-anonymous">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Don’t expose personal information during analysis. <strong>When creativity runs dry, it’s tempting to use your own name, contacts, or even passwords while testing malware.</strong> Even with isolation in place, many types of malware, especially phishing schemes or trojans, can communicate with remote services without your knowledge. <strong>Always assume that while you may have isolated your system from the malware, the malware itself may not be isolated from the outside world!</strong></p>
+<h1 id="clean-up-and-bleach">
+  Clean up and bleach
+  <a class="heading-link" href="#clean-up-and-bleach">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<figure><img src="/posts/01-safety-glasses-first/consuela-family-guy.gif" height="300vw"/>
+</figure>
+
+<p>When you’ve finally finished your analysis, it’s time to clean up after yourself! This step is as important as any other, because leaving behind &ldquo;trash&rdquo; can pose a real danger when you least expect it. <strong>Forgotten remnants can come back to &ldquo;cut&rdquo; you when overlooked.</strong></p>
+<h2 id="dont-get-attached">
+  Don&rsquo;t get attached
+  <a class="heading-link" href="#dont-get-attached">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>We use <em>VMs</em> and containers for a reason: they&rsquo;re easy to spin up and take down. <strong>Resist the temptation to reuse the same environment repeatedly.</strong> The <em>VM</em> you used two months ago to test ransomware and then forgot about is not safe for analyzing a new binary. Trust me, when you enable that shared directory to copy the new file, it will come back to bite you.</p>
+<h2 id="delete-or-secure-every-trace">
+  Delete or secure every trace
+  <a class="heading-link" href="#delete-or-secure-every-trace">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Often, legitimate sources are used to download malware for testing, typically packaged in password-protected zip or tarball files on your host before being transferred to the <em>VM</em> via <code>scp</code> or <em>drag &amp; drop</em>. You might even develop scripts on the host to aid in testing. While there’s nothing inherently wrong with this, I still don’t like leaving TNT lying around on my carpet. So, please, delete any binaries you’re not actively analyzing. If it’s rare malware or a tool you’ve developed, at the very least, secure it in a password-protected compressed file, encrypted directories, or even better, cold storage.</p>
+<h1 id="have-fun">
+  Have Fun!
+  <a class="heading-link" href="#have-fun">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>At the end of the day, this is what we’re here for, right? It’s exhilarating to play with fire and not get burned. While I can’t promise that you’ll never get burned, that would be unrealistic, there are measures you can take to minimize the chances and mitigate the consequences when it does happen. These safeguards provide the peace of mind needed to focus on your research and make great discoveries.</p>
+<p>So go ahead, and have fun <strong>bricking the heck out of your <em>VMs</em></strong>!</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2025
+     David Araújo
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

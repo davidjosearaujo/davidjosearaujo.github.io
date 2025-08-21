@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on David Araújo</title>
+    <link>https://davidjosearaujo.github.io/categories/</link>
+    <description>Recent content in Categories on David Araújo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Jul 2025 16:42:53 +0100</lastBuildDate><atom:link href="https://davidjosearaujo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>/home-server</title>
+      <link>https://davidjosearaujo.github.io/categories/home-server/</link>
+      <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/categories/home-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>/electronics</title>
+      <link>https://davidjosearaujo.github.io/categories/electronics/</link>
+      <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/categories/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>/file-system</title>
+      <link>https://davidjosearaujo.github.io/categories/file-system/</link>
+      <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/categories/file-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>/malware-analysis</title>
+      <link>https://davidjosearaujo.github.io/categories/malware-analysis/</link>
+      <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/categories/malware-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>/home</title>
+      <link>https://davidjosearaujo.github.io/categories/home/</link>
+      <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/categories/home/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

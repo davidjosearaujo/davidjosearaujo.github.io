@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Araújo</title>
+    <link>https://davidjosearaujo.github.io/</link>
+    <description>Recent content on David Araújo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Jul 2025 16:42:53 +0100</lastBuildDate><atom:link href="https://davidjosearaujo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Router Annoyances</title>
+      <link>https://davidjosearaujo.github.io/posts/04-router-annoyances/</link>
+      <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/posts/04-router-annoyances/</guid>
+      <description>Table of contents My router suffers from amnesia Exploring my options More interesting than I imagined Developing a solution Setting and forgetting Project page Like usual, you can find all documents and code here My router suffers from amnesia Link to heading Of course I have a home server.
+Like probably most people who read this blog (if there are any of you out there!), I like to self-host some services.</description>
+    </item>
+    
+    <item>
+      <title>Some Water Nonsense</title>
+      <link>https://davidjosearaujo.github.io/posts/03-some-water-nonsense/</link>
+      <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/posts/03-some-water-nonsense/</guid>
+      <description>Table of contents Poor man&amp;rsquo;s indoor pool Of course its an Arduino project List of parts Circuit schematics I suck at soldering Box it up and deploy it Project page For whatever sordid reason you&amp;rsquo;re looking into replicating this project, you can find all documents and code here Poor man&amp;rsquo;s indoor pool Link to heading So, my house has a basement. And where I live? It rains. Actually, when it rains, it pours, and when that happens, well, my basement apparently moonlights as an indoor swimming pool.</description>
+    </item>
+    
+    <item>
+      <title>Everything Is A File</title>
+      <link>https://davidjosearaujo.github.io/posts/02-everything-is-a-file/</link>
+      <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/posts/02-everything-is-a-file/</guid>
+      <description>Table of contents What is a file? Is my red blue for you, or my green your green, too? What types of files are there? Why should I care? Keep exploring What is a file? Link to heading Files, everything is a file! You may have heard this phrase in relation to Linux. It’s quite popular among Linux enthusiasts, but beyond being a catchy sentence, what does it actually mean?</description>
+    </item>
+    
+    <item>
+      <title>Safety Glasses First</title>
+      <link>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</link>
+      <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</guid>
+      <description>Table of contents Strong roots Vitualization is the name of the game Touch it with a stick Clean up and bleach Have Fun! I&amp;rsquo;m paranoid about safety.
+As much as I love getting my hands on that new, shiny, (un)known malicious application or scratching that itch of clicking on those sketchy phishing emails I tell myself only idiots click on, the one thing I love more is knowing that after I get bored doing it, my machine will not be infected and that little voice in my head won&amp;rsquo;t be telling me that I need to, again, nuke my disk and re-install my OS.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://davidjosearaujo.github.io/posts/00-hello-world/</link>
+      <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/posts/00-hello-world/</guid>
+      <description>Here we go&amp;hellip;
+If you&amp;rsquo;re reading this, it&amp;rsquo;s probably because you either follow me closely (which is a bit concerning), stumbled upon it randomly (what were you even searching for?), or I did something so incredible that you think everything I write is pure gold and MUST be read. Well, if that&amp;rsquo;s the case, let me burst your bubble: this post isn&amp;rsquo;t anything special.
+Honestly, I don&amp;rsquo;t know why I&amp;rsquo;m starting this blog or if this will be the first and last post.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://davidjosearaujo.github.io/about/</link>
+      <pubDate>Fri, 01 Nov 2024 23:16:42 +0000</pubDate>
+      
+      <guid>https://davidjosearaujo.github.io/about/</guid>
+      <description>I’ve been passionate about technology since I was young and am now pursuing a Master’s in Cybersecurity at the University of Aveiro. My main interests are in software development, network security, and malware analysis.
+My research started with Software Defined Networks during a Graduate Research Scholarship. Currently, I’m working on improving authentication and authorization for legacy non-5G devices in 5G networks.
+When I’m not working, I’m either brainstorming new projects, firefighting, or trail running—always staying focused and ready for the next challenge.</description>
+    </item>
+    
+  </channel>
+</rss>

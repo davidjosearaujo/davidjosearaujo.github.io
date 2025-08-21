@@ -1,0 +1,27 @@
+{{ partial "head/meta-tags.html" . }}
+
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
+{{ if .Permalink }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{ end }}
+
+{{ partialCached "head/theme-styles.html" . }}
+
+{{ partialCached "head/color-scheme.html" . }}
+
+{{ partialCached "head/custom-styles.html" . }}
+
+{{ partialCached "head/custom-icons.html" . }}
+
+{{ partial "head/alternative-output-formats.html" . }}
+
+{{ if .IsHome }}{{ partial "head/hugo-generator.html" . }}{{ end }}
+
+{{ partial "head/extensions.html" . }}
+
+{{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
