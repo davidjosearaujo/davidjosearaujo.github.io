@@ -1,0 +1,5 @@
+/electronics
+/file-system
+/home
+/home-server
+/malware-analysis
