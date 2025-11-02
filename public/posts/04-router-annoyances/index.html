@@ -16,16 +16,23 @@
 <meta name="description" content="My home router annoying amnesia">
 <meta name="keywords" content="portfolio,developer,personal,blog">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Router Annoyances"/>
-<meta name="twitter:description" content="My home router annoying amnesia"/>
 
-<meta property="og:title" content="Router Annoyances" />
-<meta property="og:description" content="My home router annoying amnesia" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidjosearaujo.github.io/posts/04-router-annoyances/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-07-19T16:42:53+01:00" />
-<meta property="article:modified_time" content="2025-07-19T16:42:53+01:00" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Router Annoyances">
+  <meta name="twitter:description" content="My home router annoying amnesia">
+
+<meta property="og:url" content="https://davidjosearaujo.github.io/posts/04-router-annoyances/">
+  <meta property="og:site_name" content="David Araújo">
+  <meta property="og:title" content="Router Annoyances">
+  <meta property="og:description" content="My home router annoying amnesia">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-19T16:42:53+01:00">
+    <meta property="article:modified_time" content="2025-07-19T16:42:53+01:00">
+    <meta property="article:tag" content="Networking">
+    <meta property="article:tag" content="Reverse Engineering">
+    <meta property="article:tag" content="Home Server">
 
 
 
@@ -155,20 +162,20 @@
 
           <div class="categories">
   <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/home-server/">/home-server</a></div>
+    <a href="/categories/home-server/">/Home-Server</a></div>
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/networking/">networking</a>
+      <a href="/tags/networking/">Networking</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/reverse-engineering/">reverse engineering</a>
+      <a href="/tags/reverse-engineering/">Reverse Engineering</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/home-server/">home server</a>
+      <a href="/tags/home-server/">Home Server</a>
     </span></div>
 
         </div>
@@ -218,7 +225,7 @@
 </h1>
 <p>You can probably figure out by now that this little annoyance was the problem I set out to resolve in this post. How could I make this system more resilient, without, you know, throwing my router out the window?</p>
 <p>The first question I had was the obvious one: <strong>why does the router do this?</strong></p>
-<figure><img src="/posts/04-router-annoyances/router-system-settings.png" height="400vw"/>
+<figure><img src="/posts/04-router-annoyances/router-system-settings.png" height="400vw">
 </figure>
 
 <p>From the admin panel of my router, I found this delightful set of options. It&rsquo;s pretty obvious that the problematic one is the &ldquo;scheduled restart,&rdquo; but what I still don&rsquo;t get is why it erases some configurations but not others. For that, I&rsquo;m afraid, I still don&rsquo;t have an answer. The mystery continues!</p>
@@ -235,15 +242,15 @@
 <p>So, I didn&rsquo;t really know how to do it, I just knew that I had to find a way of interacting with the router programmatically. In these cases, I tend to just go for the worst-case scenario, thinking I&rsquo;ll have to scrape the admin page, figure out how to interact with it, and really over-engineer the crap out of it!</p>
 <p>Luckily, this time I was smarter than usual. <strong>The first thing I did, like any good reconnaissance operative, I opened OWASP ZAP for proxying and then opened up the page on my browser</strong>, just so I could see what would happen when I logged into the admin panel.</p>
 <p>And then, the most wonderful thing happened. To my surprise, without interacting with the page at all, a few api/ endpoints started showing up&hellip;</p>
-<figure><img src="/posts/04-router-annoyances/owasp-zap-captures-api-endpoints.png" height="400vw"/>
+<figure><img src="/posts/04-router-annoyances/owasp-zap-captures-api-endpoints.png" height="400vw">
 </figure>
 
 <p><strong>Could it be? Could it be that this unassuming, crappy-looking piece of ISP junk has a few tricks up its sleeve in the form of a REST API I didn&rsquo;t know about? Would this turn out to be easier and even more awesome than I anticipated?</strong></p>
-<figure><img src="/posts/04-router-annoyances/interesting.gif" height="300vw"/>
+<figure><img src="/posts/04-router-annoyances/interesting.gif" height="300vw">
 </figure>
 
 <p>Well then, if this is to be true, the first step was to figure out what requests were involved for authentication. For this, I just authenticated manually and captured the following POST requests.</p>
-<figure><img src="/posts/04-router-annoyances/authentication-post-requests.png" height="150vw"/>
+<figure><img src="/posts/04-router-annoyances/authentication-post-requests.png" height="150vw">
 </figure>
 
 <p>This is quite interesting, we get two requests:</p>
@@ -306,7 +313,7 @@ Content-Length: 807
 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;&lt;response&gt;&lt;rsan&gt;c375131fe95fb28f76b5963efb7d7fbf5873d37fcc9c7a5a04681868192ce20bdd863c6c79d21f54666053e2e13e610df78499de15ed0308349f373387df7cc0914c56e080674165a0279432ce697489392c27d7bef7a8e1c7d86276c86ada912f6e9b862732c61194c14e05873535b32dea7e72c56254ca99e63a940c4738c5f49e67745a890d0f2fba3574be35519a5e12dbf7b3434bec2dec7ec88113435ee01a2a51e6824e9f2d4ab160d0e0b3481d963ba1aea9374c7a00f80bcdf43abce979e1acef56def3d5e99c89c5a24294236280a1116b50875d9e6453bc1e244299335713435dffce1efda59b2a4bb768a1da7d6087abc32cbd1148b18c942293&lt;/rsan&gt;&lt;rsae&gt;010001&lt;/rsae&gt;&lt;serversignature&gt;496eccbbe127b1ba31161ab8f6a1e7cfc28ef431b9b8b2aecc1eb962fc7c54e1&lt;/serversignature&gt;&lt;rsapubkeysignature&gt;0e01d0cd60984c28f9c9596293b9709e5b3f2c454bb9c54e01dd46d8ef1983ca&lt;/rsapubkeysignature&gt;&lt;/response&gt;
 </code></pre><p>Once this is received, there is not much to it really. It will calculate the server proof and compare it with the server signature it received. If it matches up, then it calculates a server key, and with it a public key signature, and also compares it to the RSA public key signature it received. If everything matches, it ensures mutual authentication.</p>
 <p>Now, what also must be noticed, is that all of these calculations rely on the <code>CryptoJS.SCRAM()</code> object functions, so we need to review them. These are located in another file called <em>libjquery.js</em>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>(<span style="color:#ff7b72">function</span> () {
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>(<span style="color:#ff7b72">function</span> () {
 </span></span><span style="display:flex;"><span>    ...
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">var</span> SHA2 <span style="color:#ff7b72;font-weight:bold">=</span> C_algo.SHA256;
@@ -364,7 +371,7 @@ Content-Length: 807
 </span></span></code></pre></div><p><strong>Okay, this is important because we can see how every function operates, and we will need this information when we try to replicate it.</strong></p>
 <p>The only thing missing from all of what we&rsquo;ve seen is knowing <strong>where those header flags with weird values are</strong>!</p>
 <p>Within this <code>login()</code> function, however, there is nothing regarding headers apart from the variable <code>g_requestVerificationToken</code> being verified. But what is also obvious is that I don&rsquo;t see any AJAX calls directly here; all I see are these <code>saveAjaxData</code> and <code>getAjaxData</code> functions. Let&rsquo;s go see how they are creating the requests.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> saveAjaxData(urlstr, xmlDate, callback_func, options) {
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> saveAjaxData(urlstr, xmlDate, callback_func, options) {
 </span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">var</span> myurl <span style="color:#ff7b72;font-weight:bold">=</span> AJAX_HEADER <span style="color:#ff7b72;font-weight:bold">+</span> urlstr <span style="color:#ff7b72;font-weight:bold">+</span> AJAX_TAIL;
 </span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">var</span> isAsync <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">true</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">var</span> nTimeout <span style="color:#ff7b72;font-weight:bold">=</span> AJAX_TIMEOUT;
@@ -523,6 +530,9 @@ Content-Length: 807
 
 
   
+  
+
+
 
   
 

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>safety on David Araújo</title>
+    <title>Safety on David Araújo</title>
     <link>https://davidjosearaujo.github.io/tags/safety/</link>
-    <description>Recent content in safety on David Araújo</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Safety on David Araújo</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Nov 2024 11:51:38 +0000</lastBuildDate><atom:link href="https://davidjosearaujo.github.io/tags/safety/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Nov 2024 11:51:38 +0000</lastBuildDate>
+    <atom:link href="https://davidjosearaujo.github.io/tags/safety/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Safety Glasses First</title>
       <link>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</guid>
-      <description>Table of contents Strong roots Vitualization is the name of the game Touch it with a stick Clean up and bleach Have Fun! I&amp;rsquo;m paranoid about safety.
-As much as I love getting my hands on that new, shiny, (un)known malicious application or scratching that itch of clicking on those sketchy phishing emails I tell myself only idiots click on, the one thing I love more is knowing that after I get bored doing it, my machine will not be infected and that little voice in my head won&amp;rsquo;t be telling me that I need to, again, nuke my disk and re-install my OS.</description>
+      <description>Table of contents Strong roots Vitualization is the name of the game Touch it with a stick Clean up and bleach Have Fun! I&amp;rsquo;m paranoid about safety.&#xA;As much as I love getting my hands on that new, shiny, (un)known malicious application or scratching that itch of clicking on those sketchy phishing emails I tell myself only idiots click on, the one thing I love more is knowing that after I get bored doing it, my machine will not be infected and that little voice in my head won&amp;rsquo;t be telling me that I need to, again, nuke my disk and re-install my OS.</description>
     </item>
-    
   </channel>
 </rss>

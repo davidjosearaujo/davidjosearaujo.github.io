@@ -4,53 +4,44 @@
     <title>Categories on David Araújo</title>
     <link>https://davidjosearaujo.github.io/categories/</link>
     <description>Recent content in Categories on David Araújo</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Jul 2025 16:42:53 +0100</lastBuildDate><atom:link href="https://davidjosearaujo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Jul 2025 16:42:53 +0100</lastBuildDate>
+    <atom:link href="https://davidjosearaujo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>/home-server</title>
+      <title>/Home-Server</title>
       <link>https://davidjosearaujo.github.io/categories/home-server/</link>
       <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/categories/home-server/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>/electronics</title>
+      <title>/Electronics</title>
       <link>https://davidjosearaujo.github.io/categories/electronics/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/categories/electronics/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>/file-system</title>
+      <title>/File-System</title>
       <link>https://davidjosearaujo.github.io/categories/file-system/</link>
       <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/categories/file-system/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>/malware-analysis</title>
+      <title>/Malware-Analysis</title>
       <link>https://davidjosearaujo.github.io/categories/malware-analysis/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/categories/malware-analysis/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>/home</title>
+      <title>/Home</title>
       <link>https://davidjosearaujo.github.io/categories/home/</link>
       <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
-      
       <guid>https://davidjosearaujo.github.io/categories/home/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

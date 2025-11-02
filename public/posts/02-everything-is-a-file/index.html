@@ -16,16 +16,26 @@
 <meta name="description" content="When you don&#39;t know what to do, just remember: _everything is a file_">
 <meta name="keywords" content="portfolio,developer,personal,blog">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Everything Is A File"/>
-<meta name="twitter:description" content="When you don&#39;t know what to do, just remember: _everything is a file_"/>
 
-<meta property="og:title" content="Everything Is A File" />
-<meta property="og:description" content="When you don&#39;t know what to do, just remember: _everything is a file_" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://davidjosearaujo.github.io/posts/02-everything-is-a-file/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-02-07T16:57:16+00:00" />
-<meta property="article:modified_time" content="2025-02-07T16:57:16+00:00" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Everything Is A File">
+  <meta name="twitter:description" content="When you don&#39;t know what to do, just remember: _everything is a file_">
+
+<meta property="og:url" content="https://davidjosearaujo.github.io/posts/02-everything-is-a-file/">
+  <meta property="og:site_name" content="David Araújo">
+  <meta property="og:title" content="Everything Is A File">
+  <meta property="og:description" content="When you don&#39;t know what to do, just remember: _everything is a file_">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-07T16:57:16+00:00">
+    <meta property="article:modified_time" content="2025-02-07T16:57:16+00:00">
+    <meta property="article:tag" content="Research">
+    <meta property="article:tag" content="Forensics">
+    <meta property="article:tag" content="Exploitation">
+    <meta property="article:tag" content="Malware Analysis">
+    <meta property="article:tag" content="Hacking">
+    <meta property="article:tag" content="Reverse Engineering">
 
 
 
@@ -155,32 +165,32 @@
 
           <div class="categories">
   <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/file-system/">/file-system</a></div>
+    <a href="/categories/file-system/">/File-System</a></div>
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
     <span class="tag">
-      <a href="/tags/research/">research</a>
+      <a href="/tags/research/">Research</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/forensics/">forensics</a>
+      <a href="/tags/forensics/">Forensics</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/exploitation/">exploitation</a>
+      <a href="/tags/exploitation/">Exploitation</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/malware-analysis/">malware analysis</a>
+      <a href="/tags/malware-analysis/">Malware Analysis</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/hacking/">hacking</a>
+      <a href="/tags/hacking/">Hacking</a>
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/tags/reverse-engineering/">reverse engineering</a>
+      <a href="/tags/reverse-engineering/">Reverse Engineering</a>
     </span></div>
 
         </div>
@@ -264,7 +274,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <p>Besides being a cool verse and a deep philosophical question, it&rsquo;s also something we need to ask about files: <strong>Does the OS see files the same way I do?</strong></p>
 <p>As for the colors, I have absolutely no idea, but when it comes to files, the answer is <strong>no</strong>. For the OS, a file is represented as an <em><strong>inode</strong></em>, a structure that holds metadata about the file. This includes the <strong>creation date, last update date, ownership, permissions, size, and most importantly, it contains a pointer to the memory block</strong> where the file&rsquo;s actual data is stored.</p>
 <p>To see all the information stored in an inode (and more), you can simply use the command <code>ls -il</code>. Let&rsquo;s try it!</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@00cd6cd99d6f:/var/log$ ls -il
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@00cd6cd99d6f:/var/log$ ls -il
 </span></span><span style="display:flex;"><span>total <span style="color:#a5d6ff">1824</span>
 </span></span><span style="display:flex;"><span><span style="color:#a5d6ff">37128568</span> drwxr-xr-x <span style="color:#a5d6ff">4</span> remnux     remnux             <span style="color:#a5d6ff">4096</span> Mar <span style="color:#a5d6ff">10</span>  <span style="color:#a5d6ff">2023</span> networkminer
 </span></span></code></pre></div><p>Let&rsquo;s go through what e see here from left to right:</p>
@@ -306,7 +316,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <li>And the name of the file (which we already know it&rsquo;s not in the <em>inode</em>)</li>
 </ul>
 <p>For more information about a file, you can also use the <code>stat</code> command, which will give you details like when the file was last accessed, modified, and created, its IO Block, among other things.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:/var/log$ stat alternatives.log 
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:/var/log$ stat alternatives.log 
 </span></span><span style="display:flex;"><span>  File: alternatives.log
 </span></span><span style="display:flex;"><span>  Size: <span style="color:#a5d6ff">63157</span>     	Blocks: <span style="color:#a5d6ff">128</span>        IO Block: <span style="color:#a5d6ff">4096</span>   regular file
 </span></span><span style="display:flex;"><span>Device: 32h/50d	Inode: <span style="color:#a5d6ff">37128551</span>    Links: <span style="color:#a5d6ff">1</span>
@@ -334,10 +344,10 @@ Could it be true we see differing hues?&rdquo;<br>
 <p>These are the &ldquo;common&rdquo; files that you typically think of as quintessential files. These can be anything from scripts, images, videos, audios, compressed folders (zip, 7z, &hellip;), documents, program-specific-format files like XML, DOCX, PDF, and many others.</p>
 <p>Because files can be so many things and hold so many types of different information depending on their use, Unix does not impose or provide any specific internal structure for this regular file type; this is entirely up to the program using them.</p>
 <p>As we discussed before, regular files are identified by a <strong>-</strong>, as we can see in the example below as the first character.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:/var/log$ ls -l
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:/var/log$ ls -l
 </span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#a5d6ff">1</span> root       root              <span style="color:#a5d6ff">63157</span> Mar <span style="color:#a5d6ff">10</span>  <span style="color:#a5d6ff">2023</span> alternatives.log
 </span></span></code></pre></div><p>But if you want to know what a file is, well, although there is no imposed structure, there are always conventions, standards, and programs that are so universally used that even if you don&rsquo;t recognize it (or it is <strong>hidden from you</strong>!!), the <code>file</code> command will usually be able to tell you what type of file it is.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:/var/log$ file alternatives.log 
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:/var/log$ file alternatives.log 
 </span></span><span style="display:flex;"><span>alternatives.log: ASCII text, with very long lines
 </span></span></code></pre></div><p>This works because of something we call <em>&ldquo;magic numbers&rdquo;</em> or more appropriately, <a href="https://en.wikipedia.org/wiki/File_format#Magic_number"  class="external-link" target="_blank" rel="noopener">file signature</a>, which are unique sequences of bytes at the beginning of a file that indicate the file format. The <code>file</code> command reads these magic numbers and compares them against a database to determine the file type. This database is typically found in <code>/etc/magic</code> or <code>/usr/share/file/magic</code>.</p>
 <blockquote>
@@ -367,15 +377,15 @@ Could it be true we see differing hues?&rdquo;<br>
 <p>We have hard links, but we also have <em><strong>symbolic links</strong></em> (also called <em>soft</em> links), and it is nothing but <strong>a reference to another file</strong>.</p>
 <p>But what is the difference, you ask? Well, first of all, <strong>a symbolic link is a file in itself</strong> and thus it holds information, <strong>unlike a hard link</strong>. This file holds a textual representation of the <strong>file&rsquo;s path</strong> it references.</p>
 <p>Unlike hard links that tie a file&rsquo;s name to its <em>inode</em> number, the <strong>soft link is a link to the file name</strong>, which is then linked to the <em>inode</em> via a hard link. Because of this, if you delete or move the original file, the <strong>symbolic link becomes useless (dangling)</strong> as it is pointing to a path that now has no file.</p>
-<figure><img src="/posts/02-everything-is-a-file/lost-on-links.gif" height="250vw"/>
+<figure><img src="/posts/02-everything-is-a-file/lost-on-links.gif" height="250vw">
 </figure>
 
 <p>Yeah&hellip; confusing&hellip; just look at the image!</p>
-<figure><img src="/posts/02-everything-is-a-file/hard-vs-soft.png" height="300vw"/>
+<figure><img src="/posts/02-everything-is-a-file/hard-vs-soft.png" height="300vw">
 </figure>
 
 <p>Turning back to the shell, symbolic links are denoted by a <code>l</code> character, and depending on the OS you&rsquo;re running, some have a handy representation showing you which file they are referencing.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:~$ touch file-with-a-name.txt
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@25bdfcf5df91:~$ touch file-with-a-name.txt
 </span></span><span style="display:flex;"><span>remnux@25bdfcf5df91:~$ ln -s ./file-with-a-name-txt my-file-via-another-file.txt
 </span></span><span style="display:flex;"><span>remnux@25bdfcf5df91:~$ ls -il
 </span></span><span style="display:flex;"><span>total <span style="color:#a5d6ff">0</span>
@@ -406,7 +416,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <ol>
 <li>First we create the file</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# mkfifo pipe
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# mkfifo pipe
 </span></span><span style="display:flex;"><span>root@1f587f78be08:/var/log# ls -il
 </span></span><span style="display:flex;"><span>total <span style="color:#a5d6ff">1824</span>
 </span></span><span style="display:flex;"><span>...
@@ -415,16 +425,16 @@ Could it be true we see differing hues?&rdquo;<br>
 </span></span></code></pre></div><ol start="2">
 <li>Then we need to execute something that outputs a stream of data, like the <code>ls</code> command. But remember, named pipes are blocking, so you need to push it to the background; otherwise, you will be stuck until another process (like a <code>cat pipe</code> on another terminal) reads the pipe.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# ls &gt; pipe &amp;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# ls &gt; pipe &amp;
 </span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">[</span>1<span style="color:#ff7b72;font-weight:bold">]</span> <span style="color:#a5d6ff">37</span>
 </span></span></code></pre></div><ol start="3">
 <li>Now that we have the pipe as being &ldquo;filled&rdquo; with data on the &ldquo;writing side&rdquo;, we need to read it. But once again, remember once we open it for reading, it will block until something is written on the other side! You may not notice this as a problem if what is being written is from an &ldquo;endless&rdquo; source, like a ping or <code>/dev/urandom</code>, but if it&rsquo;s not and you happen to try to read it when there&rsquo;s nothing more to be written on the other side, you&rsquo;ll be stuck in a blocked process. One way to avoid this is to direct the pipe read to a file descriptor which we can then read without getting blocked.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# exec 3&lt; pipe
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# exec 3&lt; pipe
 </span></span></code></pre></div><ol start="4">
 <li>Now, you can just read the file descriptor!</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# read -ru <span style="color:#a5d6ff">3</span> abc
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@1f587f78be08:/var/log# read -ru <span style="color:#a5d6ff">3</span> abc
 </span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">[</span>1<span style="color:#ff7b72;font-weight:bold">]</span>+  Done                    ls --color<span style="color:#ff7b72;font-weight:bold">=</span>auto &gt; pipe
 </span></span><span style="display:flex;"><span>root@1f587f78be08:/var/log# echo <span style="color:#79c0ff">$abc</span>
 </span></span><span style="display:flex;"><span>alternatives.log
@@ -433,7 +443,7 @@ Could it be true we see differing hues?&rdquo;<br>
 </span></span><span style="display:flex;"><span>root@1f587f78be08:/var/log# read -ru <span style="color:#a5d6ff">3</span> abc <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> echo <span style="color:#79c0ff">$abc</span>
 </span></span><span style="display:flex;"><span>bootstrap.log
 </span></span><span style="display:flex;"><span>...
-</span></span></code></pre></div><figure><img src="/posts/02-everything-is-a-file/pipes-are-special.gif" height="300vw"/>
+</span></span></code></pre></div><figure><img src="/posts/02-everything-is-a-file/pipes-are-special.gif" height="300vw">
 </figure>
 
 <blockquote>
@@ -451,7 +461,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <p>Sockets are identified by an <code>s</code> at the beginning of the mode string when listed in the file system.</p>
 <p>So far, we&rsquo;ve covered creating various file types, but sockets are a bit different. Unlike regular files, you can&rsquo;t just create a socket and leave it sitting there — it needs to be bound to something before it can be used.</p>
 <p>You could create a socket file with Python, like you see bellow.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@31e1f2a4f25a:~$ python -c <span style="color:#a5d6ff">&#34;import socket; sock = socket.socket(socket.AF_UNIX); sock.bind(&#39;./socket.sock&#39;)&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@31e1f2a4f25a:~$ python -c <span style="color:#a5d6ff">&#34;import socket; sock = socket.socket(socket.AF_UNIX); sock.bind(&#39;./socket.sock&#39;)&#34;</span>
 </span></span><span style="display:flex;"><span>remnux@31e1f2a4f25a:~$ ls -il
 </span></span><span style="display:flex;"><span>total <span style="color:#a5d6ff">0</span>
 </span></span><span style="display:flex;"><span><span style="color:#a5d6ff">36729100</span> srwxr-xr-x <span style="color:#a5d6ff">1</span> remnux remnux <span style="color:#a5d6ff">0</span> Feb  <span style="color:#a5d6ff">7</span> 09:06 socket.sock
@@ -459,32 +469,32 @@ Could it be true we see differing hues?&rdquo;<br>
 <ol>
 <li>In the first terminal, start <code>netcat</code> to open a socket and be able to see incoming messages.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ nc -lk -p <span style="color:#a5d6ff">9991</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ nc -lk -p <span style="color:#a5d6ff">9991</span>
 </span></span></code></pre></div><ol start="2">
 <li>Now, on the second terminal, let&rsquo;s bind a new file descriptor to that socket.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ exec 3&lt;&gt;/dev/tcp/127.0.0.1/9991
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ exec 3&lt;&gt;/dev/tcp/127.0.0.1/9991
 </span></span></code></pre></div><ol start="3">
 <li>Still from this second terminal, send a message to the file descriptor.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ echo <span style="color:#a5d6ff">&#34;Hello, its me...&#34;</span> &gt;&amp;<span style="color:#a5d6ff">3</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ echo <span style="color:#a5d6ff">&#34;Hello, its me...&#34;</span> &gt;&amp;<span style="color:#a5d6ff">3</span>
 </span></span></code></pre></div><ol start="4">
 <li>If you now return to the first terminal, you&rsquo;ll see that you&rsquo;ve received it.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ nc -lk -p <span style="color:#a5d6ff">9991</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ nc -lk -p <span style="color:#a5d6ff">9991</span>
 </span></span><span style="display:flex;"><span>Hello, its me...
 </span></span></code></pre></div><ol start="5">
 <li>But you can also send! Remember, sockets are bidirectional, so still from the first terminal, respond to Adele!</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ nc -lk -p <span style="color:#a5d6ff">9991</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ nc -lk -p <span style="color:#a5d6ff">9991</span>
 </span></span><span style="display:flex;"><span>Hello, its me...
 </span></span><span style="display:flex;"><span>Hi darling
 </span></span></code></pre></div><ol start="6">
 <li>Adele on the second terminal will be able to see that you&rsquo;re not ghosting her!</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ cat &lt;&amp;<span style="color:#a5d6ff">3</span> &amp;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@129708740d8d:~$ cat &lt;&amp;<span style="color:#a5d6ff">3</span> &amp;
 </span></span><span style="display:flex;"><span>Hi darling
-</span></span></code></pre></div><figure><img src="/posts/02-everything-is-a-file/adele-is-sad.gif" height="300vw"/>
+</span></span></code></pre></div><figure><img src="/posts/02-everything-is-a-file/adele-is-sad.gif" height="300vw">
 </figure>
 
 <h2 id="device-file">
@@ -507,7 +517,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <li>A <strong>block device</strong> is marked with a <code>b</code>.</li>
 </ul>
 <p>One common place to find character device files is in <code>/dev</code>. And by the way, remember that <code>stdin</code> is a file? Have you tried reading from it?</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@8e51daf087af:~$ ls -il /dev/
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@8e51daf087af:~$ ls -il /dev/
 </span></span><span style="display:flex;"><span>total <span style="color:#a5d6ff">0</span>
 </span></span><span style="display:flex;"><span>...
 </span></span><span style="display:flex;"><span><span style="color:#a5d6ff">13</span> lrwxrwxrwx <span style="color:#a5d6ff">1</span> root   root     <span style="color:#a5d6ff">15</span> Feb  <span style="color:#a5d6ff">7</span> 10:17 stdin -&gt; /proc/self/fd/0
@@ -524,7 +534,7 @@ Could it be true we see differing hues?&rdquo;<br>
 </span></span><span style="display:flex;"><span>hello
 </span></span></code></pre></div><p>It’s funny how everything you type just shows up again!</p>
 <p>To see block devices, you probably won’t find any examples inside a container, but if you go to your host system, you can easily spot them. For example, here’s my <strong>nvme</strong> drive.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>me@host:~$ ls -il /dev
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>me@host:~$ ls -il /dev
 </span></span><span style="display:flex;"><span><span style="color:#a5d6ff">217</span> brw-rw----   <span style="color:#a5d6ff">1</span> root            disk      259,     <span style="color:#a5d6ff">0</span> Feb  <span style="color:#a5d6ff">7</span> 08:41 nvme0n1
 </span></span></code></pre></div><h1 id="why-should-i-care">
   Why should I care?
@@ -533,13 +543,13 @@ Could it be true we see differing hues?&rdquo;<br>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<figure><img src="/posts/02-everything-is-a-file/i-dont-get-it.gif" height="250vw"/>
+<figure><img src="/posts/02-everything-is-a-file/i-dont-get-it.gif" height="250vw">
 </figure>
 
 <p>Well, this is incredibly important because of what we talked about at the beginning about notebooks: <strong>you can open them and read them</strong>. This means that if you want to know what something is, what it does, or what permissions it has, you can just open it and read it, or read something that is dealing with it.</p>
 <p>Like processes! Although a process is not technically a file, it is represented through the <code>/proc</code> filesystem, which treats processes as if they were files.</p>
 <p>For example, you can read the <code>/proc/[PID]/status</code> file to see the process metadata.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@e226bb7dc20e:~$ cat /proc/19/status 
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>remnux@e226bb7dc20e:~$ cat /proc/19/status 
 </span></span><span style="display:flex;"><span>Name:	ping
 </span></span><span style="display:flex;"><span>Umask:	<span style="color:#a5d6ff">0022</span>
 </span></span><span style="display:flex;"><span>State:	S <span style="color:#ff7b72;font-weight:bold">(</span>sleeping<span style="color:#ff7b72;font-weight:bold">)</span>
@@ -608,7 +618,7 @@ Could it be true we see differing hues?&rdquo;<br>
 <p>Alright, let’s wrap this up with a little secret: <strong>understanding Linux files isn’t just a technical skill, it’s your hidden superpower</strong>. Whether you&rsquo;re diving into forensics or hunting down malware, knowing how files work and how to spot the weird stuff can be the difference between catching a criminal and being left in the dark. From symbolic links that can confuse the heck out of you to FIFOs doing their own little dance in the background, the file system is full of sneaky tricks.</p>
 <p>By getting comfy with how files interact with the system, you’ll be ready to uncover those oddball patterns and potential threats that could be lurking in the shadows. It’s like learning the secret language of Linux.</p>
 <p>So, the next time you’re diving into a system and looking for those hidden clues, remember: <strong>if everything is a file, just READ IT!</strong></p>
-<figure><img src="/posts/02-everything-is-a-file/read-it.gif" height="300vw"/>
+<figure><img src="/posts/02-everything-is-a-file/read-it.gif" height="300vw">
 </figure>
 
 
@@ -658,6 +668,9 @@ Could it be true we see differing hues?&rdquo;<br>
 
 
   
+  
+
+
 
   
 
