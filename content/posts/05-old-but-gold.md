@@ -32,3 +32,5 @@ Linux through out its history as collected a huge amount of this amazing tools, 
 And that it way they are amazing.
 
 When you want to read the content of the file you just "`cat` it". You don't care about the format of the encoding of indentation, you just look inside, and you don't need a space suit for the first floor!
+
+Soo, before continuing, I must tell you the context of this post. I recently finished college (hurray for me!) and I started working for Cognizant doing Android Reverse Engineering for Google, and 
