@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Old But Gold · David Araújo
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="David Araújo">
+<meta name="description" content="More than words">
+<meta name="keywords" content="portfolio,developer,personal,blog">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Old But Gold">
+  <meta name="twitter:description" content="More than words">
+
+<meta property="og:url" content="https://davidjosearaujo.github.io/posts/05-old-but-gold/">
+  <meta property="og:site_name" content="David Araújo">
+  <meta property="og:title" content="Old But Gold">
+  <meta property="og:description" content="More than words">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-02T12:03:09+00:00">
+    <meta property="article:modified_time" content="2025-11-02T12:03:09+00:00">
+    <meta property="article:tag" content="Forensics">
+    <meta property="article:tag" content="Malware Analysis">
+    <meta property="article:tag" content="Reverse Engineering">
+    <meta property="article:tag" content="Tools">
+
+
+
+
+
+
+<link rel="canonical" href="https://davidjosearaujo.github.io/posts/05-old-but-gold/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.65236a6d834b26194eed04a2a3b45e44d9194ef9e620253705d4bef03bd7ef81.css" integrity="sha256-ZSNqbYNLJhlO7QSio7ReRNkZTvnmICU3BdS&#43;8DvX74E=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://davidjosearaujo.github.io/css/pagefind.css">
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      David Araújo
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About Me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post" data-pagefind-body>
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://davidjosearaujo.github.io/posts/05-old-but-gold/">
+              Old But Gold
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-11-02T12:03:09Z">
+                November 2, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/david-ara%C3%BAjo/">David Araújo</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/tools/">/Tools</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/forensics/">Forensics</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/malware-analysis/">Malware Analysis</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/reverse-engineering/">Reverse Engineering</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/tools/">Tools</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <div class="notice info">
+  <div class="notice-title">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>Table of contents
+  </div>
+  <div class="notice-content"><ol>
+<li><a href="#amazing-is-simple" >Amazing is simple</a></li>
+<li><a href="#simple-isnt-basic" >Simple isn&rsquo;t basic</a></li>
+<li><a href="#limitations" >Limitations</a></li>
+<li><a href="#on-the-shoulders-of-giants" >On the shoulders of giants</a></li>
+<li><a href="#quick-and-easy" >Quick and easy</a></li>
+</ol></div>
+</div>
+
+<div class="notice tip">
+  <div class="notice-title">
+    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>Project page
+  </div>
+  <div class="notice-content">Like usual, you can find all documents and code <a href="https://github.com/davidjosearaujo/stringx"  class="external-link" target="_blank" rel="noopener">here</a></div>
+</div>
+
+<p>So, before continuing, I must tell you the context of this post. I recently finished college (hurray for me!) and I started working for Cognizant doing Android Reverse Engineering for Google. Due to that, I got a whole new appreciation for what we&rsquo;ll discussing today.</p>
+<h1 id="amazing-is-simple">
+  Amazing is simple
+  <a class="heading-link" href="#amazing-is-simple">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>The most practical tools are not complex; they are practical precisely because they are easy to use. They are there when you need them and don&rsquo;t make you question yourself about if you have the skills to use them or you&rsquo;re just a dumbass.</p>
+<p>Linux throughout its history has collected a huge amount of these amazing tools, such as <code>file</code>, <code>diff</code>, <code>grep</code>, <code>cat</code>, <code>strings</code>, and so many others. I could spend the day going through their <code>man</code> pages. Each of these is cleverly simple and limited to a specific use and purpose. Like a chef&rsquo;s knife is awesome at cutting food but terrible at, say, unscrewing a bolt, these tools don&rsquo;t do much, but what they do, they do it perfectly!</p>
+<p>And that is why they are amazing.</p>
+<p>When you want to read the content of the file, you just &ldquo;<em>cat it</em>.&rdquo; You don&rsquo;t care about the format of the encoding or indentation, you just look inside, and you don&rsquo;t need a space suit for the first floor!</p>
+<h1 id="simple-isnt-basic">
+  Simple isn&rsquo;t basic
+  <a class="heading-link" href="#simple-isnt-basic">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>When you&rsquo;re reversing malware, you expect that most tools won&rsquo;t do you much good, as the developers have gone to great lengths to obfuscate whatever it is they are trying to accomplish. Consequently, you can quickly become frustrated if you just go from tool to tool trying to magically figure it out.</p>
+<p>You can also go the opposite route and look in places like <a href="https://docs.remnux.org/"  class="external-link" target="_blank" rel="noopener">REMnux Docs</a> for the precise tool for the occasion, which is something I definitely do sometimes.</p>
+<p>This is where our lovely simple tools come in handy, especially <code>strings</code>, which I came to love even more in the past months. There is an <strong>uncontrollable truth about code</strong>: unless you are willing to write your malware in assembly, you&rsquo;ll need to place strings in it somewhere at some time, and those will never be compiled. And as such, <code>strings</code> will find and uncover them.</p>
+<p>A string, how simple, how straight forward, they can tell you soo much and it takes soo little effort to find them. That is a key concept in malware analysis and reverse engineering: <strong>don&rsquo;t underestimate your opponent but also, don&rsquo;t skip the basics</strong>. Yes some malware developers are VERY sophisticated, but most times, the best way is the easy way.</p>
+<p>This being said, <code>cat</code> is as valid as <code>hashcat</code>, <code>ZAP</code> or <code>Metasploit</code>. <strong>A simple tool is not a basic tool.</strong> Simple does not mean it does almost nothing, or that it does it in a rudimentary way. Simplicity is efficiency, and efficiency is beautiful.</p>
+<p>In that sense, there are few things as beautiful as <code>strings</code>. It just looks for sequences of bytes and sees if they fall between the limits for encoded characters. If they do, it prints them to the console. That is it!</p>
+<p>The fact is that you can obfuscate your code all you want: bytes are bytes. You can cipher them, you can encode them, but when you write them as a string in the code, they are there, and they can&rsquo;t hide from the almighty power of <code>strings</code>.</p>
+<h1 id="limitations">
+  Limitations
+  <a class="heading-link" href="#limitations">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>It can be limiting, however, and <strong>the old saying tells us that &ldquo;when you&rsquo;re a hammer, everything is a nail,&rdquo; but that isn&rsquo;t exactly correct.</strong> Why? It assumes that the only thing you can do to a nail is punch it, and thus that is the only thing a hammer can do. Well, that is like saying that since a road is to be driven on, and a car can drive on the road, then the only use for a car is to be driven on the road. <strong>This is a fallacy, as we are limiting the uses of a tool based on the idea of what we expect an object it interacts with to be or do.</strong></p>
+<p><strong>A hammer should do more than just punch, because sometimes a nail needs to be pulled instead of punched.</strong> And as such, <code>strings</code> should do more than just read, because sometimes, <strong>strings need to be filtered, decoded, deciphered, and interpreted, not just read</strong>. The key is finding a balance. Don&rsquo;t try to do everything, but also don&rsquo;t be too limited.</p>
+<p><code>strings</code> has proven to be limiting sometimes. I don&rsquo;t mind having to pipe output to <code>grep</code> in order to find a specific value, and I also don&rsquo;t mind piping that through <code>awk</code> when I need to change the printing format of that value. <strong>But once my &lsquo;pipes&rsquo; begin to look like an interminable chain of commands, that is where it becomes cumbersome, confusing, and downright tedious and prone to errors.</strong> Having to try the same commands time and time again until I find the combination is just plain time wasteful, and that I don&rsquo;t have the patience for.</p>
+<p>I know what you&rsquo;re going to say: &ldquo;<em>That sounds like a skill issue</em>&rdquo;. And it might very well be. I won&rsquo;t deny it. But whatever the reason, I do find this to be a limiting problem for my overall workflow, and so I needed a solution.</p>
+<h1 id="on-the-shoulders-of-giants">
+  On the shoulders of giants
+  <a class="heading-link" href="#on-the-shoulders-of-giants">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>I need to come up with my own version of the tool.</p>
+<p>I don&rsquo;t know who wrote the original tool, but like most things in the Unix universe, I assume it was someone with a much better grasp on what they are doing than I probably ever will, and thus, if my tool is an improvement of it, I can only claim that as a personal preference and admire the ingenious idea of the original developers who came up with the original in the first place. I bow down to you!</p>
+<p>But enough ass kissing. What do I need to improve upon really? I tried to remember what was the flow and what other tools I usually used in combination with <code>strings</code>, and that gave me a good idea of what I could add to expand and ease up the functionality of the tool.</p>
+<p>This is my list.</p>
+<ol>
+<li>If the string is there, tell me <strong>where</strong> it is. If I run the tool in a directory, I want to know to which file each string belongs, and in which file, in which line and column.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash
+</span></span><span style="display:flex;"><span>/bin/bash:7:90:C&lt;!A&amp;Y
+</span></span><span style="display:flex;"><span>/bin/bash:7:99:/lib64/ld-linux-x86-64.so.2
+</span></span><span style="display:flex;"><span>/bin/bash:9:58: <span style="color:#79c0ff">$DJ</span>
+</span></span><span style="display:flex;"><span>/bin/bash:10:40:CDDB
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="2">
+<li>Size matters. I don&rsquo;t care what you think, big strings are usually more interesting, so I want to be able to <strong>filter the results by length</strong>. I should be able to specify a minimum (<code>MIN:</code>), a maximum (<code>:MAX</code>), and something in between (<code>MIN:MAX</code>).</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash -l 10:50
+</span></span><span style="display:flex;"><span>/bin/bash:7:99:/lib64/ld-linux-x86-64.so.2
+</span></span><span style="display:flex;"><span>/bin/bash:264:49:_ITM_deregisterTMCloneTable
+</span></span><span style="display:flex;"><span>/bin/bash:264:77:__gmon_start__
+</span></span><span style="display:flex;"><span>/bin/bash:264:92:_ITM_registerTMCloneTable
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="3">
+<li>If you <em><strong>ascii</strong></em> me, UTF-8 is king, but different files use different encodings, so I want to be able to <strong>choose which encoding to use</strong> when reading.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash -e ascii
+</span></span><span style="display:flex;"><span>/bin/bash:7:90:C&lt;!A&amp;Y
+</span></span><span style="display:flex;"><span>/bin/bash:7:99:/lib64/ld-linux-x86-64.so.2
+</span></span><span style="display:flex;"><span>/bin/bash:9:58: <span style="color:#79c0ff">$DJ</span>
+</span></span><span style="display:flex;"><span>/bin/bash:10:40:CDDB
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="4">
+<li>Obfuscation is a real thing, as Base-64 or Hex are very common, so why not recursively <strong>auto-decode strings</strong> that may appear in those formats?</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ echo <span style="color:#a5d6ff">&#34;Don&#39;t look! I&#39;m a secret!&#34;</span> | base64 | base64 &gt; /tmp/file.txt
+</span></span><span style="display:flex;"><span>$ stringx -d base64 /tmp/file.txt 
+</span></span><span style="display:flex;"><span>/tmp/file.txt:1:1:Ukc5dUozUWdiRzl2YXlFZ1NTZHRJR0VnYzJWamNtVjBJUW89Cg<span style="color:#ff7b72;font-weight:bold">==</span>
+</span></span><span style="display:flex;"><span>  /tmp/file.txt-&gt;base64@0:1:1:RG9uJ3QgbG9vayEgSSdtIGEgc2VjcmV0IQo<span style="color:#ff7b72;font-weight:bold">=</span>
+</span></span><span style="display:flex;"><span>    /tmp/file.txt-&gt;base64@0-&gt;base64@0:1:1:Don<span style="color:#a5d6ff">&#39;t look! I&#39;</span>m a secret!
+</span></span></code></pre></div><ol start="5">
+<li>Perhaps the biggest issue with <code>strings</code> is that it is a &ldquo;dumb&rdquo; tool, it just tries to print everything and you end up with a lot of noise. Usually, <strong>natural languages happen to have a higher entropy</strong>, so an entropy filter could provide some noise reduction on the output.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --entropy <span style="color:#a5d6ff">1</span>
+</span></span><span style="display:flex;"><span>/bin/bash:7:90:C&lt;!A&amp;Y
+</span></span><span style="display:flex;"><span>/bin/bash:7:99:/lib64/ld-linux-x86-64.so.2
+</span></span><span style="display:flex;"><span>/bin/bash:9:58: <span style="color:#79c0ff">$DJ</span>
+</span></span><span style="display:flex;"><span>/bin/bash:10:40:CDDB
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --entropy <span style="color:#a5d6ff">4</span>
+</span></span><span style="display:flex;"><span>/bin/bash:264:19375:_rl_completion_prefix_display_length
+</span></span><span style="display:flex;"><span>/bin/bash:264:38370:stop_making_children
+</span></span><span style="display:flex;"><span>/bin/bash:264:39761:bash_groupname_completion_function
+</span></span><span style="display:flex;"><span>/bin/bash:264:40748:bash_default_completion
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="6">
+<li>Why do use <code>strings</code>? <strong>To find stuff!</strong> And I would bet that 99.9% of the times, you combine it with <code>grep</code>, right? Of course you do! So why not just have a <strong>built-in regex filter</strong> to find what you need?</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash -r <span style="color:#a5d6ff">&#34;GNU&#34;</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2562:13:<span style="color:#a5d6ff">&#39;\&#39;</span><span style="color:#f85149">&#39;</span>GNU bash, version %s-<span style="color:#ff7b72;font-weight:bold">(</span>%s<span style="color:#ff7b72;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2563:22:GNU long options:
+</span></span><span style="display:flex;"><span>/bin/bash:2589:980:GNU bash, version %s <span style="color:#ff7b72;font-weight:bold">(</span>%s<span style="color:#ff7b72;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2650:168:Usage:       %s <span style="color:#ff7b72;font-weight:bold">[</span>GNU long option<span style="color:#ff7b72;font-weight:bold">]</span> <span style="color:#ff7b72;font-weight:bold">[</span>option<span style="color:#ff7b72;font-weight:bold">]</span> ...
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="7">
+<li>What if you don&rsquo;t know what you&rsquo;re searching for? Well, <strong>you may know what you are NOT searching for</strong>, so an <strong>excluding regex filter</strong> may help you clear out the irrelevant results.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --entropy 4.1
+</span></span><span style="display:flex;"><span>/bin/bash:2650:168:Usage:       %s <span style="color:#ff7b72;font-weight:bold">[</span>GNU long option<span style="color:#ff7b72;font-weight:bold">]</span> <span style="color:#ff7b72;font-weight:bold">[</span>option<span style="color:#ff7b72;font-weight:bold">]</span> ...
+</span></span><span style="display:flex;"><span>/bin/bash:2651:1:       %s <span style="color:#ff7b72;font-weight:bold">[</span>GNU long option<span style="color:#ff7b72;font-weight:bold">]</span> <span style="color:#ff7b72;font-weight:bold">[</span>option<span style="color:#ff7b72;font-weight:bold">]</span> script-file ...
+</span></span><span style="display:flex;"><span>/bin/bash:2652:9:       -ilrsD or -c command or -O shopt_option         <span style="color:#ff7b72;font-weight:bold">(</span>invocation only<span style="color:#ff7b72;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2653:5:Type <span style="color:#a5d6ff">`</span>%s -c <span style="color:#a5d6ff">&#34;help set&#34;</span><span style="color:#f85149">&#39;</span> <span style="color:#ff7b72">for</span> more information about shell options.
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --entropy 4.1 -x <span style="color:#a5d6ff">&#34;GNU&#34;</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2652:9:       -ilrsD or -c command or -O shopt_option         <span style="color:#ff7b72;font-weight:bold">(</span>invocation only<span style="color:#ff7b72;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2653:5:Type <span style="color:#a5d6ff">`</span>%s -c <span style="color:#a5d6ff">&#34;help set&#34;</span><span style="color:#a5d6ff">&#39; for more information about shell options.
+</span></span></span><span style="display:flex;"><span><span style="color:#a5d6ff">/bin/bash:2654:7:Type `%s -c help&#39;</span> <span style="color:#ff7b72">for</span> more information about shell builtin commands.
+</span></span><span style="display:flex;"><span>/bin/bash:2655:4:Use the <span style="color:#a5d6ff">`</span>bashbug<span style="color:#f85149">&#39;</span> command to report bugs.
+</span></span><span style="display:flex;"><span>/bin/bash:2656:7:bash home page: &lt;http://www.gnu.org/software/bash&gt;
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="8">
+<li>Especially in reverse engineering, you like to search for <strong>key information</strong> that has a very <strong>specific format, like IPs, URLs, emails, and hashes</strong>, so a pre-defined list of format filters should be included.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash -f url
+</span></span><span style="display:flex;"><span>/bin/bash:2656:7:bash home page: &lt;http://www.gnu.org/software/bash&gt;
+</span></span><span style="display:flex;"><span>/bin/bash:2657:6:General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;
+</span></span><span style="display:flex;"><span>/bin/bash:2659:5375:License GPLv3+: GNU GPL version <span style="color:#a5d6ff">3</span> or later &lt;http://gnu.org/licenses/gpl.html&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash -f email
+</span></span><span style="display:flex;"><span>/bin/bash:2586:163:bash-maintainers@gnu.org
+</span></span></code></pre></div><ol start="9">
+<li>I don&rsquo;t need to scroll through the results just to see the same word printed one hundred times; I just want to know if it is there! A <strong><em>unique</em> filter can show me every different word occurrence that exists</strong>. If I want to know how many times it occurs, I&rsquo;m not going to count them; I&rsquo;ll just use the <strong><em>count</em> filter, which will also show a unique word list but with the amount of occurrences of each word</strong>.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash | wc -l
+</span></span><span style="display:flex;"><span><span style="color:#a5d6ff">12138</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --unique | wc -l
+</span></span><span style="display:flex;"><span><span style="color:#a5d6ff">7213</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --count | wc -l
+</span></span><span style="display:flex;"><span><span style="color:#a5d6ff">7213</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --count
+</span></span><span style="display:flex;"><span>    <span style="color:#a5d6ff">351</span> <span style="color:#ff7b72;font-weight:bold">[]</span>A<span style="color:#79c0ff">\A</span><span style="color:#ff7b72;font-weight:bold">]</span>A^A_
+</span></span><span style="display:flex;"><span>    <span style="color:#a5d6ff">266</span>     
+</span></span><span style="display:flex;"><span>    <span style="color:#a5d6ff">227</span> <span style="color:#ff7b72;font-weight:bold">[]</span>A<span style="color:#79c0ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#79c0ff"></span>    <span style="color:#a5d6ff">207</span> <span style="color:#ff7b72;font-weight:bold">[]</span>A<span style="color:#79c0ff">\A</span><span style="color:#ff7b72;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a5d6ff">157</span> <span style="color:#79c0ff">\$</span>HL
+</span></span><span style="display:flex;"><span>    <span style="color:#a5d6ff">126</span> AWAVAUATUSH
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="10">
+<li>Nowadays, data ingestion for automation is crucial, so an option to <strong>output the results in JSON format</strong> can be very useful when using this tool to feed data into others.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash --json
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">{</span><span style="color:#a5d6ff">&#34;column&#34;</span>:90,<span style="color:#a5d6ff">&#34;entropy&#34;</span>:2.585,<span style="color:#a5d6ff">&#34;file&#34;</span>:<span style="color:#a5d6ff">&#34;/bin/bash&#34;</span>,<span style="color:#a5d6ff">&#34;length&#34;</span>:6,<span style="color:#a5d6ff">&#34;line&#34;</span>:7,<span style="color:#a5d6ff">&#34;offset&#34;</span>:907,<span style="color:#a5d6ff">&#34;string&#34;</span>:<span style="color:#a5d6ff">&#34;C\u003c!A\u0026Y&#34;</span><span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">{</span><span style="color:#a5d6ff">&#34;column&#34;</span>:99,<span style="color:#a5d6ff">&#34;entropy&#34;</span>:3.8562,<span style="color:#a5d6ff">&#34;file&#34;</span>:<span style="color:#a5d6ff">&#34;/bin/bash&#34;</span>,<span style="color:#a5d6ff">&#34;length&#34;</span>:27,<span style="color:#a5d6ff">&#34;line&#34;</span>:7,<span style="color:#a5d6ff">&#34;offset&#34;</span>:916,<span style="color:#a5d6ff">&#34;string&#34;</span>:<span style="color:#a5d6ff">&#34;/lib64/ld-linux-x86-64.so.2&#34;</span><span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">{</span><span style="color:#a5d6ff">&#34;column&#34;</span>:58,<span style="color:#a5d6ff">&#34;entropy&#34;</span>:2,<span style="color:#a5d6ff">&#34;file&#34;</span>:<span style="color:#a5d6ff">&#34;/bin/bash&#34;</span>,<span style="color:#a5d6ff">&#34;length&#34;</span>:4,<span style="color:#a5d6ff">&#34;line&#34;</span>:9,<span style="color:#a5d6ff">&#34;offset&#34;</span>:1117,<span style="color:#a5d6ff">&#34;string&#34;</span>:<span style="color:#a5d6ff">&#34; </span><span style="color:#79c0ff">$DJ</span><span style="color:#a5d6ff">&#34;</span><span style="color:#ff7b72;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><ol start="11">
+<li>Finally, like in the use case for using the exclude option, I may not know what I&rsquo;m looking for, but I may know that it fits in a certain category or format. I may want to know if there are emails with certain domains, or URLs with certain subdomains, or mentions or usernames, among others. This is a common approach we see in active discovery techniques like <em><strong>fuzzing</strong></em> URLs, so why not apply it here? We should be able to <strong>specify a wordlist file, and get only the results that match within the target file I&rsquo;m searching</strong>.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ stringx /bin/bash -w /usr/share/seclists/Fuzzing/os-names.txt
+</span></span><span style="display:flex;"><span>/bin/bash:2562:13:<span style="color:#a5d6ff">&#39;\&#39;</span><span style="color:#f85149">&#39;</span>GNU bash, version %s-<span style="color:#ff7b72;font-weight:bold">(</span>%s<span style="color:#ff7b72;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2563:22:GNU long options:
+</span></span><span style="display:flex;"><span>/bin/bash:2589:980:GNU bash, version %s <span style="color:#ff7b72;font-weight:bold">(</span>%s<span style="color:#ff7b72;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>/bin/bash:2650:168:Usage:       %s <span style="color:#ff7b72;font-weight:bold">[</span>GNU long option<span style="color:#ff7b72;font-weight:bold">]</span> <span style="color:#ff7b72;font-weight:bold">[</span>option<span style="color:#ff7b72;font-weight:bold">]</span> ...
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><h1 id="quick-and-easy">
+  Quick and easy
+  <a class="heading-link" href="#quick-and-easy">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>This is it. The goals are clear, concise, and do not <strong>overcomplicate</strong> the tool in such a way that it becomes impractical or cumbersome to use.</p>
+<p>To accomplish this, I opted to use Go, because I love pretty much everything about it—its simplicity to code, its explicitness, its structure, and its build and runtime efficiency are also great.</p>
+<p>I decided to also try to &ldquo;collaborate&rdquo; with Gemini and see how far AI tools have progressed in writing code, and I must say I was pleasantly surprised, although still have to tweak some aspects myself. But overall, a very good experience and a good way to iterate quickly and ease up the development cycle.</p>
+<p>Ultimately, <code>strings</code> remains a classic for a reason: simplicity breeds utility. But as our tasks in reverse engineering and forensics evolve, our tools must, too. Creating <code>stringx</code> wasn&rsquo;t about replacing a giant; it was about building on its foundation to ease my own workflow, adding those necessary features like decoding and filtering right where I needed them. I hope this journey, built with the power of Go and a little help from AI, inspires you to look closer at the &ldquo;old gold&rdquo; in your toolkit and consider how you might shape it for tomorrow&rsquo;s challenges. You can check out the full source code and give <code>stringx</code> a try yourself at the link above. Happy reversing!</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2025
+     David Araújo
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

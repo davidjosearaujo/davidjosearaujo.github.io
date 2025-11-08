@@ -2,22 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://davidjosearaujo.github.io/categories/tools/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/authors/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/categories/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
     <loc>https://davidjosearaujo.github.io/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/authors/david-ara%C3%BAjo/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/forensics/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/malware-analysis/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/posts/05-old-but-gold/</loc>
     <lastmod>2025-11-02T12:03:09+00:00</lastmod>
   </url><url>
     <loc>https://davidjosearaujo.github.io/posts/</loc>
     <lastmod>2025-11-02T12:03:09+00:00</lastmod>
   </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/reverse-engineering/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/tools/</loc>
+    <lastmod>2025-11-02T12:03:09+00:00</lastmod>
+  </url><url>
     <loc>https://davidjosearaujo.github.io/categories/home-server/</loc>
-    <lastmod>2025-07-19T16:42:53+01:00</lastmod>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/authors/</loc>
-    <lastmod>2025-07-19T16:42:53+01:00</lastmod>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/categories/</loc>
-    <lastmod>2025-07-19T16:42:53+01:00</lastmod>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/authors/david-ara%C3%BAjo/</loc>
     <lastmod>2025-07-19T16:42:53+01:00</lastmod>
   </url><url>
     <loc>https://davidjosearaujo.github.io/tags/home-server/</loc>
@@ -26,13 +47,7 @@
     <loc>https://davidjosearaujo.github.io/tags/networking/</loc>
     <lastmod>2025-07-19T16:42:53+01:00</lastmod>
   </url><url>
-    <loc>https://davidjosearaujo.github.io/tags/reverse-engineering/</loc>
-    <lastmod>2025-07-19T16:42:53+01:00</lastmod>
-  </url><url>
     <loc>https://davidjosearaujo.github.io/posts/04-router-annoyances/</loc>
-    <lastmod>2025-07-19T16:42:53+01:00</lastmod>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/tags/</loc>
     <lastmod>2025-07-19T16:42:53+01:00</lastmod>
   </url><url>
     <loc>https://davidjosearaujo.github.io/categories/electronics/</loc>
@@ -65,13 +80,7 @@
     <loc>https://davidjosearaujo.github.io/tags/exploitation/</loc>
     <lastmod>2025-02-07T16:57:16+00:00</lastmod>
   </url><url>
-    <loc>https://davidjosearaujo.github.io/tags/forensics/</loc>
-    <lastmod>2025-02-07T16:57:16+00:00</lastmod>
-  </url><url>
     <loc>https://davidjosearaujo.github.io/tags/hacking/</loc>
-    <lastmod>2025-02-07T16:57:16+00:00</lastmod>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/tags/malware-analysis/</loc>
     <lastmod>2025-02-07T16:57:16+00:00</lastmod>
   </url><url>
     <loc>https://davidjosearaujo.github.io/tags/research/</loc>
@@ -90,9 +99,6 @@
     <lastmod>2024-11-16T11:51:38+00:00</lastmod>
   </url><url>
     <loc>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</loc>
-    <lastmod>2024-11-16T11:51:38+00:00</lastmod>
-  </url><url>
-    <loc>https://davidjosearaujo.github.io/tags/tools/</loc>
     <lastmod>2024-11-16T11:51:38+00:00</lastmod>
   </url><url>
     <loc>https://davidjosearaujo.github.io/categories/home/</loc>

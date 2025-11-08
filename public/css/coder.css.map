@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder.css",
-	"sourceRoot": "/home/davidjosearaujo/Documents/GitHub/davidjosearaujo.github.io",
+	"sourceRoot": "/home/davidjosearaujo/Documents/davidjosearaujo.dev",
 	"sources": [
 		"themes/hugo-coder/assets/scss/coder.scss",
 		"themes/hugo-coder/assets/scss/css/normalize.css",

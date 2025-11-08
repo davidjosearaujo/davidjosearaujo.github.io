@@ -6,8 +6,15 @@
     <description>Recent content in Reverse Engineering on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Jul 2025 16:42:53 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 02 Nov 2025 12:03:09 +0000</lastBuildDate>
     <atom:link href="https://davidjosearaujo.github.io/tags/reverse-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Old But Gold</title>
+      <link>https://davidjosearaujo.github.io/posts/05-old-but-gold/</link>
+      <pubDate>Sun, 02 Nov 2025 12:03:09 +0000</pubDate>
+      <guid>https://davidjosearaujo.github.io/posts/05-old-but-gold/</guid>
+      <description>Table of contents Amazing is simple Simple isn&amp;rsquo;t basic Limitations On the shoulders of giants Quick and easy Project page Like usual, you can find all documents and code here So, before continuing, I must tell you the context of this post. I recently finished college (hurray for me!) and I started working for Cognizant doing Android Reverse Engineering for Google. Due to that, I got a whole new appreciation for what we&amp;rsquo;ll discussing today.</description>
+    </item>
     <item>
       <title>Router Annoyances</title>
       <link>https://davidjosearaujo.github.io/posts/04-router-annoyances/</link>
