@@ -310,7 +310,7 @@ Finally, the cookie flag: we don't really need to see how the code handles it be
 
 Lets get into development!
 
-Now look, I can't be acused of prefering Python for every thing like a sucker, **but I do belive in choosing the best tool for the job**. Is this a super specifi task? Will it be efficiency constrained? No and no. Do I want to get this over with? YES!
+Now look, I can't be acused of prefering Python for every thing like a sucker, **but I do belive in choosing the best tool for the job**. Is this a super specific task? Will it be efficiency constrained? No and no. Do I want to get this over with? YES!
 
 So we've poked and prodded, and now we know how this router's brain (or lack thereof) works. The goal? To programmatically log in and tell it to behave, specifically when it comes to those pesky port-forwarding rules. Since we're dealing with a custom CHAP authentication and XML (ugh).
 
