@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2025-11-02T12:03:09Z
+date = 2025-11-09T12:03:09Z
 title = "Old But Gold"
 description = "More than words"
 slug = ""
