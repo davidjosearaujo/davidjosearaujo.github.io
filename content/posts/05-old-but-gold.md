@@ -25,7 +25,7 @@ Like usual, you can find all documents and code [here](https://github.com/davidj
 
 {{< /notice >}}
 
-So, before continuing, I must tell you the context of this post. I recently finished college (hurray for me!) and I started working for Cognizant doing Android Reverse Engineering for Google. Due to that, I got a whole new appreciation for what we'll discussing today.
+So, before continuing, I must tell you the context of this post. I recently finished college (hurray for me!) and I started working for Cognizant doing Android Reverse Engineering for Google. Due to that, I got a whole new appreciation for what we'll be discussing today.
 
 # Amazing is simple
 
