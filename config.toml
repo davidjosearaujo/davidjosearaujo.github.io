@@ -21,7 +21,7 @@ unsafe = true
 
 [params]
   author = "David Araújo"
-  info = "Cybersecurity student and researcher"
+  info = "Cybersecurity analyst and researcher"
   keywords = "portfolio,developer,personal,blog"
 
   colorScheme = "auto"
