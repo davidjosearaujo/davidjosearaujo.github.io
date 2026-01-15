@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on David Araújo</title>
-    <link>https://davidjosearaujo.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 09 Nov 2025 12:03:09 +0000</lastBuildDate>
-    <atom:link href="https://davidjosearaujo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Forensics</title>
-      <link>https://davidjosearaujo.github.io/tags/forensics/</link>
+      <link>http://localhost:1313/tags/forensics/</link>
       <pubDate>Sun, 09 Nov 2025 12:03:09 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/forensics/</guid>
+      <guid>http://localhost:1313/tags/forensics/</guid>
       <description></description>
     </item>
     <item>
       <title>Malware Analysis</title>
-      <link>https://davidjosearaujo.github.io/tags/malware-analysis/</link>
+      <link>http://localhost:1313/tags/malware-analysis/</link>
       <pubDate>Sun, 09 Nov 2025 12:03:09 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/malware-analysis/</guid>
+      <guid>http://localhost:1313/tags/malware-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Reverse Engineering</title>
-      <link>https://davidjosearaujo.github.io/tags/reverse-engineering/</link>
+      <link>http://localhost:1313/tags/reverse-engineering/</link>
       <pubDate>Sun, 09 Nov 2025 12:03:09 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/reverse-engineering/</guid>
+      <guid>http://localhost:1313/tags/reverse-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
-      <link>https://davidjosearaujo.github.io/tags/tools/</link>
+      <link>http://localhost:1313/tags/tools/</link>
       <pubDate>Sun, 09 Nov 2025 12:03:09 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/tools/</guid>
+      <guid>http://localhost:1313/tags/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Home Server</title>
-      <link>https://davidjosearaujo.github.io/tags/home-server/</link>
+      <link>http://localhost:1313/tags/home-server/</link>
       <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/home-server/</guid>
+      <guid>http://localhost:1313/tags/home-server/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://davidjosearaujo.github.io/tags/networking/</link>
+      <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/networking/</guid>
+      <guid>http://localhost:1313/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Arduino</title>
-      <link>https://davidjosearaujo.github.io/tags/arduino/</link>
+      <link>http://localhost:1313/tags/arduino/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/arduino/</guid>
+      <guid>http://localhost:1313/tags/arduino/</guid>
       <description></description>
     </item>
     <item>
       <title>Electronics</title>
-      <link>https://davidjosearaujo.github.io/tags/electronics/</link>
+      <link>http://localhost:1313/tags/electronics/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/electronics/</guid>
+      <guid>http://localhost:1313/tags/electronics/</guid>
       <description></description>
     </item>
     <item>
       <title>Hardware</title>
-      <link>https://davidjosearaujo.github.io/tags/hardware/</link>
+      <link>http://localhost:1313/tags/hardware/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/hardware/</guid>
+      <guid>http://localhost:1313/tags/hardware/</guid>
       <description></description>
     </item>
     <item>
       <title>Home</title>
-      <link>https://davidjosearaujo.github.io/tags/home/</link>
+      <link>http://localhost:1313/tags/home/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/home/</guid>
+      <guid>http://localhost:1313/tags/home/</guid>
       <description></description>
     </item>
     <item>
       <title>Microcontrolers</title>
-      <link>https://davidjosearaujo.github.io/tags/microcontrolers/</link>
+      <link>http://localhost:1313/tags/microcontrolers/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/microcontrolers/</guid>
+      <guid>http://localhost:1313/tags/microcontrolers/</guid>
       <description></description>
     </item>
     <item>
       <title>Exploitation</title>
-      <link>https://davidjosearaujo.github.io/tags/exploitation/</link>
+      <link>http://localhost:1313/tags/exploitation/</link>
       <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/exploitation/</guid>
+      <guid>http://localhost:1313/tags/exploitation/</guid>
       <description></description>
     </item>
     <item>
       <title>Hacking</title>
-      <link>https://davidjosearaujo.github.io/tags/hacking/</link>
+      <link>http://localhost:1313/tags/hacking/</link>
       <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/hacking/</guid>
+      <guid>http://localhost:1313/tags/hacking/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>https://davidjosearaujo.github.io/tags/research/</link>
+      <link>http://localhost:1313/tags/research/</link>
       <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/research/</guid>
+      <guid>http://localhost:1313/tags/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Environment</title>
-      <link>https://davidjosearaujo.github.io/tags/environment/</link>
+      <link>http://localhost:1313/tags/environment/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/environment/</guid>
+      <guid>http://localhost:1313/tags/environment/</guid>
       <description></description>
     </item>
     <item>
       <title>Isolation</title>
-      <link>https://davidjosearaujo.github.io/tags/isolation/</link>
+      <link>http://localhost:1313/tags/isolation/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/isolation/</guid>
+      <guid>http://localhost:1313/tags/isolation/</guid>
       <description></description>
     </item>
     <item>
       <title>Safety</title>
-      <link>https://davidjosearaujo.github.io/tags/safety/</link>
+      <link>http://localhost:1313/tags/safety/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/safety/</guid>
+      <guid>http://localhost:1313/tags/safety/</guid>
       <description></description>
     </item>
     <item>
       <title>Blogging</title>
-      <link>https://davidjosearaujo.github.io/tags/blogging/</link>
+      <link>http://localhost:1313/tags/blogging/</link>
       <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/blogging/</guid>
+      <guid>http://localhost:1313/tags/blogging/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
-      <link>https://davidjosearaujo.github.io/tags/cybersecurity/</link>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
       <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/tags/cybersecurity/</guid>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
       <description></description>
     </item>
   </channel>

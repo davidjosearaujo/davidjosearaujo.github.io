@@ -6,7 +6,6 @@ defaultcontentlanguage = "en"
 
 [outputs]
   home = ['html', 'rss']
-  blog = ['html', 'rss']
 
 [pagination]
 pagerSize = 20

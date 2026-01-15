@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on David Araújo</title>
-    <link>https://davidjosearaujo.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 09 Nov 2025 12:03:09 +0000</lastBuildDate>
-    <atom:link href="https://davidjosearaujo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>/Tools</title>
-      <link>https://davidjosearaujo.github.io/categories/tools/</link>
+      <link>http://localhost:1313/categories/tools/</link>
       <pubDate>Sun, 09 Nov 2025 12:03:09 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/categories/tools/</guid>
+      <guid>http://localhost:1313/categories/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>/Home-Server</title>
-      <link>https://davidjosearaujo.github.io/categories/home-server/</link>
+      <link>http://localhost:1313/categories/home-server/</link>
       <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/categories/home-server/</guid>
+      <guid>http://localhost:1313/categories/home-server/</guid>
       <description></description>
     </item>
     <item>
       <title>/Electronics</title>
-      <link>https://davidjosearaujo.github.io/categories/electronics/</link>
+      <link>http://localhost:1313/categories/electronics/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      <guid>https://davidjosearaujo.github.io/categories/electronics/</guid>
+      <guid>http://localhost:1313/categories/electronics/</guid>
       <description></description>
     </item>
     <item>
       <title>/File-System</title>
-      <link>https://davidjosearaujo.github.io/categories/file-system/</link>
+      <link>http://localhost:1313/categories/file-system/</link>
       <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/categories/file-system/</guid>
+      <guid>http://localhost:1313/categories/file-system/</guid>
       <description></description>
     </item>
     <item>
       <title>/Malware-Analysis</title>
-      <link>https://davidjosearaujo.github.io/categories/malware-analysis/</link>
+      <link>http://localhost:1313/categories/malware-analysis/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/categories/malware-analysis/</guid>
+      <guid>http://localhost:1313/categories/malware-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>/Home</title>
-      <link>https://davidjosearaujo.github.io/categories/home/</link>
+      <link>http://localhost:1313/categories/home/</link>
       <pubDate>Sat, 02 Nov 2024 21:07:22 +0000</pubDate>
-      <guid>https://davidjosearaujo.github.io/categories/home/</guid>
+      <guid>http://localhost:1313/categories/home/</guid>
       <description></description>
     </item>
   </channel>
