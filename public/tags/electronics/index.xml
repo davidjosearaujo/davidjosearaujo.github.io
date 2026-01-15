@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronics on David Araújo</title>
-    <link>http://localhost:1313/tags/electronics/</link>
+    <link>https://davidjosearaujo.github.io/tags/electronics/</link>
     <description>Recent content in Electronics on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 13 May 2025 11:05:20 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://davidjosearaujo.github.io/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some Water Nonsense</title>
-      <link>http://localhost:1313/posts/03-some-water-nonsense/</link>
+      <link>https://davidjosearaujo.github.io/posts/03-some-water-nonsense/</link>
       <pubDate>Tue, 13 May 2025 11:05:20 +0100</pubDate>
-      <guid>http://localhost:1313/posts/03-some-water-nonsense/</guid>
+      <guid>https://davidjosearaujo.github.io/posts/03-some-water-nonsense/</guid>
       <description>Table of contents Poor man&amp;rsquo;s indoor pool Of course its an Arduino project List of parts Circuit schematics I suck at soldering Box it up and deploy it Project page For whatever sordid reason you&amp;rsquo;re looking into replicating this project, you can find all documents and code here Poor man&amp;rsquo;s indoor pool Link to heading So, my house has a basement. And where I live? It rains. Actually, when it rains, it pours, and when that happens, well, my basement apparently moonlights as an indoor swimming pool.</description>
     </item>
   </channel>

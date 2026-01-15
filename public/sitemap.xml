@@ -2,120 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-15T22:07:56+00:00</lastmod>
+    <loc>https://davidjosearaujo.github.io/categories/home-server/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-01-15T22:07:56+00:00</lastmod>
+    <loc>https://davidjosearaujo.github.io/authors/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tools/</loc>
+    <loc>https://davidjosearaujo.github.io/categories/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/authors/david-ara%C3%BAjo/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/environment/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/home-server/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/posts/06-homeless-self-hosting/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/posts/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/tags/tools/</loc>
+    <lastmod>2026-01-15T18:17:36+00:00</lastmod>
+  </url><url>
+    <loc>https://davidjosearaujo.github.io/categories/tools/</loc>
     <lastmod>2025-11-09T12:03:09+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/forensics/</loc>
     <lastmod>2025-11-09T12:03:09+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/malware-analysis/</loc>
     <lastmod>2025-11-09T12:03:09+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/david-ara%C3%BAjo/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/05-old-but-gold/</loc>
     <lastmod>2025-11-09T12:03:09+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/forensics/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/reverse-engineering/</loc>
     <lastmod>2025-11-09T12:03:09+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/malware-analysis/</loc>
-    <lastmod>2025-11-09T12:03:09+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/05-old-but-gold/</loc>
-    <lastmod>2025-11-09T12:03:09+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/reverse-engineering/</loc>
-    <lastmod>2025-11-09T12:03:09+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-11-09T12:03:09+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tools/</loc>
-    <lastmod>2025-11-09T12:03:09+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/home-server/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/networking/</loc>
     <lastmod>2025-07-19T16:42:53+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/home-server/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/04-router-annoyances/</loc>
     <lastmod>2025-07-19T16:42:53+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/networking/</loc>
-    <lastmod>2025-07-19T16:42:53+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/04-router-annoyances/</loc>
-    <lastmod>2025-07-19T16:42:53+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/electronics/</loc>
+    <loc>https://davidjosearaujo.github.io/categories/electronics/</loc>
     <lastmod>2025-05-13T11:05:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/arduino/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/arduino/</loc>
     <lastmod>2025-05-13T11:05:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/electronics/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/electronics/</loc>
     <lastmod>2025-05-13T11:05:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hardware/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/hardware/</loc>
     <lastmod>2025-05-13T11:05:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/home/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/home/</loc>
     <lastmod>2025-05-13T11:05:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/microcontrolers/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/microcontrolers/</loc>
     <lastmod>2025-05-13T11:05:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/03-some-water-nonsense/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/03-some-water-nonsense/</loc>
     <lastmod>2025-05-13T11:05:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/file-system/</loc>
+    <loc>https://davidjosearaujo.github.io/categories/file-system/</loc>
     <lastmod>2025-02-07T16:57:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/02-everything-is-a-file/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/02-everything-is-a-file/</loc>
     <lastmod>2025-02-07T16:57:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/exploitation/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/exploitation/</loc>
     <lastmod>2025-02-07T16:57:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hacking/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/hacking/</loc>
     <lastmod>2025-02-07T16:57:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/research/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/research/</loc>
     <lastmod>2025-02-07T16:57:16+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/malware-analysis/</loc>
+    <loc>https://davidjosearaujo.github.io/categories/malware-analysis/</loc>
     <lastmod>2024-11-16T11:51:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/environment/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/isolation/</loc>
     <lastmod>2024-11-16T11:51:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/isolation/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/safety/</loc>
     <lastmod>2024-11-16T11:51:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/safety/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</loc>
     <lastmod>2024-11-16T11:51:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/01-safety-glasses-first/</loc>
-    <lastmod>2024-11-16T11:51:38+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/home/</loc>
+    <loc>https://davidjosearaujo.github.io/categories/home/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blogging/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/blogging/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity/</loc>
+    <loc>https://davidjosearaujo.github.io/tags/cybersecurity/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/00-hello-world/</loc>
+    <loc>https://davidjosearaujo.github.io/posts/00-hello-world/</loc>
     <lastmod>2024-11-02T21:07:22+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://davidjosearaujo.github.io/about/</loc>
     <lastmod>2024-11-01T23:16:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://davidjosearaujo.github.io/series/</loc>
   </url>
 </urlset>

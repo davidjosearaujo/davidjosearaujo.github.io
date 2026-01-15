@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forensics on David Araújo</title>
-    <link>http://localhost:1313/tags/forensics/</link>
+    <link>https://davidjosearaujo.github.io/tags/forensics/</link>
     <description>Recent content in Forensics on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 09 Nov 2025 12:03:09 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://davidjosearaujo.github.io/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Old But Gold</title>
-      <link>http://localhost:1313/posts/05-old-but-gold/</link>
+      <link>https://davidjosearaujo.github.io/posts/05-old-but-gold/</link>
       <pubDate>Sun, 09 Nov 2025 12:03:09 +0000</pubDate>
-      <guid>http://localhost:1313/posts/05-old-but-gold/</guid>
+      <guid>https://davidjosearaujo.github.io/posts/05-old-but-gold/</guid>
       <description>Table of contents Amazing is simple Simple isn&amp;rsquo;t basic Limitations On the shoulders of giants Quick and easy Project page Like usual, you can find all documents and code here So, before continuing, I must tell you the context of this post. I recently finished college (hurray for me!) and I started working for Cognizant doing Android Reverse Engineering for Google. Due to that, I got a whole new appreciation for what we&amp;rsquo;ll be discussing today.</description>
     </item>
     <item>
       <title>Everything Is A File</title>
-      <link>http://localhost:1313/posts/02-everything-is-a-file/</link>
+      <link>https://davidjosearaujo.github.io/posts/02-everything-is-a-file/</link>
       <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/02-everything-is-a-file/</guid>
+      <guid>https://davidjosearaujo.github.io/posts/02-everything-is-a-file/</guid>
       <description>Table of contents What is a file? Is my red blue for you, or my green your green, too? What types of files are there? Why should I care? Keep exploring What is a file? Link to heading Files, everything is a file! You may have heard this phrase in relation to Linux. It’s quite popular among Linux enthusiasts, but beyond being a catchy sentence, what does it actually mean?</description>
     </item>
   </channel>

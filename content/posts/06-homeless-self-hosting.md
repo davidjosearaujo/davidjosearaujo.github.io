@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2026-01-15T22:07:56Z
+date = 2026-01-15T18:17:36Z
 title = "Homeless Self Hosting"
 description = "Hosting your own script, automating your own flows, doesn't mean you need a server, just means you need an environment."
 slug = ""
@@ -12,18 +12,12 @@ series = []
 +++
 
 {{< notice info "Table of contents" >}}
-
 1. [As specific as it is simple](#as-specific-as-it-is-simple)
 2. [I needed a coach](#i-needed-a-coach)
 3. [All hail Apps Script](#all-hail-app-script)
 4. [The Architecture: No Server, No Problem](#the-architecture-no-server-no-problem)
 5. [The 'Secret Sauce': Gemini 2.5 Pro](#the-secret-sauce-gemini-25-pro)
 6. [Conclusion: The Environment is the Message](#conclusion-the-environment-is-the-message)
-
-{{< /notice >}}
-
-{{< notice tip "Project page" >}}
-Like usual, you can find all documents and code here
 {{< /notice >}}
 
 {{< notice tip "Project page" >}}

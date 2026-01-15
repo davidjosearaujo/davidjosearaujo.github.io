@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hacking on David Araújo</title>
-    <link>http://localhost:1313/tags/hacking/</link>
+    <link>https://davidjosearaujo.github.io/tags/hacking/</link>
     <description>Recent content in Hacking on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 07 Feb 2025 16:57:16 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://davidjosearaujo.github.io/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Everything Is A File</title>
-      <link>http://localhost:1313/posts/02-everything-is-a-file/</link>
+      <link>https://davidjosearaujo.github.io/posts/02-everything-is-a-file/</link>
       <pubDate>Fri, 07 Feb 2025 16:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/02-everything-is-a-file/</guid>
+      <guid>https://davidjosearaujo.github.io/posts/02-everything-is-a-file/</guid>
       <description>Table of contents What is a file? Is my red blue for you, or my green your green, too? What types of files are there? Why should I care? Keep exploring What is a file? Link to heading Files, everything is a file! You may have heard this phrase in relation to Linux. It’s quite popular among Linux enthusiasts, but beyond being a catchy sentence, what does it actually mean?</description>
     </item>
     <item>
       <title>Safety Glasses First</title>
-      <link>http://localhost:1313/posts/01-safety-glasses-first/</link>
+      <link>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      <guid>http://localhost:1313/posts/01-safety-glasses-first/</guid>
+      <guid>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</guid>
       <description>Table of contents Strong roots Vitualization is the name of the game Touch it with a stick Clean up and bleach Have Fun! I&amp;rsquo;m paranoid about safety.&#xA;As much as I love getting my hands on that new, shiny, (un)known malicious application or scratching that itch of clicking on those sketchy phishing emails I tell myself only idiots click on, the one thing I love more is knowing that after I get bored doing it, my machine will not be infected and that little voice in my head won&amp;rsquo;t be telling me that I need to, again, nuke my disk and re-install my OS.</description>
     </item>
   </channel>

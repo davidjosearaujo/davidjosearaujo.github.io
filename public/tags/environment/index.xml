@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Environment on David Araújo</title>
-    <link>http://localhost:1313/tags/environment/</link>
+    <link>https://davidjosearaujo.github.io/tags/environment/</link>
     <description>Recent content in Environment on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Nov 2024 11:51:38 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/environment/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jan 2026 18:17:36 +0000</lastBuildDate>
+    <atom:link href="https://davidjosearaujo.github.io/tags/environment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homeless Self Hosting</title>
+      <link>https://davidjosearaujo.github.io/posts/06-homeless-self-hosting/</link>
+      <pubDate>Thu, 15 Jan 2026 18:17:36 +0000</pubDate>
+      <guid>https://davidjosearaujo.github.io/posts/06-homeless-self-hosting/</guid>
+      <description>Table of contents As specific as it is simple I needed a coach All hail Apps Script The Architecture: No Server, No Problem The &amp;lsquo;Secret Sauce&amp;rsquo;: Gemini 2.5 Pro Conclusion: The Environment is the Message Project page Like usual, you can find all documents and code here Has specific as it is simple Link to heading In this cookie-cutter world, we have managed to make ourselves fit in whatever shape fits the majority.</description>
+    </item>
     <item>
       <title>Safety Glasses First</title>
-      <link>http://localhost:1313/posts/01-safety-glasses-first/</link>
+      <link>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</link>
       <pubDate>Sat, 16 Nov 2024 11:51:38 +0000</pubDate>
-      <guid>http://localhost:1313/posts/01-safety-glasses-first/</guid>
+      <guid>https://davidjosearaujo.github.io/posts/01-safety-glasses-first/</guid>
       <description>Table of contents Strong roots Vitualization is the name of the game Touch it with a stick Clean up and bleach Have Fun! I&amp;rsquo;m paranoid about safety.&#xA;As much as I love getting my hands on that new, shiny, (un)known malicious application or scratching that itch of clicking on those sketchy phishing emails I tell myself only idiots click on, the one thing I love more is knowing that after I get bored doing it, my machine will not be infected and that little voice in my head won&amp;rsquo;t be telling me that I need to, again, nuke my disk and re-install my OS.</description>
     </item>
   </channel>

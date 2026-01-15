@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>/Home-Server on David Araújo</title>
-    <link>http://localhost:1313/categories/home-server/</link>
+    <link>https://davidjosearaujo.github.io/categories/home-server/</link>
     <description>Recent content in /Home-Server on David Araújo</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Jul 2025 16:42:53 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/home-server/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jan 2026 18:17:36 +0000</lastBuildDate>
+    <atom:link href="https://davidjosearaujo.github.io/categories/home-server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homeless Self Hosting</title>
+      <link>https://davidjosearaujo.github.io/posts/06-homeless-self-hosting/</link>
+      <pubDate>Thu, 15 Jan 2026 18:17:36 +0000</pubDate>
+      <guid>https://davidjosearaujo.github.io/posts/06-homeless-self-hosting/</guid>
+      <description>Table of contents As specific as it is simple I needed a coach All hail Apps Script The Architecture: No Server, No Problem The &amp;lsquo;Secret Sauce&amp;rsquo;: Gemini 2.5 Pro Conclusion: The Environment is the Message Project page Like usual, you can find all documents and code here Has specific as it is simple Link to heading In this cookie-cutter world, we have managed to make ourselves fit in whatever shape fits the majority.</description>
+    </item>
     <item>
       <title>Router Annoyances</title>
-      <link>http://localhost:1313/posts/04-router-annoyances/</link>
+      <link>https://davidjosearaujo.github.io/posts/04-router-annoyances/</link>
       <pubDate>Sat, 19 Jul 2025 16:42:53 +0100</pubDate>
-      <guid>http://localhost:1313/posts/04-router-annoyances/</guid>
+      <guid>https://davidjosearaujo.github.io/posts/04-router-annoyances/</guid>
       <description>Table of contents My router suffers from amnesia Exploring my options More interesting than I imagined Developing a solution Setting and forgetting Project page Like usual, you can find all documents and code here My router suffers from amnesia Link to heading Of course I have a home server.&#xA;Like probably most people who read this blog (if there are any of you out there!), I like to self-host some services.</description>
     </item>
   </channel>
